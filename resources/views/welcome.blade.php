@@ -142,4 +142,89 @@
               <div class="cards-placeholder__item"></div>
             </div>
     </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="">
+          COMO NADIE.
+          CONOCEMOS
+          A LA PERFECCIÓN 
+          LO QUE NECESITAN
+          LOS PIES
+          DE TUS PEQUEÑINES
+        </div>
+        <div class="">
+          <div class="lista_landing">
+            <div class="">
+              RESISTENCIA
+            </div> 
+            <div class="">
+              COMODIDAD
+            </div>
+            <div class="">
+              SUAVIDAD
+            </div>
+            <div class="">
+              DISEÑO
+            </div>
+          </div>
+          <div class="imagen_lading">
+            <img src="{{ asset('img/') }}" alt="">
+          </div>
+        </div>
+        <div class="">
+          NUESTRO OBJETIVO 
+          ES EL DESARROLLO Y LA SALUD 
+          DEL PIE DE TU NIÑO
+          EN TODAS LAS ETAPAS DE SU 
+          CRECIMIENTO.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="">
+        APROVECHAMOS 
+        NUESTRA GRAN EXPERIENCIA Y
+        AMPLIO CONOCIMIENTO 
+        EN LOS MATERIALES, 
+        EN EL PROCESO DE FABRICACIÓN DEL CALZADO 
+        Y  LA ANATOMÍA DEL
+        PIÉ TU PEQUEÑO
+      </div>
+      <div class="">
+        <img src="{{ asset('img/') }}" alt="">
+        <div class="canvas"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-6">
+            <img src="{{ asset('img/') }}" alt="">
+            <div class="">
+              PARA LLEVARTE UN PRODUCTO HECHO DE PIEL
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="{{ asset('img/') }}" alt="">
+            <div class="">
+              CON UN BULLON ACOJINADO A LA ALTURA DE LOS TOBILLOS.
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="{{ asset('img/') }}" alt="">
+            <div class="">
+              CON UNA PLANTILLA Y ARCO ACOJINADOS
+            </div>
+            
+          </div>
+          <div class="col-6">
+            <img src="{{ asset('img/') }}" alt="">
+            <div class="">
+              UNA SUELA CON COLETA PARA DAR ESTABILIDAD A ESOS PRIMEROS PASOS DE TU BEBE.
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
 @endsection

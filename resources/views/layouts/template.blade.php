@@ -51,6 +51,81 @@
 	</nav>
 	@yield('content')
 
+	<div class="row">
+		<div class="col-12">
+			<div class="footer">
+				<div class="acerca_footer">
+					<a href="{{ url('acerca') }}">ACERCA DE NOSOTROS</a>
+				</div>
+				<div class="nuestro_productos_footer">
+					<div class="">NUESTROS PRODUCTOS</div>
+					<div class="iconos_productos_fotoer">
+						<div class="icono_footer">
+							<a href="{{ url('baby') }}"></a>
+							<img src="{{ asset('img/') }}" alt="">
+						</div>
+						<div class="icono_footer">
+							<a href="{{ url('1eros') }}"></a>
+							<img src="{{ asset('img/') }}" alt="">
+						</div>
+						<div class="icono_footer">
+							<a href="{{ url('kids') }}"></a>
+							<img src="{{ asset('img/') }}" alt="">
+						</div>
+						<div class="icono_footer">
+							<a href="{{ url('junior') }}"></a>
+							<img src="{{ asset('img/') }}" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="contacto_footer">
+					<p>contacto</p>
+					<a href="tel:+524777717373" class="Blondie">
+					    T. ( 477 ) 7717373
+					</a>
+					<div>
+						correo electrónico:
+						info@miniburbujas.mx
+					</div>
+				</div>
+				<div class="redes_sociales_footer">
+					<div>
+						<a href="">
+							<img src="{{ asset('img/') }}" alt="">
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img src="{{ asset('img/') }}" alt="">
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img src="{{ asset('img/') }}" alt="">
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img src="{{ asset('img/') }}" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="footer_institucional">
+					<div class="marca">
+						Miniburbujas®
+					</div>
+					<div class="aviso_privacidad">
+						<a href="{{ url('terminosycondiciones') }}">Términos y condiciones</a>|
+						<a href="{{ url('aviso_de_privacidad') }}">Aviso de privacidad</a>
+					</div>
+					<div class="derechos">
+						2018 Miniburbujas, Todos los derechos reservados.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
     <!-- Scripts -->
         <script src="{{ asset('js/anime.js') }}"></script>
         <script src="{{ asset('js/general.js') }}"></script>
