@@ -143,14 +143,14 @@
             </div>
     </div>
     <div class="row">
-      <div class="col-12">
-        <div class="">
-          COMO NADIE.
-          CONOCEMOS
-          A LA PERFECCIÓN 
-          LO QUE NECESITAN
-          LOS PIES
-          DE TUS PEQUEÑINES
+      <div class="col-12 contenedor_2">
+        <div class="alienado_centro texto_cont_2">
+          <p>COMO NADIE.</p>
+          <p><span>CONOCEMOS</span></p>
+          <p> A LA PERFECCIÓN</p>
+          <p><span>LO QUE NECESITAN</span></p> 
+          <p><span>LOS PIES</span></p>
+          <p>DE TUS PEQUEÑINES</p>
         </div>
         <div class="">
           <div class="lista_landing">
@@ -168,31 +168,35 @@
             </div>
           </div>
           <div class="imagen_lading">
-            <img src="{{ asset('img/') }}" alt="">
+            <img src="{{ asset('img/Miniburbujas_Kids2_Marlin.png') }}" alt="">
           </div>
         </div>
-        <div class="">
-          NUESTRO OBJETIVO 
-          ES EL DESARROLLO Y LA SALUD 
-          DEL PIE DE TU NIÑO
-          EN TODAS LAS ETAPAS DE SU 
-          CRECIMIENTO.
+        <div class="alienado_centro texto_cont_3">
+          <div class="alienado_derecha">
+            <p>NUESTRO OBJETIVO ES EL </p>
+            <p> <span>DESARROLLO Y LA SALUD</span> </p>
+            <p> <span>DEL PIE DE TU NIÑO</span> </p>
+            <p>EN TODAS LAS ETAPAS DE SU </p>
+            <p> <span>CRECIMIENTO.</span></p>
+          </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="">
-        APROVECHAMOS 
-        NUESTRA GRAN EXPERIENCIA Y
-        AMPLIO CONOCIMIENTO 
-        EN LOS MATERIALES, 
-        EN EL PROCESO DE FABRICACIÓN DEL CALZADO 
-        Y  LA ANATOMÍA DEL
-        PIÉ TU PEQUEÑO
-      </div>
-      <div class="">
-        <img src="{{ asset('img/') }}" alt="">
-        <div class="canvas"></div>
+      <div class="col-12">
+        <div class="">
+            APROVECHAMOS 
+            NUESTRA GRAN EXPERIENCIA Y
+            AMPLIO CONOCIMIENTO 
+            EN LOS MATERIALES, 
+            EN EL PROCESO DE FABRICACIÓN DEL CALZADO 
+            Y  LA ANATOMÍA DEL
+            PIÉ TU PEQUEÑO
+          </div>
+          <div class="">
+            <img src="{{ asset('img/') }}" alt="">
+            <div class="canvas"></div>
+          </div>
       </div>
     </div>
     <div class="row">
