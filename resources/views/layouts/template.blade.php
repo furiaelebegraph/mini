@@ -53,72 +53,76 @@
 
 	<div class="row">
 		<div class="col-12">
-			<div class="footer">
+			<div class="footer alienado_centro">
 				<div class="acerca_footer">
 					<a href="{{ url('acerca') }}">ACERCA DE NOSOTROS</a>
 				</div>
 				<div class="nuestro_productos_footer">
-					<div class="">NUESTROS PRODUCTOS</div>
+					<div class="texto_bold">NUESTROS PRODUCTOS</div>
 					<div class="iconos_productos_fotoer">
 						<div class="icono_footer">
-							<a href="{{ url('baby') }}"></a>
-							<img src="{{ asset('img/') }}" alt="">
+							<a href="{{ url('baby') }}">
+								<img src="{{ asset('img/') }}" alt="">
+							</a>
 						</div>
 						<div class="icono_footer">
-							<a href="{{ url('1eros') }}"></a>
-							<img src="{{ asset('img/') }}" alt="">
+							<a href="{{ url('1eros') }}">
+								<img src="{{ asset('img/') }}" alt="">
+							</a>
 						</div>
 						<div class="icono_footer">
-							<a href="{{ url('kids') }}"></a>
-							<img src="{{ asset('img/') }}" alt="">
+							<a href="{{ url('kids') }}">
+								<img src="{{ asset('img/') }}" alt="">
+							</a>
 						</div>
 						<div class="icono_footer">
-							<a href="{{ url('junior') }}"></a>
-							<img src="{{ asset('img/') }}" alt="">
+							<a href="{{ url('junior') }}">
+								<img src="{{ asset('img/') }}" alt="">
+							</a>
 						</div>
 					</div>
 				</div>
-				<div class="contacto_footer">
-					<p>contacto</p>
-					<a href="tel:+524777717373" class="Blondie">
+				<div class="contacto_footer m-b-50">
+					<p class='texto_bold'>contacto</p>
+					<a href="tel:+524777717373" class="texto_bold">
 					    T. ( 477 ) 7717373
 					</a>
-					<div>
-						correo electrónico:
+					<div class='texto_bold'>
+						correo electrónico: <br>
 						info@miniburbujas.mx
 					</div>
 				</div>
-				<div class="redes_sociales_footer">
+				<div class="redes_sociales_footer m-b-50">
 					<div>
 						<a href="">
-							<img src="{{ asset('img/') }}" alt="">
+							<img src="{{ asset('img/icono_face_landing.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
 						<a href="">
-							<img src="{{ asset('img/') }}" alt="">
+							<img src="{{ asset('img/icono_twitter.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
 						<a href="">
-							<img src="{{ asset('img/') }}" alt="">
+							<img src="{{ asset('img/icono_pinterest_landing.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
 						<a href="">
-							<img src="{{ asset('img/') }}" alt="">
+							<img src="{{ asset('img/icono_google.svg') }}" alt="">
 						</a>
 					</div>
 				</div>
-				<div class="footer_institucional">
-					<div class="marca">
+				<div class="footer_institucional p-b-50">
+					<div class="marca texto_bold">
 						Miniburbujas®
 					</div>
 					<div class="aviso_privacidad">
 						<a href="{{ url('terminosycondiciones') }}">Términos y condiciones</a>|
 						<a href="{{ url('aviso_de_privacidad') }}">Aviso de privacidad</a>
 					</div>
-					<div class="derechos">
+					<div class="derechos texto_bold">
 						2018 Miniburbujas, Todos los derechos reservados.
 					</div>
 				</div>

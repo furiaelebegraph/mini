@@ -184,49 +184,69 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="">
-            APROVECHAMOS 
-            NUESTRA GRAN EXPERIENCIA Y
-            AMPLIO CONOCIMIENTO 
-            EN LOS MATERIALES, 
-            EN EL PROCESO DE FABRICACIÓN DEL CALZADO 
-            Y  LA ANATOMÍA DEL
-            PIÉ TU PEQUEÑO
+        <div class="texto_cont_4 alienado_centro">
+            <p> APROVECHAMOS  </p>
+            <p> <span>NUESTRA GRAN EXPERIENCIA</span> Y </p>
+            <p> <span>AMPLIO CONOCIMIENTO</span>  </p>
+            <p> EN LOS MATERIALES,  </p>
+            <p> EN EL <span>PROCESO DE FABRICACIÓN</span></p> 
+            <p> DEL CALZADO </p>
+            <p> Y <span> LA ANATOMÍA DEL</span> </p>
+            <p> <span>PIÉ TU PEQUEÑO</span> </p>
+        </div>
+        <div class="wrap_huarache">
+          <div class="huarache_landing">
+            <img src="{{ asset('img/huarache.png') }}" alt="">
           </div>
-          <div class="">
-            <img src="{{ asset('img/') }}" alt="">
-            <div class="canvas"></div>
+          <div class="canvas">
+            <svg x="0px" y="0px" >
+              <path  fill="none" stroke="#FFF" class="st0" d="M285,9.9c0,0-115.5,6.2-167,68.9s-6.7,82.9-106.5,118.8"/>
+
+            </svg>
           </div>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="row">
+        <div class="row justify-content-center texto_cont_5">
           <div class="col-6">
-            <img src="{{ asset('img/') }}" alt="">
+            <img src="{{ asset('img/icono_piel.svg') }}" alt="">
             <div class="">
-              PARA LLEVARTE UN PRODUCTO HECHO DE PIEL
+              <p>PARA LLEVARTE</p>
+              <p>UN PRODUCTO</p>
+              <p> <span>HECHO DE PIEL</span> </p>
             </div>
           </div>
           <div class="col-6">
-            <img src="{{ asset('img/') }}" alt="">
+            <img src="{{ asset('img/icono_talon.svg') }}" alt="">
             <div class="">
-              CON UN BULLON ACOJINADO A LA ALTURA DE LOS TOBILLOS.
+              <p>CON UN <span>BULLON</span></p>
+              <p> <span>ACOJINADO</span>A LA</p>
+              <p>ALTURA DE LOS </p>
+              <p>TOBILLOS.</p>
             </div>
           </div>
+          <div class="w-100 p-b-30"></div>
           <div class="col-6">
-            <img src="{{ asset('img/') }}" alt="">
+            <img src="{{ asset('img/icono_arco.svg') }}" alt="">
             <div class="">
-              CON UNA PLANTILLA Y ARCO ACOJINADOS
+              <p>CON UNA </p>
+              <p><span>PLANTILLA</span> </p>
+              <p><span>Y ARCO</span> </p>
+              <p><span>ACOJINADOS</span></p>
             </div>
             
           </div>
           <div class="col-6">
-            <img src="{{ asset('img/') }}" alt="">
+            <img src="{{ asset('img/icono_talon_2.svg') }}" alt="">
             <div class="">
-              UNA SUELA CON COLETA PARA DAR ESTABILIDAD A ESOS PRIMEROS PASOS DE TU BEBE.
+              <p>UNA <span>SUELA CON</span> </p>
+              <p> <span>COLETA</span>  PARA DAR</p>
+              <p>ESTABILIDAD A </p>
+              <p>ESOS PRIMEROS </p>
+              <p>PASOS DE TU BEBE.</p>
             </div>
-            
           </div>
         </div>
       </div>
