@@ -11,6 +11,11 @@
 |
 */
 
+
+Route::get('/catalogo', function () {
+    return view('catalogo');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });

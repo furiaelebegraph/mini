@@ -3,8 +3,6 @@
   'use strict';
 
   var BODY_BACKGROUNDS = [
-    '50% 50%, url("img/circulitos_vista_1.svg"), radial-gradient(ellipse at center, rgba(187,250,229,0) 0%,rgba(187,250,229,0.45) 85%)',
-    '50% 50%, url("img/fondo_coleccion_pv.svg"), radial-gradient(ellipse at center, rgba(232,251,254,0) 0%,rgba(198,252,231,0.45) 85%)',
     '#8850FF',
     '#FFBA00',
     '#F15A29',
