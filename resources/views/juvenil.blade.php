@@ -13,7 +13,7 @@
 				</div>
 				<div class="col-12 m-t-50">
 					<div class="row justify-content-center align-items-center bloques_juvenil">
-						<div class="col-11 col-sm-5">
+						<div class="col-11 col-sm-6">
 
 							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 							  <ol class="carousel-indicators">
@@ -65,50 +65,78 @@
 						<div class="wrap_detalles">
 							<div class="row">
 								<div class="col-12 wrap_coleccion_nautica">
-									<div class="row">
-										<div class="al_49 textos_juvenil">
-											<p>
-												Colección <br>
-												<span>NAUTICA</span>
-											</p>
-											<img class='vivorita' src="{{ asset('img/juvenil/vivorita.svg') }}" alt="">
-											<p class='textos_juvenil'>
-												Nuestras líneas  para Juniors son un clásico que nunca pasa de moda, y le damos un toque actual y atractivo para estos pequeños que poco a poco dejan de serlo.
-											</p>
+									<div class="row align-items-center">
+										<div class="col-12 col-sm-6 order-1 order-sm-2">
+											<div class="textos_juvenil">
+												<p class='texto_coleccion_nautica'>
+													Colección
+												</p>
+												<p class='texto_nautica'>
+													<span>NAUTICA</span>
+												</p>
+												<img class='vivorita imagen_vivorita' src="{{ asset('img/juvenil/vivorita.svg') }}" alt="">
+												<p class='textos_juvenil descripcion_nautica'>
+													Nuestras líneas  para Juniors son un clásico que nunca pasa de moda, y le damos un toque actual y atractivo para estos pequeños que poco a poco dejan de serlo.
+												</p>
+											</div>
 										</div>
-										<div class="al_49">
-											<img src="{{ asset('img/juvenil/nautica_blanco.png') }}" alt="">
+										<div class="col-12 col-sm-6 order-2 order-sm-1">
+											<img class='imagen_seccion_juvenil_1' src="{{ asset('img/juvenil/nautica_blanco.png') }}" alt="">
 										</div>
 									</div>
 								</div>
 								<div class="col-12 wrap_coleccion_nautica">
-									<div class="row">
-										<div class="textos_juvenil">
-											<p>
-												<span>IDEAL</span>
-											</p>
-											<img  class='vivorita' src="{{ asset('img/juvenil/vivorita.svg') }}" alt="">
-											<p class='textos_juvenil'>
-												para esas ocasiones especiales donde deben lucir como verdaderos príncipes y enorgullecer a la familia.
-											</p>
+									<div class="row align-items-center">
+										<div class="col-12 col-sm-6">
+											<div class="textos_juvenil p-l-20">
+												<img  class='vivorita' src="{{ asset('img/juvenil/vivorita.svg') }}" alt="">
+												<p class='m-t-30'>
+													<span>IDEAL</span>
+												</p>
+												<p class='textos_juvenil'>
+													para esas ocasiones especiales donde deben lucir como verdaderos príncipes y enorgullecer a la familia.
+												</p>
+											</div>
 
 										</div>
-										<div class="">
-											<img class='' src="{{ asset('img/juvenil/nautica_cafe.png') }}" alt="">
+										<div class="col-12 col-sm-6">
+											<img class='imagen_seccion_juvenil_2' src="{{ asset('img/juvenil/nautica_cafe.png') }}" alt="">
 										</div>
 									</div>
 								</div>
-								
 							</div>
-						
-							
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-12 alienado_centro margen_negativo_150">
+					<div class="cilindro_catalogo">
+						CATÁLOGO
+					</div>
+				</div>	
+
+			</div>
 		</div>
+	</div>
+	<div class="row fondo_olitas alienado_centro">
 		<div class="col-12">
+			<div class="row">
+				<div class="col-12 ">
+					<div class="wrap_imagen_catalogo">
+						<a href="#">
+							<img class='imagen_catalogo_juvenil' src="{{ asset('img/juvenil/carousel_juvenil_2.png') }}" alt="">
+						</a>
+					</div>
+					<div class="m-t-70">
+						<a class='titulo_juvenil_cata' href="#">MARLÍN</a>
+					</div>
+				</div>
+				
+			</div>
 		</div>
+
+
 	</div>
 
 @endsection

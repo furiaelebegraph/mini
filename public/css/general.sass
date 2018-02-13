@@ -33,13 +33,10 @@ p
   -webkit-margin-end: 0px
 
 .al_100
-  width: 100%
-
+  width: 100
 
 .al_49
   width: 49%
-  
-  
 
 .contenedor_2
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4293d3ef', endColorstr='#4200ffff',GradientType=0 )
@@ -262,7 +259,8 @@ p
     color: black
 
 .logo_header
-  width: 80px
+  width: 80px    
+  margin: 0 auto
   img
     width: 100%
 
@@ -589,7 +587,7 @@ p
 
 .card__wish-list
   display: block
-  width: 50%
+  width: 70%
   margin: 0 auto 15px
   padding: 15px
   border-radius: 20px
@@ -597,8 +595,17 @@ p
   text-transform: uppercase
   font-size: 14px
   background: linear-gradient(to right, rgba(82,64,254,1) 0%, rgba(196,36,253,1) 100%)
+  background-size: 1px 50px
   color: white
-  font-family: margotItalica
+  font-family: mikado
+  transition: background 1s ease-out
+  a 
+    color: white
+    font-family: mikado
+    &:hover
+      text-decoration: none
+  &:hover
+    background: linear-gradient(to right, rgba(82,64,254,1) 50%, rgba(196,36,253,1) 100%)
 
 .acerca_footer
   background: #00abaa

@@ -32,7 +32,7 @@
 				</div>
 			</div>
 			<div class="col-4">
-				<div class="logo_header">
+				<div class="logo_header alienado_centro">
 					<a href="{{ url('/') }}">
 						<img src="{{ asset('img/logo_mini.png') }}" alt="">
 					</a>
@@ -76,7 +76,7 @@
 							</a>
 						</div>
 						<div class="icono_footer">
-							<a href="{{ url('junior') }}">
+							<a href="{{ url('juvenil') }}">
 								<img src="{{ asset('img/logo_junior_footer.svg') }}" alt="">
 							</a>
 						</div>

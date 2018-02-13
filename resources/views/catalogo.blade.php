@@ -70,7 +70,7 @@
 
                       <img src="img/zapato_junior.png" alt="Nike Solstice" class="card__image card__will-animate">
                       <span class="card__category card__will-animate">CRECE EN GRANDE</span>
-                      <div class="card__wish-list card__wish-list--solstice card__will-animate">Visitar categoría</div>
+                      <div class="card__wish-list card__wish-list--solstice card__will-animate"> <a href="{{ url('juvenil') }}">Visitar categoría</a></div>
 
 
                     </div>
@@ -81,9 +81,7 @@
           <div class="cards-placeholder__item"></div>
           <div class="cards-placeholder__item"></div>
           <div class="cards-placeholder__item"></div>
-          <div class="cards-placeholder__item"></div>
-          <div class="cards-placeholder__item"></div>
         </div>
     </div>
-    <script sric='{{ asset('js/slider_catalogo.js') }}'></script>
+    <script src='{{ asset('js/slider_catalogo.js') }}'></script>
 @endsection
