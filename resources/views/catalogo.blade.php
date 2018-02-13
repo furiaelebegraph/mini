@@ -85,4 +85,5 @@
           <div class="cards-placeholder__item"></div>
         </div>
     </div>
+    <script sric='{{ asset('js/slider_catalogo.js') }}'></script>
 @endsection

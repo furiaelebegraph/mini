@@ -16,6 +16,10 @@ Route::get('/catalogo', function () {
     return view('catalogo');
 });
 
+Route::get('/juvenil', function () {
+    return view('juvenil');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });

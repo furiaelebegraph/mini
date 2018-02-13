@@ -1,0 +1,113 @@
+$azul_juvenil: #92d3e9
+
+$azul_juv_oscuro: #324f5b
+
+.logo_juvenil_1
+  max-width: 300px
+  width: 70%
+  margin: 0 auto
+  img
+    width: 100%
+
+.fondo_azul_junior
+  background: #92d3e9
+
+.wrap_descripcion
+  background: #92d3e9
+
+
+.fondo_olas
+  background-image: url('../img/juvenil/olas_juveil.svg'), linear-gradient(to bottom, #fff 0%, #92d3e9 9%)
+  background-size: 100%
+  background-position: center top
+  background-blend-mode: overlay
+  background-repeat-y: no-repeat
+  overflow: hidden
+  .carousel-inner, .carousel-item
+    height: auto
+
+.bloques_juvenil
+  position: relative
+  z-index: 1
+
+
+.textos_juvenil
+  max-width: 520px
+  min-width: 165px
+  width: 90%
+  font-size: 15px
+  color: $azul_juv_oscuro
+  font-family: mikado
+  span
+    font-family: mikadoBold
+    font-size: 20px
+    line-height: 0px
+
+.wrap_detalles
+  max-width: 800px
+  width: 100%
+  margin: 0 auto
+
+.wrap_coleccion_nautica
+  .textos_juvenil
+    width: 90%
+    span
+      font-size: 40px
+      line-height: 0px
+
+
+.circulo-timon
+  position: relative
+  top: -80px
+  left: 50%
+  margin-left: -100%
+
+.timon
+  width: 550px
+  margin: 0 auto
+  -webkit-animation: rotating 5s ease-in-out infinite
+  -moz-animation: rotating 5s ease-in-out infinite
+  -ms-animation: rotating 5s ease-in-out infinite
+  -o-animation: rotating 5s ease-in-out infinite
+  animation: rotating 5s ease-in-out infinite
+  img
+    width: 100%
+
+.fondo_detalles_nautica
+  background-image: url('../img/juvenil/seccion_2_juvenil.svg')
+  background-position: 50% 55%
+  background-size: 140%
+  background-repeat: no-repeat
+  display: flexbox
+
+.vivorita
+  width: 80px
+
+@keyframes rotating 
+  0% 
+    -ms-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+  50% 
+    -ms-transform: rotate(90deg)
+    -moz-transform: rotate(90deg)
+    -webkit-transform: rotate(180deg)
+    -o-transform: rotate(90deg)
+    transform: rotate(90deg)
+  100% 
+    -ms-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+
+
+@media only screen and ( min-width: 768px )
+  .textos_juvenil
+    font-size: 25px
+    span
+      font-size: 35px
+  .timon
+    top: -100px

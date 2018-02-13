@@ -11,14 +11,35 @@ $azulito: #93d3ef
 
 @import "_font-hlp"
 
+
 @include declare-font-face('margot', 'Margot-Regular', 'regular')
 @include declare-font-face('margotBold', 'Margot-Bold', 'bold')
 @include declare-font-face('margotItalica', 'Margot-BoldItalic', 'bold', 'italic' )
-
+@include declare-font-face('mikado', 'MikadoMedium', 'regular')
+@include declare-font-face('mikadoBold', 'MikadoBold', 'bold')
+@include declare-font-face('mikadoLight', 'MikadoLight', 'light')
+@import "_juvenil"
+ 
 *
   padding: 0
   margin: 0
   font-family: margot
+
+p 
+  display: block
+  -webkit-margin-before: 0px
+  -webkit-margin-after: 0px
+  -webkit-margin-start: 0px
+  -webkit-margin-end: 0px
+
+.al_100
+  width: 100%
+
+
+.al_49
+  width: 49%
+  
+  
 
 .contenedor_2
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4293d3ef', endColorstr='#4200ffff',GradientType=0 )
@@ -583,6 +604,11 @@ $azulito: #93d3ef
   background: #00abaa
 
 
+.carousel-indicators li 
+  width: 15px
+  border-radius: 50%
+  height: 15px
+
 
 .card__category
   display: block
@@ -667,7 +693,7 @@ p
   height: 100vh
 
 .carousel-control-next-icon 
-  background-image: url('../img/')
+  background-image: url('../img/flecha_derecha.png')
 
 
 @media only screen and ( min-width: 768px )
