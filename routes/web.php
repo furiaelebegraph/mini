@@ -20,6 +20,10 @@ Route::get('/juvenil', function () {
     return view('juvenil');
 });
 
+Route::get('/kids', function () {
+    return view('kids');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });

@@ -1,0 +1,48 @@
+.fondo_ciudad
+  background-image: url('../img/kids/ciudad_fondo.svg')
+  background-size: 264px
+  background-position: 50% 11%
+  background-repeat: no-repeat
+
+.fondo_lombris_cosmica::after
+  content: ""
+  background: url('../img/kids/lombris_cosmica.svg')
+  opacity: 0.9
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  position: absolute
+  z-index: -1
+  background-size: 150%
+  background-position: 50% 0%
+  background-repeat: no-repeat
+
+.titulo_kids
+  font-size: 19px
+  font-family: margot
+
+.kids_bloque_1
+  width: 80%
+  margin: 0 auto
+
+.logo_kids_kids
+  max-width: 320px
+  width: 75%
+  min-width: 220px
+
+@media (min-width: 1025px) 
+
+@media (min-width: 768px) 
+  .kids_bloque_1
+    max-width: 825px
+  .fondo_ciudad
+    background-size: 800px
+    background-position: 50% 11%
+  .logo_kids_kids
+    max-width: 420px
+    width: 80%
+    min-width: 320px
+  .fondo_lombris_cosmica::after
+    background-size: 100%
+    background-position: left center
