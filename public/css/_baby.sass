@@ -1,0 +1,157 @@
+$azul_fuerte_baby: #005f93
+
+.centro_baby
+  max-width: 850px
+  widh: 80%
+  margin: 0 auto
+
+.wrap_texto_1
+  width: 260px
+  position: relative
+  left: 50%
+  right: 0
+  transform: translate(-50%,0)
+
+
+.zapatito_baby_1
+  position: relative
+  margin-top: -215px
+  left: -181px
+  img
+    width: 384px
+  
+
+.fondo_hojas
+  background-image: url('../img/baby/fondo_hoja.svg')
+  background-position: left bottom
+  background-repeat: no-repeat
+  background-size: 430px
+
+.texto_baby_2
+  max-width: 320px
+  width: 100%
+  margin: 0 auto
+  p
+    font-size: 17px
+    color: $azul_fuerte_baby
+    span
+      font-size: 21px
+      color: $azul_fuerte_baby
+
+.texto_baby_1  
+  max-width: 320px
+  width: 100%
+  margin-top: 20px
+  padding-left: 77px
+  p
+    text-align: right
+    font-size: 17px
+    color: $azul_fuerte_baby
+    span
+      font-size: 21px
+      color: $azul_fuerte_baby
+
+
+.titulo_baby_2
+  p
+    font-size: 80px
+    color: #ff9900
+    font-family: mikadoBold
+    line-height: 70px
+
+
+.logo_baby
+  max-width: 280px
+  width: 80%
+  margin: 0 auto
+  padding: 40px 0px
+  img
+    widht: 100%
+
+.fondo_nube
+  background-image: url('../img/baby/nude_magica_bebe.svg')
+  background-position: 50% 4%
+  background-repeat: no-repeat
+  background-size: 430px
+
+.fondo_solishito
+  background-image: url('../img/baby/fondo_sholeshito.svg')
+  background-position: 50% 4%
+  background-repeat: no-repeat
+  background-size: 430px
+  padding: 150px 0px
+
+
+.titulo_baby_1
+  p
+    color: $azul_fuerte_baby
+    font-size: 45px
+    font-family: margotBold
+    &:nth-child(1)
+      &:after
+        -moz-text-stroke: 5px #33ffcc
+        -webkit-text-stroke: 5px #33ffcc
+        text-stroke: 3px #33ffcc
+        content: attr(data-texto)
+        font-family: margotBold
+        position: absolute
+        left: 0px
+        z-index: -2
+        font-size: 1em
+    &:nth-child(2)
+      margin-top: -20px
+      line-height: 50px
+      margin-left: 20px
+      &:after
+        -moz-text-stroke: 5px #33ffcc
+        -webkit-text-stroke: 5px #33ffcc
+        text-stroke: 3px #33ffcc
+        content: attr(data-texto)
+        font-family: margotBold
+        position: absolute
+        left: 116px
+        z-index: -2
+        font-size: 1em
+    & span
+      font-size: 27px
+      vertical-align: top
+      font-family: margotBold
+      line-height: 33px
+      &:after
+        -moz-text-stroke: 5px #33ffcc
+        -webkit-text-stroke: 5px #33ffcc
+        text-stroke: 3px #33ffcc
+        content: attr(data-texto)
+        font-family: margotBold
+        position: absolute
+        left: 21px
+        z-index: -2
+        font-size: 1em
+
+@media only screen and ( min-width: 768px )
+  .logo_baby
+    max-width: 480px
+    padding: 100px 0px
+  .fondo_nube
+    background-size: 850px
+  .texto_baby_1
+    p
+      text-align: left
+  .fondo_hojas
+    background-image: url('../img/baby/fondo_hoja.svg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 430px
+    position: relative
+    margin-top: 0px
+    left: 0px
+  .titulo_baby_2
+    p
+      font-size: 120px
+      line-height: 92px
+  .zapatito_baby_1
+    position: relative
+    margin-top: 0px
+    left: 0px
+    img
+      width: 100%

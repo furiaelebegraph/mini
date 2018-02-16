@@ -24,6 +24,14 @@ Route::get('/kids', function () {
     return view('kids');
 });
 
+Route::get('/baby', function () {
+    return view('baby');
+});
+
+Route::get('/primeros', function () {
+    return view('primeros');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });

@@ -7,32 +7,32 @@
     <div class="carousel-item active aniversario_landing">
       <div class="wrap_aniversario">
         
-        <img src="{{ asset('img/25aniv.png') }}" alt="baby" class="primera_imagen_landing card__will-animate">
+        <img src="{{ asset('img/25aniv.png') }}" alt="baby" class="primera_imagen_landing card__will-animate wow bounceIn">
 
         <div class="row card__subtitle card__will-animate">
           <div class="col-12 texto_header upperca alienado_centro py-5">
-            <div class="panel-heading textoBold azulverde">Celebramos un año más </div>
-            <div class="naranja textoBold">
+            <div data-wow-delay="0.5s" class="panel-heading textoBold azulverde wow zoomIn">Celebramos un año más </div>
+            <div data-wow-delay="1s" class="naranja textoBold wow zoomIn">
               <span>de</span> vanguardia y calidad
             </div>
-            <div class="azulverde textoBold">
+            <div data-wow-delay="1.5s" class="azulverde textoBold wow zoomIn">
               creando zapatos <span>de</span>
             </div>
-            <div class="amarillo textoBold">
+            <div data-wow-delay="2s" class="amarillo textoBold wow zoomIn">
               moda para niños.
             </div>
           </div>
         </div>
-        <img src="{{ asset('img/logo_mini_g.png ') }}" alt="Nike 19" class='imagen_logo_landig'>
+        <img data-wow-delay="4s" src="{{ asset('img/logo_mini_g.png ') }}" alt="Nike 19" class='imagen_logo_landig'>
 
       </div>
     </div>
     <div class="carousel-item vercatalogo">
       <div class="wrap_vercatalogo">
         <a href="{{ url('catalogo') }}">
-          <img src="{{ asset('img/nino_coleccion.png') }}" alt="baby" class="primera_imagen_landing card__will-animate coleccion_1">
+          <img data-wow-delay="0.5s" src="{{ asset('img/nino_coleccion.png') }}" alt="baby" class="primera_imagen_landing card__will-animate coleccion_1 wow slideInLeft">
 
-          <div class="card__subtitle card__will-animate coleccion_2">
+          <div data-wow-delay="0.5s" class="card__subtitle card__will-animate coleccion_2 wow zoomIn">
             <img src="{{ asset('img/coleccion_primavera_icono.png') }}" alt="">
           </div>
 
@@ -41,7 +41,7 @@
           <h1 class="card__title card__will-animate"></h1>
           <span class="card__subtitle card__will-animate"></span>
 
-          <img src="{{ asset('img/nina_coleccion.png') }}" alt="Nike 19" class="card__image card__will-animate coleccion_3">
+          <img data-wow-delay="0.5s" src="{{ asset('img/nina_coleccion.png') }}" alt="Nike 19" class="card__image card__will-animate coleccion_3 wow slideInRight">
           <span class="card__category card__will-animate no_mostrar"></span>
           <div class="card__wish-list card__wish-list--19 card__will-animate no_mostrar"></div>
 
@@ -84,7 +84,7 @@
               DISEÑO
             </div>
           </div>
-          <div class="imagen_lading">
+          <div class="imagen_lading wow zoomIn">
             <img src="{{ asset('img/Miniburbujas_Kids2_Marlin.png') }}" alt="">
           </div>
         </div>
@@ -111,8 +111,8 @@
             <p> Y <span> LA ANATOMÍA DEL</span> </p>
             <p> <span>PIÉ TU PEQUEÑO</span> </p>
         </div>
-        <div class="wrap_huarache">
-          <div class="huarache_landing">
+        <div data-wow-duration='2s' class="wrap_huarache wow infinite pulse">
+          <div data-wow-duration='2s' data-wow-delay="0.2s" delay class="huarache_landing wow infinite pulse">
             <img src="{{ asset('img/huarache.png') }}" alt="">
           </div>
         </div>

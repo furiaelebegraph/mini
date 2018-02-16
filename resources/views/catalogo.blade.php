@@ -54,7 +54,7 @@
 
                           <img src="img/zapato_kids.png" alt="Nike Huarache" class="card__image card__will-animate">
                           <span class="card__category card__will-animate">LISTOS PARA LA AVENTURA</span>
-                          <div class="card__wish-list card__wish-list--solstice card__will-animate">Visitar categoría</div>
+                          <div class="card__wish-list card__wish-list--solstice card__will-animate"><a href="{{ url('kids') }}">Visitar categoría</a></div>
                         </div>
                     </div>
                   <!-- Nike Solstice -->

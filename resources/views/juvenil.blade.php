@@ -5,13 +5,13 @@
 	<div class="row fondo_olas">
 		<div class="col-12 primero_header ">
 			<div class="row ">
-				<div class="col-12">
+				<div class="col-12  wow bounceInUp">
 					<div class="logo_juvenil_1">
-						<img src="../img/logo_junior.svg" alt="">
+						<img src="{{ asset('img/logo_junior.svg') }}" alt="">
 					</div>
 					
 				</div>
-				<div class="col-12 m-t-50">
+				<div class="col-12 m-t-50 wow slideInRight">
 					<div class="row justify-content-center align-items-center bloques_juvenil">
 						<div class="col-11 col-sm-6">
 
@@ -66,7 +66,7 @@
 							<div class="row">
 								<div class="col-12 wrap_coleccion_nautica">
 									<div class="row align-items-center">
-										<div class="col-12 col-sm-6 order-1 order-sm-2">
+										<div class="col-12 col-sm-6 order-1 order-sm-2 wow slideInLeft">
 											<div class="textos_juvenil">
 												<p class='texto_coleccion_nautica'>
 													Colección
@@ -80,14 +80,14 @@
 												</p>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 order-2 order-sm-1">
+										<div class="col-12 col-sm-6 order-2 order-sm-1 wow slideInRight">
 											<img class='imagen_seccion_juvenil_1' src="{{ asset('img/juvenil/nautica_blanco.png') }}" alt="">
 										</div>
 									</div>
 								</div>
 								<div class="col-12 wrap_coleccion_nautica">
 									<div class="row align-items-center">
-										<div class="col-12 col-sm-6">
+										<div class="col-12 col-sm-6 wow slideInLeft">
 											<div class="textos_juvenil p-l-20">
 												<img  class='vivorita' src="{{ asset('img/juvenil/vivorita.svg') }}" alt="">
 												<p class='m-t-30'>
@@ -99,7 +99,7 @@
 											</div>
 
 										</div>
-										<div class="col-12 col-sm-6">
+										<div class="col-12 col-sm-6 wow slideInRight">
 											<img class='imagen_seccion_juvenil_2' src="{{ asset('img/juvenil/nautica_cafe.png') }}" alt="">
 										</div>
 									</div>
@@ -122,7 +122,7 @@
 	<div class="row fondo_olitas alienado_centro">
 		<div class="col-12">
 			<div class="row">
-				<div class="col-12 ">
+				<div class="col-12 wow zoomIn">
 					<div class="wrap_imagen_catalogo">
 						<a href="#">
 							<img class='imagen_catalogo_juvenil' src="{{ asset('img/juvenil/carousel_juvenil_2.png') }}" alt="">
