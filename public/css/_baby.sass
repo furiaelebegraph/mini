@@ -8,15 +8,15 @@ $azul_fuerte_baby: #005f93
 .wrap_texto_1
   width: 260px
   position: relative
-  left: 50%
+  left: 58%
   right: 0
   transform: translate(-50%,0)
 
 
-.zapatito_baby_1
+.zapatito_baby_1    
   position: relative
-  margin-top: -215px
-  left: -181px
+  margin-top: -344px
+  left: -198px
   img
     width: 384px
   
@@ -32,11 +32,15 @@ $azul_fuerte_baby: #005f93
   width: 100%
   margin: 0 auto
   p
-    font-size: 17px
+    font-size: 15px
     color: $azul_fuerte_baby
     span
-      font-size: 21px
+      font-size: 19px
       color: $azul_fuerte_baby
+
+
+.m-t-n-300
+  margin-top: -400px
 
 .texto_baby_1  
   max-width: 320px
@@ -45,10 +49,10 @@ $azul_fuerte_baby: #005f93
   padding-left: 77px
   p
     text-align: right
-    font-size: 17px
+    font-size: 15px
     color: $azul_fuerte_baby
     span
-      font-size: 21px
+      font-size: 19px
       color: $azul_fuerte_baby
 
 
@@ -74,13 +78,11 @@ $azul_fuerte_baby: #005f93
   background-repeat: no-repeat
   background-size: 430px
 
-.fondo_solishito
-  background-image: url('../img/baby/fondo_sholeshito.svg')
-  background-position: 50% 4%
-  background-repeat: no-repeat
-  background-size: 430px
-  padding: 150px 0px
-
+.fondo_pescaito
+  position: relative
+  left: -180px
+  top: -83px
+  z-index: -1
 
 .titulo_baby_1
   p
@@ -128,6 +130,184 @@ $azul_fuerte_baby: #005f93
         z-index: -2
         font-size: 1em
 
+.fondo_solishito
+  img
+    position: relative
+    left: 50%
+    transform: translate(-50%, 0%)
+
+.texto_baby_3
+  width: 325px
+  padding: 1em 2em
+  position: relative
+  margin: 0 auto
+  p
+    color: $azul_fuerte_baby
+    font-size: 17px
+    line-height: 16px
+    & span
+      font-size: 27px
+      line-height: 26px
+  &:after, &:before
+    border: .3em solid yellow
+    bottom: 0
+    content: ''
+    position: absolute
+    top: 0
+    width: 20%
+  &:after
+    border-left: none
+    right: 0
+  &:before
+    border-right: none
+    left: 0
+
+.titulo_baby_4
+  margin: -12px 18px 0px auto
+  width: 311px
+  p
+    font-family: margotBold
+    font-size: 80px
+    color: #00a055
+    line-height: 36px
+    letter-spacing: -3px
+    span
+      font-family: margotBold
+      font-size: 40px
+      color: #00a055
+
+
+.texto_baby_4
+  max-width: 270px
+  width: 100%
+  margin: 5px 29px 0px auto
+  width: 177px
+  p
+    text-align: right
+    font-size: 15px
+    color: $azul_fuerte_baby
+    span
+      font-size: 19px
+      color: $azul_fuerte_baby
+
+.zapato_gigante_baby
+  img
+    position: relative
+    left: 50%
+    -webkit-transform: translate(-50%, 0%)
+    -moz-transform: translate(-50%, 0%)
+    -ms-transform: translate(-50%, 0%)
+    -o-transform: translate(-50%, 0%)
+    transform: translate(-50%, 0%)
+    left: -100px
+    margin-top: -300px
+
+.wrap_cat_baby
+  width: 100%
+  border-top: 10px solid #fffa8c
+  background: #33ccff
+
+.texto_cat_kids
+  padding: 6px 15px 0px 0px
+  h1
+    font-family: margotBold
+    font-size: 15px
+    color: white
+    span
+      font-size: 30px
+      font-family: margotBold
+
+.btn_catalogo_baby
+  display: none
+  background: #49ffff
+  padding: 10px 120px
+  font-size: 26px
+  border-radius: 100px
+  font-family: mikadoBold
+  color: $azul_fuerte_baby
+
+.wrap_catalogo_baby
+  width: 180px
+  position: relative
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  &::before
+    transition: all 0.5s ease
+    content: ''
+    background-image: url(../img/baby/fondo_catalogo_baby.svg)
+    background-repeat: no-repeat
+    background-position: center
+    width: 180px
+    height: 180px
+    display: inline-block
+  &:hover
+    &::before
+      width: 160px
+      height: 160px
+
+.titulo_baby_cata
+  font-size: 25px
+  margin-top: 150px
+  font-family: margotBold
+  color: $azul_fuerte_baby
+  &:hover
+    text-decoration: none
+    color: $azul_juv_oscuro 
+
+.imagen_catalogo_baby
+  width: 220px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.texto_cat_baby
+  padding: 6px 15px 0px 0px
+  h1
+    font-family: margotBold
+    font-size: 15px
+    color: white
+    span
+      font-size: 30px
+      font-family: margotBold
+
+.m-t-100-n
+  margin-top: -100px
+
+
+@media (min-width: 550px) and (max-width: 767px)
+  .zapatito_baby_1
+    position: relative
+    margin-top: -344px
+    left: 9px
+    img
+      width: 384px
+  .wrap_texto_1
+      left: 70%
+      transform: translate(-50%, 0)
+  .fondo_pescait
+      position: relative
+      left: -40px
+  .texto_baby_1
+    p
+      font-size: 17px
+  .texto_baby_2
+    p
+      font-size: 17px
+  .m-t-n-300
+    margin-top: 0px
+  .fondo_solishito 
+    img 
+      top: 130px
+  .texto_baby_4
+    margin: 0 auto
+    p
+      text-align: left
+  .btn_catalogo_baby
+    display: inline-block
+
+
 @media only screen and ( min-width: 768px )
   .logo_baby
     max-width: 480px
@@ -135,8 +315,13 @@ $azul_fuerte_baby: #005f93
   .fondo_nube
     background-size: 850px
   .texto_baby_1
+    padding-left: 0px
     p
       text-align: left
+      font-size: 17px
+  .texto_baby_2
+    p
+      font-size: 17px
   .fondo_hojas
     background-image: url('../img/baby/fondo_hoja.svg')
     background-position: center
@@ -155,3 +340,27 @@ $azul_fuerte_baby: #005f93
     left: 0px
     img
       width: 100%
+  .fondo_pescaito
+      position: relative
+      left: -40px
+  .m-t-n-300
+    margin-top: 0px
+  .texto_baby_4
+    margin: 0 auto
+    max-width: 270px
+    width: 100%
+    p
+      text-align: left
+  .titulo_baby_4
+    margin: 0 auto
+  .zapato_gigante_baby
+    img
+      left: 50%
+      -webkit-transform: translate(-50%, 0%)
+      -moz-transform: translate(-50%, 0%)
+      -ms-transform: translate(-50%, 0%)
+      -o-transform: translate(-50%, 0%)
+      transform: translate(-50%, 0%)
+      margin-top: 0px
+  .btn_catalogo_baby
+    display: inline-block
