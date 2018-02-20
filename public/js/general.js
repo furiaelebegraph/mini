@@ -1,4 +1,9 @@
 
+$( document ).ready(function() {
+
+  $('#myCarousel .list-inline-item:first-child').addClass('active');
+  $('#myCarousel .carousel-item:first-child').addClass('active');
+});
 new WOW().init();
 
 var path = anime.path('.st0');

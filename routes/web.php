@@ -60,6 +60,8 @@ Route::group(['middleware'=> 'auth'],function(){
   Route::get('imagen/{id}/deleteMsg','imaController@DeleteMsg');
 });
 
+Route::get('subcategoria/{id}', 'catalogoController@index')->name('subcategoria');
+
 Route::get('/catalogo/{id}', 'catalogoController@index' )->name('catalogo');
 
 Route::get('/detalle/{id}', 'catalogoController@detalle')->name('detalle');

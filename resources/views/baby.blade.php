@@ -203,6 +203,18 @@
 								<a class='titulo_baby_cata' href="#">Milán</a>
 							</div>
 						</div>
+						@foreach ($babies as $baby)
+							<div class="col-11 col-sm-5">
+								<div class="wrap_catalogo_baby">
+									<a href=" {{ route('catalogo' , $baby->id) }} ">
+										<img class='imagen_catalogo_kids' src="{{ asset( $baby->imagen ) }}" alt="">
+									</a>
+								</div>
+								<div class="m-t-20 alienado_centro">
+									<a class='titulo_baby_cata' href=" {{ route('catalogo' , $baby->id) }}"> {{ $baby->nombre }} </a>
+								</div>
+							</div>	
+						@endforeach
 					</div>
 				</div>
 			</div>

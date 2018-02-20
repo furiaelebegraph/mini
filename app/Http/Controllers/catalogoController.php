@@ -25,6 +25,7 @@ class catalogoController extends Controller
     public function detalle($id, Request $request)
     {
         $producto = Produ::with('Ima')->findOrfail($id);
+        
         return view('catalogo.detalle', compact('producto'));
     }
 

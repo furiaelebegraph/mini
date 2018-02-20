@@ -18,6 +18,9 @@ class Produ extends Model
     public static function obtenerProductos($id){
         return Produ::where('subcate_id', '=', $id)->select('nombre','id', 'imagen', 'descripcion')->get();
     }
+    public static function obtenerSubcategoria($id){
+        return Produ::where('subcate_id', '=', $id)->select('nombre','id', 'imagen', 'descripcion')->get();
+    }
     protected $table = 'produ';
     protected $fillable = [
         'nombre','imagen', 'cate_id', 'sub_cate_id', 'orden'

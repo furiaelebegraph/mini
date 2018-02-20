@@ -62,12 +62,12 @@ class WelcomeController extends Controller{
     return view('juvenil', compact('juveniles'));
    }
    public function sitioKids(){
-    $kids = SubCate::obtenerSubCategoria(1);
+    $kids = SubCate::obtenerSubCategoria(3);
       return view('kids', compact('kids'));
    }
    public function sitioBaby(){
-    $babys = SubCate::obtenerSubCategoria(3);
-      return view('baby', compact('babys'));
+    $babies = SubCate::obtenerSubCategoria(1);
+      return view('baby', compact('babies'));
    }
    public function sitioPrimeros(){
     $primeros = SubCate::obtenerSubCategoria(2);
