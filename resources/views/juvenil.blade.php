@@ -122,16 +122,19 @@
 	<div class="row fondo_olitas alienado_centro">
 		<div class="col-12">
 			<div class="row">
-				<div class="col-12 wow zoomIn">
+
+				@foreach ($juveniles as $juvenil)
+				<div class="col-11 wow zoomIn">
 					<div class="wrap_imagen_catalogo">
-						<a href="#">
-							<img class='imagen_catalogo_juvenil' src="{{ asset('img/juvenil/carousel_juvenil_2.png') }}" alt="">
+						<a href=" {{ route('catalogo' , $juvenil->id) }} ">
+							<img class='imagen_catalogo_juvenil' src="{{ asset( $juvenil->imagen ) }}" alt="">
 						</a>
 					</div>
-					<div class="m-t-70">
-						<a class='titulo_juvenil_cata' href="#">MARLÍN</a>
+					<div class="m-t-70 alienado_centro">
+						<a class='titulo_juvenil_cata' href=" {{ route('catalogo' , $juvenil->id) }}"> {{ $juvenil->nombre }} </a>
 					</div>
-				</div>
+				</div>	
+				@endforeach
 				
 			</div>
 		</div>

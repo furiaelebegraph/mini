@@ -9,11 +9,11 @@
 					<div class="row justify-content-between">
 						<div class="col-12 alienado_centro">
 							<div class="regresar">
-								<a href="">
+								<a href="{{ url(strtolower ( $subcategoria->cate->url ))}}">
 									Regresar
 								</a>
 							</div>
-							<h1> {{ $subCategoria->nombre }}  </h1>
+							<h1> {{ $subcategoria->nombre }}  </h1>
 						</div>
 					</div>
 					<div class="row justify-content-center">

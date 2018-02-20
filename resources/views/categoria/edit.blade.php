@@ -31,6 +31,10 @@
                             <input id="nombre" name = "nombre" type="text" class="form-control" value="{!!$categoria->nombre!!}">
                         </div>
                         <div class="form-group">
+                            <label for="direccion">URL</label>
+                            <input id="direccion" name = "direccion" type="text" class="form-control" value="{!!$categoria->url!!}">
+                        </div>
+                        <div class="form-group">
                             <label for="imagen">imagen</label>
                             <img src="{!! asset($categoria->imagen)!!}" alt="">
                             <input id="imagen" name = "imagen" type="file" class="form-control" value="{!!$categoria->imagen!!}"> 

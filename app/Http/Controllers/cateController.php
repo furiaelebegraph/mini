@@ -62,6 +62,7 @@ class CateController extends Controller
         }
 
         $categoria->nombre = $request->nombre;
+        $categoria->url = $request->direccion;
         $categoria->orden = $request->orden;
         $categoria->save();
         return redirect('categoria');
@@ -129,6 +130,7 @@ class CateController extends Controller
         }
 
         $categoria->nombre = $request->nombre;
+        $categoria->url = $request->direccion;
         $categoria->save();
         return redirect('categoria');
 

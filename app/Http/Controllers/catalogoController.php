@@ -18,13 +18,14 @@ class catalogoController extends Controller
     public function index($id, Request $request)
     {
         $productos = Produ::obtenerProductos($id);
-        $subCategoria = SubCate::findOrfail($id);
-        return view('catalogo.index', compact('productos', 'subCategoria'));
+        $subcategoria = SubCate::findOrfail($id);
+        return view('catalogo.index', compact('productos', 'subcategoria'));
     }
 
     public function detalle($id, Request $request)
     {
         $producto = Produ::with('Ima')->findOrfail($id);
+        
         return view('catalogo.detalle', compact('producto'));
     }
 

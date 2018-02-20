@@ -54,6 +54,10 @@
                             <input id="orden" name = "orden" type="number" class="form-control">
                         </div>
                         <div class="form-group">
+                            <label for="direccion">URL</label>
+                            <input id="direccion" name = "direccion" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
                             <label for="orden">Activo</label>
                             <select class="form-control" name="activo">
                                 <option selected="selected"  value="si">Si</option>

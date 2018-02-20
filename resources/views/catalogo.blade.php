@@ -18,7 +18,7 @@
 
                             <img src="img/zapato_baby.png" alt="Nike 19" class="card__image card__will-animate">
                             <span class="card__category card__will-animate">CONOCIENDO EL CAMINO</span>
-                            <div class="card__wish-list card__wish-list--19 card__will-animate">Visitar categoría</div>
+                            <div class="card__wish-list card__wish-list--19 card__will-animate"><a href="{{ url('baby') }}">Visitar categoría</a></div>
 
 
                         </div>
@@ -36,7 +36,7 @@
 
                       <img src="img/zapato_pasos.png" alt="Nike Solstice" class="card__image card__will-animate">
                       <span class="card__category card__will-animate">UN CALZADO CON ESTILO</span>
-                      <div class="card__wish-list card__wish-list--solstice card__will-animate">Visitar categoría</div>
+                      <div class="card__wish-list card__wish-list--solstice card__will-animate"><a href="{{ url('primeros') }}">Visitar categoría</a></div>
 
                     </div>
                   </div>
