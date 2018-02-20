@@ -7,18 +7,18 @@
 		<div class="col-12">
 			<div class="centro_primeros m-t-100">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 wow zoomIn">
 						<div class="logo_primeros">
 							<img src="{{ asset('img/logo_pasos.svg') }}" alt="">
 						</div>
 					</div>
 					<div class="col-12 flexeado">
-						<div class="escalera_1">
+						<div class="escalera_1 wow slideInUp">
 							<img src="{{ asset('img/primeros/escalera_1.svg') }}" alt="">
 						</div>
 						<div class="wrap_texto_pasos_1">
 							<div class="row">
-								<div class="col-12 col-md-6">
+								<div class="col-12 col-md-6 order-2 order-md-1 wow slideInLeft">
 									<div class="texto_pasos_1">
 										<p>
 											Cuando tu bebé comienza a 
@@ -32,7 +32,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="col-12 col-md-6">
+								<div class="col-12 col-md-6 order-1 order-md-2 wow slideInRight">
 									<div class="titulo_pasos_1">
 										<p><span>UN </span>MUNDO</p>
 										<p>NUEVO PARA</p>
@@ -44,20 +44,20 @@
 					</div>
 					<div class="col-12">
 						<div class="row">
-							<div class="col-12 col-md-6">
+							<div class="col-12 col-md-6 order-2 order-md-1">
 								<div class="wrap_nuvecita">
-									<div class="img_nubecita"> 
+									<div class="img_nubecita wow bounceIn"> 
 										<img src="{{ asset('img/primeros/nubecita_pri.svg') }}" alt="">
 									</div>
 									<div class="titulo_pasos_2">
-										<p>SÚPER</p>
-										<p>cómodos</p>
-										<p>GRAN DISEÑO</p>
-										<p>Y RESISTENCIA</p>
+										<p class=' wow slideInLeft'>SÚPER</p>
+										<p class=' wow slideInLeft'>cómodos</p>
+										<p class=' wow slideInLeft'>GRAN DISEÑO</p>
+										<p class=' wow slideInLeft'>Y RESISTENCIA</p>
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-md-6">
+							<div class="col-12 col-md-6 order-1 order-md-2 wow bounceIn">
 								<img src="{{ asset('img/primeros/zapato_1_primeros.png') }}" alt="">
 							</div>
 						</div>
@@ -66,11 +66,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row m-t-350">
 		<div class="col-12">
 			<div class="centro_primeros">
 				<div class="row align-items-center">
-					<div class="col-11 col-md-4">
+					<div class="col-11 col-md-4 order-2 order-md-1 wow fadeInUp">
 						<div class="texto_pasos_1">
 							<p>
 								En esta edad tus campeones 
@@ -83,7 +83,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-11 col-md-5">
+					<div class="col-11 col-md-5 order-1 order-md-2 wow fadeInUp">
 						<img class='zapatito_primero_2' src="{{ asset('img/primeros/zapato_2_primeros.png') }}" alt="">
 					</div>
 				</div>
@@ -94,14 +94,17 @@
 		<div class="col-12">
 			<div class="centro_primeros">
 				<div class="row align-items-end">
-					<div class="col-12 col-md-5">
+					<div class="col-12 col-md-5 order-2 order-md-1 wow fadeInLeft">
 						<div class="wrap_zapatito_3">
 							<img class='zapatito_primeros_3' src="{{ asset('img/primeros/zapato_3_primeros.png') }}" alt="">
 						</div>
 					</div>
-					<div class="col-12 col-md-7">
-						<div class="wrap_todo_resiste">
+					<div class="col-12 col-md-7 order-1 order-md-2 wow fadeInRight">
+						<div class="wrap_todo_resiste escritorio">
 							<img src="{{ asset('img/primeros/todo_resiste_pri_12.svg') }}" alt="">
+						</div>
+						<div class="wrap_todo_resiste mobiles">
+							<img src="{{ asset('img/primeros/todo_resiste_pri_1.svg') }}" alt="">
 						</div>
 					</div>
 				</div>
@@ -112,7 +115,7 @@
 		<div class="col-12">
 			<div class="centro_primeros">
 				<div class="row align-content-center">
-					<div class="col-12 col-sm-6 flexeado">
+					<div class="col-12 col-sm-6 flexeado wow fadeInRight">
 						<div class="texto_primeros_3">
 							<p>
 								Nuestra experiencia en el calzado de 
@@ -122,7 +125,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-md-6 wow fadeInLeft">
 						<div class="row">
 							<div class="col-10 flexeado">
 								<div class="icono_listado"><img src="{{ asset('img/primeros/iconito_1_miniburgujas.svg') }}" alt=""></div>
@@ -157,19 +160,31 @@
 	<div class="row">
 		<div class="col-12">
 			<div class="centro_primeros">
-				<div class="row">
+				<div class="row align-content-center">
 					<div class="col-12 col-md-6">
-						<img src="{{ asset('img/primeros/zapato_4_primeros.png') }}" alt="">
+						<img class='zapatito_primeros_4' src="{{ asset('img/primeros/zapato_4_primeros.png') }}" alt="">
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="texto_primeros_4">
 							<p>
 								A partir de esta etapa el
+							</p>
+							<p>
 								<span>zapato cuenta con arco 
-								almendra marcado</span>
+							</p>
+							<p>
+								<span>almendra marcado</span>
+							</p>
+							<p>
 								que, junto al 
+							</p>
+							<p>
 								<span>
 									forro y la plantilla 
+								</span>
+							</p>
+							<p>
+								<span>
 									de piel de cerdo
 								</span>
 							</p>
@@ -187,7 +202,7 @@
 				<h1>
 					Categorías <br>
 					<span>
-						KIDS
+						PRIMEROS PASOS
 					</span>
 					
 				</h1>
@@ -205,7 +220,7 @@
 				<div class="col-12 col-sm-8">
 					<div class="row justify-content-between">
 						<div class="col-11 col-sm-5">
-							<div class="wrap_catalogo_baby">
+							<div class="wrap_catalogo_primeros">
 								<a href="#">
 									<img class='imagen_catalogo_baby' src="{{ asset('img/kids/barquito.png') }}" alt="">
 								</a>
@@ -215,7 +230,7 @@
 							</div>
 						</div>
 						<div class="col-11 col-sm-5">
-							<div class="wrap_catalogo_baby">
+							<div class="wrap_catalogo_primeros">
 								<a href="#">
 									<img class='imagen_catalogo_kids' src="{{ asset('img/kids/milan.png') }}" alt="">
 								</a>

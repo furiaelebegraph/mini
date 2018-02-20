@@ -8,17 +8,17 @@
 		<div class="col-12 fondo_nube">
 			<div class="centro_baby m-t-80">
 				<div class="row m-t-70 ">
-					<div class="col-12 alienado_centro">
+					<div class="col-12 alienado_centro wow zoomIn">
 						<img class="logo_baby"  src="{{ asset('img/logo_baby.svg') }}" alt="">
 					</div>
 					<div class="col-12 fondo_hojas">
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-5 col-lg-6 order-2 order-md-1 ">
+							<div class="col-12 col-md-5 col-lg-6 order-2 order-md-1 wow slideInLeft">
 								<div class="zapatito_baby_1">
 									<img src="{{ asset('img//baby/zapatito_baby_1.png') }}" alt="">
 								</div>
 							</div>
-							<div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 ">
+							<div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 wow slideInRight">
 								<div class="wrap_texto_1">
 									<div class="titulo_baby_1">
 										<p data-texto='HERMOSOS'>HERMOSOS</p>
@@ -70,9 +70,9 @@
 						<div class="row">
 							<div class="col-12 col-sm-6">
 								<div class="titulo_baby_2">
-									<p>CÓ</p>
-									<p>MO</p>
-									<p>DO</p>
+									<p data-wow-delay="0.3s" class='wow slideInLeft'>CÓ</p>
+									<p data-wow-delay="0.6s" class='wow slideInLeft'>MO</p>
+									<p data-wow-delay="1s" class='wow slideInLeft'>DO</p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6">
@@ -106,7 +106,7 @@
 		<div class="col-12">
 			<div class="centro_baby">
 				<div class="row align-items-center">
-					<div class="col-12 col-sm-6">
+					<div class="col-12 col-sm-6 wow bounceIn">
 						<div class="fondo_solishito escritorio">
 							<img src="{{ asset('img/baby/zapatito_baby_3.png') }}" alt="">
 						</div>
@@ -115,7 +115,7 @@
 							<img src="{{ asset('img/baby/zapatito_baby_3_1.png') }}" alt="">
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 m-t-n-300">
+					<div class="col-12 col-sm-6 m-t-n-300 wow slideInUp">
 						<div class="texto_baby_3">
 							<p>
 								Materiales como
@@ -128,10 +128,10 @@
 		</div>
 	</div>
 	<div class="row align-items-center m-t-100-n">
-		<div class="col-12 col-sm-6 order-2 order-sm-1 zapato_gigante_baby">
+		<div class="col-12 col-sm-6 order-2 order-sm-1 zapato_gigante_baby wow slideInLeft">
 			<img src="{{ asset('img/baby/zapatito_baby_4.png') }}" alt="">
 		</div>
-		<div class="col-12 col-sm-6 order-1 order-sm-2 alienado_centro">
+		<div class="col-12 col-sm-6 order-1 order-sm-2 alienado_centro wow slideInRight">
 			<div class="titulo_baby_4">
 				<p>DISEÑO</p>
 				<p><span>ESPECTACULAR</span> </p>

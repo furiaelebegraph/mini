@@ -17,6 +17,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/helpers.min.css') }}"  rel="stylesheet">
     <link href="{{ asset('css/animate.css') }}"  rel="stylesheet">
+    @yield('cssgaleria')
     <link href="{{ asset('css/general.css') }}"  rel="stylesheet">
 </head>
 <body>
@@ -67,7 +68,7 @@
 							</a>
 						</div>
 						<div class="icono_footer">
-							<a href="{{ url('1eros') }}">
+							<a href="{{ url('primeros') }}">
 								<img src="{{ asset('img/logo_1eros_footer.svg') }}" alt="">
 							</a>
 						</div>
@@ -100,22 +101,22 @@
 				</div>
 				<div class="redes_sociales_footer m-b-10">
 					<div>
-						<a href="">
+						<a href="https://www.facebook.com/miniburbujas/">
 							<img src="{{ asset('img/icono_face_landing.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
-						<a href="">
+						<a href="https://twitter.com/MiniBurbujas">
 							<img src="{{ asset('img/icono_twitter.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
-						<a href="">
+						<a href="https://www.pinterest.com.mx/miniburbujas/">
 							<img src="{{ asset('img/icono_pinterest_landing.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
-						<a href="">
+						<a href="https://plus.google.com">
 							<img src="{{ asset('img/icono_google.svg') }}" alt="">
 						</a>
 					</div>
@@ -142,6 +143,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="{{ asset('js/anime.js') }}"></script>
          <script src="{{ asset('js/wow.min.js') }} "></script>
+         @yield('jsgaleria')
         <script src="{{ asset('js/general.js') }}"></script>
 </body>
 </html>

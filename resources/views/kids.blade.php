@@ -137,26 +137,18 @@
 			<div class="row justify-content-center m-b-50">
 				<div class="col-12 col-sm-8">
 					<div class="row justify-content-between">
-						<div class="col-11 col-sm-5">
-							<div class="wrap_catalogo_kids">
-								<a href="#">
-									<img class='imagen_catalogo_kids' src="{{ asset('img/kids/barquito.png') }}" alt="">
-								</a>
-							</div>
-							<div class="m-t-20 alienado_centro">
-								<a class='titulo_kids_cata' href="#">Barquito</a>
-							</div>
-						</div>
-						<div class="col-11 col-sm-5">
-							<div class="wrap_catalogo_kids">
-								<a href="#">
-									<img class='imagen_catalogo_kids' src="{{ asset('img/kids/milan.png') }}" alt="">
-								</a>
-							</div>
-							<div class="m-t-20 alienado_centro">
-								<a class='titulo_kids_cata' href="#">Milán</a>
-							</div>
-						</div>
+						@foreach ($kids as $kid)
+							<div class="col-11 col-sm-5">
+								<div class="wrap_catalogo_kids">
+									<a href=" {{ route('catalogo' , $kid->id) }} ">
+										<img class='imagen_catalogo_kids' src="{{ asset( $kid->imagen ) }}" alt="">
+									</a>
+								</div>
+								<div class="m-t-20 alienado_centro">
+									<a class='titulo_kids_cata' href=" {{ route('catalogo' , $kid->id) }}"> {{ $kid->nombre }} </a>
+								</div>
+							</div>	
+						@endforeach
 					</div>
 				</div>
 			</div>

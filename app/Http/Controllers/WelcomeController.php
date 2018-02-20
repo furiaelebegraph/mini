@@ -6,17 +6,19 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Mail;
 use App\Mail\CorreoContactoAfiliado;
-
+use App\Cate;
+use App\SubCate;
+use App\Ima;
+use App\Produ;
 
 class WelcomeController extends Controller{
+  
    public function index(){
    	return view('welcome');
    	
    }
 
     public function edit($id,Request $request){
-        $users = User::findOrfail($id);
-        return view('capacitacion.edit',compact('users'));
     }
 
 
@@ -25,7 +27,7 @@ class WelcomeController extends Controller{
         $this->validate($request,[
             'correo'        =>  'required|email|min:5',
             'nombre'        =>  'required|min:3',
-            'mensaje'   =>  'required|min:3',
+            'mensaje'       =>  'required|min:3',
             'telefono'      =>  'required',
             'asunto'        =>  'required',
         ]);
@@ -54,39 +56,21 @@ class WelcomeController extends Controller{
       return redirect('afiliados/detalle_afiliado');
 
    }
-   public function afiliados(){
-   		$afiliados = User::Afiliados()->paginate(6);
-   		return view('afiliados.index', compact('afiliados'));
-   }
 
-   public function afiliarse(){
-      return view('estatico.afiliarse');
+   public function sitioJuvenil(){
+    $juveniles = SubCate::obtenerSubCategoria(4);
+    return view('juvenil', compact('juveniles'));
    }
-
-   public function detalleAfiliado($id, Request $request){
-      $afiliado = User::findOrfail($id);
-      return view('afiliados.detalle_afiliado', compact('afiliado'));
+   public function sitioKids(){
+    $kids = SubCate::obtenerSubCategoria(1);
+      return view('kids', compact('kids'));
    }
-
-   public function enviarCorreoAfiliarse(Request $request){
-        $this->validate($request,[
-            'email'                =>  'required|email|min:5',
-            'empresa'               =>  'required|min:3',
-            'telefono'              =>  'required|min:3',
-            'representante'         =>  'required|min:3'
-        ]);
-        $data = [
-              'email' => $request->email,
-              'empresa' => $request->empresa,
-              'telefono' => $request->telefono,
-              'representante' => $request->representante,
-              'direccion' => $request->direccion,
-              'rfc' => $request->rfc,
-              'ciudad' => $request->ciudad,
-              'servicios' => $request->servicios
-        ];
-        Mail::to('desarrolloempresarial@cnecgto.org')->send(new SolicitudAfiliarse($data));
-        return redirect('/');
+   public function sitioBaby(){
+    $babys = SubCate::obtenerSubCategoria(3);
+      return view('baby', compact('babys'));
    }
-
+   public function sitioPrimeros(){
+    $primeros = SubCate::obtenerSubCategoria(2);
+      return view( 'primeros', compact('primeros') );
+   }
 }
