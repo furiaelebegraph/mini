@@ -1,7 +1,7 @@
 @extends('layouts.template')
-
 @section('content')
 
+<link rel="stylesheet" href="{{ asset('css/threesixty.css') }}">
 
 <div class="escondido">
 	<div class="row">
@@ -127,6 +127,18 @@
 			</div>
 		</div>
 	</div>
+	<div class="row fondo_nube">
+		<div class="col-12">
+			<div class="centro_360">
+				<div class="threesixty shapatito_baby">
+				    <div class="spinner">
+				        <span>0%</span>
+				    </div>
+				    <ol class="threesixty_images"></ol>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="row align-items-center m-t-100-n">
 		<div class="col-12 col-sm-6 order-2 order-sm-1 zapato_gigante_baby wow slideInLeft">
 			<img src="{{ asset('img/baby/zapatito_baby_4.png') }}" alt="">
@@ -204,3 +216,9 @@
 </div>
 
 @endsection
+
+@push('js360')
+    <!-- flot charts scripts-->
+    <script src="{{ asset('js/threesixty.js') }}"></script>
+    <script src="{{ asset('js/360.js') }}"></script>
+@endpush

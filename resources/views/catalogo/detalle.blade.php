@@ -75,7 +75,7 @@
 
 @endsection
 
-	@section('jsgaleria')
+	@push('jsgaleria')
     <!-- flot charts scripts-->
 	    <script src="{{asset('js/jquery.fancybox.min.js')}}"></script>
-	@stop
+	@endpush

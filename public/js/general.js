@@ -9,6 +9,7 @@ new WOW().init();
 var path = anime.path('.st0');
 
 
+
 function particula(maximo, duracioon, camino, agregar){
   var maxElements = maximo;
   var duration = duracioon;

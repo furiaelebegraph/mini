@@ -11,9 +11,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Miniburbujas') }}</title>
 
     <!-- Styles -->
+    <link href="{{ asset('css/threesixty.css')}}" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/helpers.min.css') }}"  rel="stylesheet">
     <link href="{{ asset('css/animate.css') }}"  rel="stylesheet">
@@ -51,6 +52,7 @@
 			</div>
 		</div>
 	</nav>
+
 	@yield('content')
 
 	<div class="row acerca_footer">
@@ -138,12 +140,13 @@
 	</div>
 
     <!-- Scripts -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="{{ asset('js/jquery.js') }}"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="{{ asset('js/anime.js') }}"></script>
          <script src="{{ asset('js/wow.min.js') }} "></script>
-         @yield('jsgaleria')
+         @stack('jsgaleria')
+         @stack('js360')
         <script src="{{ asset('js/general.js') }}"></script>
 </body>
 </html>
