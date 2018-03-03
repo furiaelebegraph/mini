@@ -136,6 +136,9 @@
 				    </div>
 				    <ol class="threesixty_images"></ol>
 				</div>
+				<div class="icono_360">
+					<img src="{{ asset('img/360_icono.png') }}" alt="">
+				</div>
 			</div>
 		</div>
 	</div>
