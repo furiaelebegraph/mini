@@ -49,7 +49,7 @@
                                     @foreach($colores as $color) 
                                     <tr>
                                         <td>{!!$color->nombre!!}</td>
-                                        <td> <img class='al_100' src="{!!$color->imagen!!}" alt=""> 
+                                        <td> <img class='al_100' src="{{asset($color->imagen) }}" alt=""> 
                                         </td>
                                         <td>
                                             <form action="{{ route('color.destroy', ['id' => $color->id]) }}" method="post">

@@ -62,6 +62,15 @@
                             <input id="orden" name = "alter" type="number" class="form-control">
                         </div>
                         <div class="form-group m-b-20">
+                            <label for="color">Color</label>
+                            <select required id='color' class="form-control" name="id_color">
+                                <option value="" selected disabled style="display:none">Seleciona un color</option>
+                                @foreach($colores as $color)
+                                    <option value="{{$color->id}}">{{$color->nombre}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group m-b-20">
                             <label for="orden">Subir Fotos</label>
                             <input id="photos" type="file" name="photos[]" multiple class="form-control">
                         </div>
