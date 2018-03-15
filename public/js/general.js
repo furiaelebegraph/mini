@@ -3,6 +3,46 @@ $( document ).ready(function() {
 
   $('#myCarousel .list-inline-item:first-child').addClass('active');
   $('#myCarousel .carousel-item:first-child').addClass('active');
+
+$('#nav-icon').on('click', function(){
+  $('#navegacion_miniburbuajas').removeClass();
+  $('#navegacion_miniburbuajas').addClass('abierto_minis');
+});
+
+$('.cerrar_navega').on('click', function(){
+  $('#navegacion_miniburbuajas').removeClass();
+  $('#navegacion_miniburbuajas').addClass('cerrado_minis');
+});
+
+  $( '.baby_navega' ).hover( function(){
+    $('.fondo_change > div').removeClass();
+    $('.fondo_change > div').addClass('fondo_baby');
+    $('.fondo_baby').animate({
+      opacity: 1
+    }, 300);
+
+  });
+  $( '.kids_navega' ).hover( function(){
+    $('.fondo_change > div').removeClass();
+    $('.fondo_change > div').addClass('fondo_kids');
+    $('.fondo_kids').animate({
+      opacity: 1
+    }, 300);
+  });
+  $( '.primeros_navega' ).hover( function(){
+    $('.fondo_change > div').removeClass();
+    $('.fondo_change > div').addClass('fondo_primeros');
+    $('.fondo_primeros').animate({
+      opacity: 1
+    }, 300);
+  });
+  $( '.juvenil_navega' ).hover( function(){
+    $('.fondo_change > div').removeClass();
+    $('.fondo_change > div').addClass('fondo_juvenil');
+    $('.fondo_juvenil').animate({
+      opacity: 1
+    }, 300);
+  });
 });
 new WOW().init();
 

@@ -70,18 +70,93 @@
           <p>DE TUS PEQUEÑINES</p>
         </div>
         <div class="">
-          <div class="lista_landing">
-            <div class="">
-              RESISTENCIA
+          <div class="lista_landing" id="accordion">
+            <div class="collapse_lista">
+              <div id="headingResistencia">
+                <button  data-toggle="collapse" data-target="#collapseResistencia" aria-expanded="false" aria-controls="collapseResistencia">
+                  RESISTENCIA
+                </button>
+              </div>
+              <div id="collapseResistencia" class="collapse" aria-labelledby="headingResistencia" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-sm-6 texto_cont_dropdown">
+                        <p>PARA LLEVARTE</p>
+                        <p>UN PRODUCTO</p>
+                        <p> <span>HECHO DE PIEL</span> </p>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
             </div> 
-            <div class="">
-              COMODIDAD
+            <div class="collapse_lista">
+              <div id='headingComodidad'>
+                <button  data-toggle="collapse" data-target="#collapseComodidad" aria-expanded="false" aria-controls="collapseComodidad">
+                  COMODIDAD
+                </button> 
+              </div>
+              <div id="collapseComodidad" class="collapse" aria-labelledby="headingComodidad" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-sm-6 texto_cont_dropdown">
+                        <p>CON UN <span>BULLON</span></p>
+                        <p> <span>ACOJINADO</span>A LA</p>
+                        <p>ALTURA DE LOS </p>
+                        <p>TOBILLOS.</p>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        
+                      </div>
+                    </div>
+                  </div>
+              </div>
             </div>
-            <div class="">
-              SUAVIDAD
+            <div class="collapse_lista">
+              <div id='headingSuavidad'>
+                <button  data-toggle="collapse" data-target="#collapseSuavidad" aria-expanded="false" aria-controls="collapseSuavidad">
+                  SUAVIDAD
+                </button> 
+              </div>
+              <div id="collapseSuavidad" class="collapse" aria-labelledby="headingSuavidad" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-sm-6 texto_cont_dropdown">
+                        <p>LA SELECCIÓN </p>
+                        <p>DE PIELES</p>
+                        <p> <span>HECHO DE PIEL</span> </p>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
             </div>
-            <div class="">
-              DISEÑO
+            <div class="collapse_lista">
+              <div id='headingDiseno'>
+                <button  data-toggle="collapse" data-target="#collapseDiseno" aria-expanded="false" aria-controls="collapseDiseno">
+                  DISEÑO
+                </button> 
+              </div>
+              <div id="collapseDiseno" class="collapse" aria-labelledby="headingDiseno" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-sm-6 texto_cont_dropdown">
+                        <p>PARA LLEVARTE</p>
+                        <p>UN PRODUCTO</p>
+                        <p> <span>HECHO DE PIEL</span> </p>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
             </div>
           </div>
           <div class="imagen_lading wow zoomIn">
@@ -119,7 +194,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 m-t-20 m-b-20">
         <div class="row justify-content-center texto_cont_5">
           <div class="col-6">
             <img src="{{ asset('img/icono_piel.svg') }}" alt="">

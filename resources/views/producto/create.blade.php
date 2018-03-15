@@ -44,35 +44,47 @@
                     <form method = 'POST' action = '{!!url("producto")!!}' enctype="multipart/form-data">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <meta name="_token" content="{!! csrf_token() !!}">
-                        <div class="form-group">
+                        <div class="form-group m-b-20">
                             <label for="titulo">Nombre</label>
                             <input id="titulo" name = "nombre" type="text" class="form-control">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group m-b-20">
                             <label for="imagen">Portada</label>
                             <input id="imagen" name = "imagen" type="file" class="form-control">
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group m-b-20">
                             <label for="descrip">Descripcion</label>
                             <textarea  id="descripcion" name = "descrip" type="text" class="form-control"></textarea>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group m-b-20">
                             <label for="orden">Orden</label>
                             <input id="orden" name = "alter" type="number" class="form-control">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group m-b-20">
                             <label for="orden">Subir Fotos</label>
                             <input id="photos" type="file" name="photos[]" multiple class="form-control">
                         </div>
-                        <div class="form-group">
+
+                        <div class="form-group m-b-20">
+                            <label for="orden">Tallas</label>
+                            @foreach($tallas as $talla)
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="arrayTallas[]" value="{{ $talla->id }}">
+                                        {{ $talla->numero }}
+                                    </label>
+                                </div>
+                            @endforeach 
+                        </div>
+                        <div class="form-group m-b-20">
                             <label for="orden">Activo</label>
                             <select class="form-control" name="sino">
                                 <option selected="selected"  value="si">Si</option>
                                 <option value="no">No</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group m-b-20">
                             <label for="orden">Categoria</label>
                             <select id='cate' class="form-control" name="id_categoria">
                                 <option value="" selected disabled style="display:none">Seleciona una categoria</option>
@@ -81,13 +93,13 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="form-group{{ $errors->has('subcate') ? ' has-error' : '' }}">
+                        <div class=" m-b-20 form-group{{ $errors->has('subcate') ? ' has-error' : '' }}">
                             <label for="subcate" class="col-md-12 control-label">Sub Categoria</label>
                             <select name="id_subcategoria" class="form-control" id='subcate'>
                                 <option value="" selected disabled style="display:none">Sub Categoria</option>
                             </select>
                         </div>
-                        <div class="sub-main_crear">
+                        <div class="sub-main_crear m-b-20">
                           <button class="button-two_crear" type = 'submit'><span class="texto_blanco">Crear</span></button>
                         </div>
                     </form>
@@ -114,8 +126,9 @@
         $('#cate').append(' Please choose one');
         $('#cate').on('change',function(e){
             var potato = e.target.value;
+            var liga = "{{ url('ajaxSucate/') }}";
             console.log(potato);
-            $.get('/ajaxSucate/'+ potato+'', function(data){
+            $.get(liga+'/'+potato+'', function(data){
 
                 $('#subcate').empty();
                 $('#subcate').append('<option>Elije una opcion </option>');

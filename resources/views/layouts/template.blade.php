@@ -14,6 +14,8 @@
     <title>{{ config('app.name', 'Miniburbujas') }}</title>
 
     <!-- Styles -->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
     <link href="{{ asset('css/threesixty.css')}}" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/helpers.min.css') }}"  rel="stylesheet">
@@ -23,6 +25,63 @@
 </head>
 <body>
 
+	<div id="navegacion_miniburbuajas">
+		<div class="cambio_fondo fondo_change">
+			<div>
+				
+			</div>
+		</div>
+			<div class="row justify-content-center align-items-center opciones_submenu">
+				<div class="col-12 alienado_centro">
+					<div class="cerrar_navega"> CERRAR </div>
+					
+				</div>
+				<div class="col-12">
+					<div class="centro_baby">
+						<div class="row justify-content-center align-items-center">
+							<div class="col-7 col-sm-5 baby_navega margen_menu alienado_centro">
+								<div>
+									<a href="{{ url('baby') }}">
+										<img class='icono_navegacion_menu' src="{{ asset('img/logo_baby_footer.svg') }}" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="col-7 col-sm-5 primeros_navega margen_menu alienado_centro">
+								<div>
+									<a href="{{ url('primeros') }}">
+										<img class='icono_navegacion_menu' src="{{ asset('img/logo_1eros_footer.svg') }}" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="col-7 col-sm-5 kids_navega margen_menu alienado_centro">
+								<div>
+									<a href="{{ url('kids') }}">
+										<img class='icono_navegacion_menu' src="{{ asset('img/logo_kids_footer.svg') }}" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="col-7 col-sm-5 juvenil_navega margen_menu alienado_centro">
+								<div> 
+									<a href="{{ url('juvenil') }}">
+										<img class='icono_navegacion_menu' src="{{ asset('img/logo_junior_footer.svg') }}" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="col-7 col-sm-5 alienado_centro">
+								<div> <a href="{{ url('acerca') }}"><img class="icono_navegacion_menu" src="{{ asset('img/logo_blanco_mini.svg') }}" alt=""></a></div>
+							</div>
+
+							<div class="col-7 col-sm-5">
+								<div class="contacto_link"> <a href="{{ url('contacto') }}">CONTACTO</a></div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+	</div>
 	<nav class="navbar-default navbar-static-top navegador_movil ">
 		<div class="row align-items-center">
 			<div class="col-4">

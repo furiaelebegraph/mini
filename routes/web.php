@@ -24,6 +24,14 @@ Route::get('/baby', 'WelcomeController@sitioBaby');
 
 Route::get('/primeros', 'WelcomeController@sitioPrimeros');
 
+Route::get('/contacto', 'WelcomeController@contacto')->name('contacto');
+
+Route::get('/acerca', function () {
+    return view('acerca');
+});
+
+Route::post('enviar_correo', 'WelcomeController@enviarcontacto');
+
 Route::get('/', 'WelcomeController@index')->name('inicio');
 
 Route::group(['prefix' => 'adminis'], function(){
@@ -38,17 +46,39 @@ Route::group(['middleware'=> 'auth'],function(){
 });
 
 Route::group(['middleware'=> 'auth'],function(){
-  Route::resource('subcategoria','subCateController', ['only' => ['create', 'store', 'index', 'edit']]);
-  Route::post('subcategoria/{id}/update','subCateController@update');
-  Route::delete('subcategoria/{id}/delete','subCateController@destroy')->name('subcategoria.destroy');
-  Route::get('subcategoria/{id}/deleteMsg','subCateController@DeleteMsg');
+  Route::resource('subcategoria','SubCateController', ['only' => ['create', 'store', 'index', 'edit']]);
+  Route::post('subcategoria/{id}/update','SubCateController@update');
+  Route::delete('subcategoria/{id}/delete','SubCateController@destroy')->name('subcategoria.destroy');
+  Route::get('subcategoria/{id}/deleteMsg','SubCateController@DeleteMsg');
 });
 
 Route::group(['middleware'=> 'auth'],function(){
-  Route::resource('producto','produController', ['only' => ['create', 'store', 'index', 'edit']]);
-  Route::post('producto/{id}/update','produController@update');
-  Route::delete('producto/{id}/delete','produController@destroy')->name('producto.destroy');
-  Route::get('producto/{id}/deleteMsg','produController@DeleteMsg');
+  Route::resource('talla','TallaController', ['only' => ['create', 'store', 'index', 'edit']]);
+  Route::post('talla/{id}/update','TallaController@update');
+  Route::delete('talla/{id}/delete','TallaController@destroy')->name('talla.destroy');
+  Route::get('talla/{id}/deleteMsg','TallaController@DeleteMsg');
+});
+
+Route::group(['middleware'=> 'auth'],function(){
+  Route::resource('color','ColorController', ['only' => ['create', 'store', 'index', 'edit']]);
+  Route::post('color/{id}/update','ColorController@update');
+  Route::delete('color/{id}/delete','ColorController@destroy')->name('color.destroy');
+  Route::get('color/{id}/deleteMsg','ColorController@DeleteMsg');
+});
+
+
+Route::group(['middleware'=> 'auth'],function(){
+  Route::resource('tienda','TiendaController', ['only' => ['create', 'store', 'index', 'edit']]);
+  Route::post('tienda/{id}/update','TiendaController@update');
+  Route::delete('tienda/{id}/delete','TiendaController@destroy')->name('tienda.destroy');
+  Route::get('tienda/{id}/deleteMsg','TiendaController@DeleteMsg');
+});
+
+Route::group(['middleware'=> 'auth'],function(){
+  Route::resource('producto','ProduController', ['only' => ['create', 'store', 'index', 'edit']]);
+  Route::post('producto/{id}/update','ProduController@update');
+  Route::delete('producto/{id}/delete','ProduController@destroy')->name('producto.destroy');
+  Route::get('producto/{id}/deleteMsg','ProduController@DeleteMsg');
 });
 
 Route::group(['middleware'=> 'auth'],function(){
@@ -68,7 +98,6 @@ Route::get('/detalle/{id}', 'catalogoController@detalle')->name('detalle');
 
 Route::get('/logout', 'HomeController@logout');
 
-Route::post('enviar_correo', 'WelcomeController@enviarCorreo');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

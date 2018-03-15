@@ -5,17 +5,18 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Mail;
-use App\Mail\CorreoContactoAfiliado;
+use App\Mail\NuevoCorreoContacto;
 use App\Cate;
 use App\SubCate;
+use App\Tienda;
 use App\Ima;
 use App\Produ;
 
 class WelcomeController extends Controller{
   
    public function index(){
-   	return view('welcome');
-   	
+    return view('welcome');
+    
    }
 
     public function edit($id,Request $request){
@@ -38,7 +39,7 @@ class WelcomeController extends Controller{
               'telefono' => $request->telefono,
               'asunto' => $request->asunto
         ];
-        Mail::to('desarrolloempresarial@cnecgto.org')->send(new NuevoCorreoContacto($data));
+        Mail::to('emmanegr@gmail.com')->send(new NuevoCorreoContacto($data));
         return redirect('/');
     }
 
@@ -46,16 +47,21 @@ class WelcomeController extends Controller{
 
    }
 
-   public function enviarCorreoAfiliado(Request $request){
+   public function enviarCorreo(Request $request){
       $this->validate($request,[
          'mensaje'   => 'required| min:5',
          'email'     => 'required| email',
          'nombre'    => 'required| min:5'
       ]);
-      Mail::to($request->emailemp)->send(new CorreoContactoAfiliado());
+      Mail::to('emmanegr@gmail.com')->send(new CorreoContactoAfiliado());
       return redirect('afiliados/detalle_afiliado');
 
    }
+
+  public function contacto(){
+    $tiendas = Tienda::all();
+    return view('contacto', compact('tiendas'));
+  }
 
    public function sitioJuvenil(){
     $juveniles = SubCate::obtenerSubCategoria(4);

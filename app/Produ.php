@@ -6,8 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Produ extends Model
 {
+    function talla(){
+        return $this->belongsToMany(Talla::class, 'produ_talla')->orderBy('orden', 'asc');
+    }
+    function color(){
+    	return $this->belongsTo(Color::class, 'color_id');
+    }
     function ima(){
-    	return $this->hasMany(Ima::class);
+        return $this->hasMany(Ima::class);
     }
     function cate(){
     	return $this->belongsTo(Cate::class, 'cate_id');
@@ -23,6 +29,6 @@ class Produ extends Model
     }
     protected $table = 'produ';
     protected $fillable = [
-        'nombre','imagen', 'cate_id', 'sub_cate_id', 'orden'
+        'nombre','imagen', 'cate_id', 'color_id', 'sub_cate_id', 'orden'
     ];
 }

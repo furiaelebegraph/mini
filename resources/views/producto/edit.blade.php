@@ -31,33 +31,57 @@
         <div class="row">
           <div class="col-12 mb-12">
                     <h1>
-                        Editar SubCategoria
+                        Editar Producto
                     </h1>
                     <form method = 'get' action = '{!!url("producto")!!}'>
-                        <button class = 'btn btn-danger'>Ver Categorias</button>
+                        <button class = 'btn btn-danger'>Ver Productos</button>
                     </form>
                     <br>
                     <form method = 'POST' action = '{!! url("producto")!!}/{!!$producto->
                         id!!}/update' enctype="multipart/form-data"> 
                         <input type = 'hidden' name = '_token' value = '{{Session::token()}}'>
-                        <div class="form-group">
+                        <div class="form-group m-b-30">
                             <label for="nombre">Nombre</label>
                             <input id="nombre" name = "nombre" type="text" class="form-control" value="{!!$producto->nombre!!}"> 
                         </div>
-                        <div class="form-group">
+                        <div class="form-group m-b-30">
                             <label for="imagen">imagen</label>
-                            <img src="{!! asset($producto->imagen)!!}" alt="">
+                            <img class='w-100' src="{!! asset($producto->imagen)!!}" alt="">
                             <input id="imagen" name = "imagen" type="file" class="form-control" value="{!!$producto->imagen!!}"> 
                         </div>
-                        <div class="form-group">
+                        <div class="form-group m-b-30">
                             <label for="imagen">Descripcion</label>
                             <textarea  id="descripcion" name = "descrip" type="text" class="form-control">{!!$producto->descripcion!!}</textarea> 
                         </div>
-                        <div class="form-group">
+
+                        @if( $producto->color()->count() >0 )
+                            <div class="form-group m-b-30">
+                                <label for="color">Color</label>
+                                 <select id='color' class="form-control"  name="id_color">
+                                    <option selected="selected" value="{{$producto->color->id}}">{{$producto->color->nombre}}</option>
+                                    @foreach ($colores  as $color)
+                                        <option value="{{$color->id}}">{{$color->nombre}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+
+                        @else
+                            <div class="form-group m-b-30">
+                                <label for="color">Color</label>
+                                 <select id='color' class="form-control"  name="id_color">
+                                    <option selected="selected" >Selecciona un color</option>
+                                    @foreach ($colores  as $color)
+                                        <option value="{{$color->id}}">{{$color->nombre}}</option>
+                                    @endforeach
+                                </select> 
+                            </div>
+                        @endif
+
+                        <div class="form-group m-b-30">
                             <label for="orden">Orden</label>
                             <input id="orden" name = "orden" type="text" class="form-control" value="{!!$producto->orden!!}"> 
                         </div>
-                        <div class="form-group">
+                        <div class="form-group m-b-30">
                             <label for="orden">Categoria</label>
                             <select id='cate' class="form-control"  name="id_categoria">
                                 <option selected="selected" value="{{$producto->cate->id}}">{{$producto->cate->nombre}}</option>
@@ -66,13 +90,13 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="form-group{{ $errors->has('subcate') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('subcate') ? ' has-error' : '' }} m-b-30">
                             <label for="subcate" class="col-md-12 control-label">Sub Categoria</label>
                             <select name="id_subcategoria" class="form-control" id='subcate'>
                                  <option selected="selected" value="{{$producto->subcate->id}}">{{$producto->subcate->nombre}}</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group m-b-30">
                             <label for="orden">Activo</label>
                             <select class="form-control"  name="activo">
                                 <option selected="selected" value="{{$producto->activo}}">{{$producto->activo}}</option>
@@ -82,7 +106,7 @@
                         </div>
                         <button class = 'btn btn-primary' type ='submit'>Update</button>
                     </form>
-                    <div class="col-12">
+                    <div class="col-12 m-b-30">
                         @if($producto->ima->count() <= 0)
                             <div class="jumbotron text-center">
                                 <div class="container">

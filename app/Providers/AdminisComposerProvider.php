@@ -4,6 +4,9 @@ namespace App\Providers;
 use App\Cate;
 use App\SubCate;
 use App\Produ;
+use App\Tienda;
+use App\Talla;
+use App\Color;
 use Illuminate\Support\ServiceProvider;
 
 class AdminisComposerProvider extends ServiceProvider
@@ -23,6 +26,15 @@ class AdminisComposerProvider extends ServiceProvider
         });
         view()->composer('layouts.admin', function($view){
             $view->with('productos', Produ::all());
+        });
+        view()->composer('layouts.admin', function($view){
+            $view->with('tallas', Talla::all());
+        });
+        view()->composer('layouts.admin', function($view){
+            $view->with('colores', Color::all());
+        });
+        view()->composer('layouts.admin', function($view){
+            $view->with('tiendas', Tienda::all());
         });
     }
 

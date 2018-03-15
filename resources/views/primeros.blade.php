@@ -2,6 +2,7 @@
 
 @section('content')
 
+<link rel="stylesheet" href="{{ asset('css/threesixty.css') }}">
 <div class="escondido">
 	<div class="row gusano_cosmico_pri">
 		<div class="col-12">
@@ -159,6 +160,23 @@
 	</div>
 	<div class="row">
 		<div class="col-12">
+			<div class="row fondo_nube">
+				<div class="col-12">
+					<div class="centro_360">
+						<div class="threesixty shapatito_baby">
+							<div class="spinner">
+								<span>0%</span>
+							</div>
+							<ol class="threesixty_images"></ol>
+						</div>
+						<div class="icono_360">
+							<img src="{{ asset('img/360_icono.png') }}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12">
 			<div class="centro_primeros">
 				<div class="row align-content-center">
 					<div class="col-12 col-md-6">
@@ -242,3 +260,8 @@
 
 
 @endsection
+@push('js360')
+    <!-- flot charts scripts-->
+    <script src="{{ asset('js/threesixty.js') }}"></script>
+    <script src="{{ asset('js/360.js') }}"></script>
+@endpush

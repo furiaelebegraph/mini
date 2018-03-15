@@ -15,7 +15,7 @@
 
         <!-- Icon Cards -->
         <div class="row">
-          <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="col-12 col-sm-6 mb-3">
             <div class="card text-white bg-primary o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
@@ -39,7 +39,7 @@
                 </a>
             </div>
           </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="col-12 col-sm-6 mb-3">
             <div class="card text-white bg-warning o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
@@ -63,7 +63,57 @@
                 </a>
             </div>
           </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
+
+          <div class="col-12 col-sm-6 mb-3">
+            <div class="card text-white bg-warning o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fa fa-fw fa-list"></i>
+                </div>
+                <div class="mr-5">
+                  {{$tallas->count()}} Tallas
+                </div>
+              </div>
+              <a href="{{url('talla')}}" class="card-footer text-white clearfix small z-1">
+                <span class="float-left">Ver todas las Tallas</span>
+                <span class="float-right">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </a>
+                <a href="{{route('talla.create')}}" class="card-footer text-white clearfix small z-1">
+                    <span class="float-left">NUEVA Talla</span>
+                    <span class="float-right">
+                        <i class="fa fa-angle-right"></i>
+                    </span>
+                </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 mb-3">
+            <div class="card text-white bg-warning o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fa fa-fw fa-list"></i>
+                </div>
+                <div class="mr-5">
+                  {{$colores->count()}} Colores
+                </div>
+              </div>
+              <a href="{{url('color')}}" class="card-footer text-white clearfix small z-1">
+                <span class="float-left">Ver todas los Colores</span>
+                <span class="float-right">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </a>
+                <a href="{{route('color.create')}}" class="card-footer text-white clearfix small z-1">
+                    <span class="float-left">NUEVA Colores</span>
+                    <span class="float-right">
+                        <i class="fa fa-angle-right"></i>
+                    </span>
+                </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 mb-3">
             <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
@@ -81,6 +131,30 @@
                 </a>
                 <a href="{{route('producto.create')}}" class="card-footer text-white clearfix small z-1">
                     <span class="float-left">NUEVO Producto</span>
+                    <span class="float-right">
+                        <i class="fa fa-angle-right"></i>
+                    </span>
+                </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 mb-3">
+            <div class="card text-white bg-warning o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fa fa-fw fa-list"></i>
+                </div>
+                <div class="mr-5">
+                  {{$tiendas->count()}} Tiendas
+                </div>
+              </div>
+              <a href="{{url('tienda')}}" class="card-footer text-white clearfix small z-1">
+                <span class="float-left">Ver todas las Tiendas</span>
+                <span class="float-right">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </a>
+                <a href="{{route('tienda.create')}}" class="card-footer text-white clearfix small z-1">
+                    <span class="float-left">NUEVA Tienda</span>
                     <span class="float-right">
                         <i class="fa fa-angle-right"></i>
                     </span>

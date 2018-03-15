@@ -26,7 +26,7 @@
                             <div class="col-xs-6 col-centered">
                                 <form class = 'col s3' method = 'get' action = '{!!url("imagen")!!}/create'>
                                     <div class="sub-main">
-                                      <button class="button-two" type = 'submit'><span class="texto_blanco">Crear nuevo Producto</span></button>
+                                      <button class="button-two" type = 'submit'><span class="texto_blanco">Crear nuevo Imagen</span></button>
                                     </div>
                                 </form>
                             </div>
@@ -37,9 +37,7 @@
                             <table class='table table-striped' cellpadding="10">
                                 <thead>
                                     <tr>
-                                        <td>Producto</td>
-                                        <td>categoria</td>
-                                        <td>subcategoria</td>
+                                        <td>Imagen</td>
                                         <td>Imagen</td>
                                         <td>Orden</td>
                                         <td>BORRAR</td>
@@ -49,28 +47,34 @@
                                 </thead>
 
                                 <tbody>
-                                    @foreach($productos as $producto) 
+                                    @foreach($imagenes as $imagen) 
                                     <tr>
-                                        <td>{!!$producto->nombre!!}</td>
+                                        <td>{!!$imagen->nombre!!}</td>
                                         <td>
-                                            {{$producto->cate->nombre}}
+                                            {{$imagen->produ->nombre}}
                                         </td>
                                         <td>
-                                            {{$producto->subcate->nombre}}
+                                            {{$imagen->subcate->nombre}}
                                         </td>
-                                        <td> <img class='al_100' src="{!!$producto->imagen!!}" alt=""> 
-                                        </td>
-                                        <td>
-                                            {{$producto->orden}}
+                                        <td> <img class='al_100' src="{!!$imagen->imagen!!}" alt=""> 
                                         </td>
                                         <td>
-                                            <a href="/producto/{!!$producto->id!!}/delete" data-toggle="modal"  class = 'delete btn btn-danger btn-xs'><i class = 'material-icons'>Borrar</i></a>
+                                            {{$imagen->orden}}
                                         </td>
                                         <td>
-                                            <a href="{{ route('producto.edit', $producto->id) }}" class = 'viewEdit btn btn-primary btn-xs' data-link = '/subcategoria/{!!$producto->id!!}/edit'><i class = 'material-icons'>edit</i></a>
+                                            <form action="{{ route('imagen.destroy', ['id' => $imagen->id]) }}" method="post">
+                                                {{ csrf_field() }}
+                                                {{ method_field('DELETE') }}
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar</button>
+                                                </div>
+                                            </form>
                                         </td>
                                         <td>
-                                            <a href = '#' class = 'viewShow btn btn-warning btn-xs' data-link = '/subcategoria/{!!$producto->id!!}'><i class = 'material-icons'>info</i></a>
+                                            <a href="{{ route('imagen.edit', $imagen->id) }}" class = 'viewEdit btn btn-primary btn-xs' data-link = '/imagen/{!!$imagen->id!!}/edit'><i class = 'material-icons'>edit</i></a>
+                                        </td>
+                                        <td>
+                                            <a href = '#' class = 'viewShow btn btn-warning btn-xs' data-link = '/imagen/{!!$imagen->id!!}'><i class = 'material-icons'>info</i></a>
                                         </td>
                                     </tr>
                                     @endforeach 
@@ -78,7 +82,7 @@
                             </table>    
                         </div>    
                     </div>
-                    {!! $productos->links() !!}
+                    {!! $imagenes->links() !!}
                 </div>
             </div>
         </div>

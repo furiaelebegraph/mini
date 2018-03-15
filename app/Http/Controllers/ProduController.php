@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Produ;
 use Illuminate\Http\Request;
 use Image;
+use App\Talla;
+use App\Color;
 use App\SubCate;
 use App\Cate;
 use App\Ima;
@@ -20,9 +22,11 @@ class ProduController extends Controller
         $title = 'Index - Producto';
         $albums = Produ::with('Ima')->get();
         $productos = Produ::paginate(10);
+        $tallas = Produ::with('Talla')->get();
+        $colores = Produ::with('Color')->get();
         $imagenes = Ima::all();
         $sucategorias = SubCate::all();
-        return view('producto.index', compact('albums', 'productos','imagenes', 'sucategorias'));
+        return view('producto.index', compact('albums', 'tallas', 'productos','imagenes', 'sucategorias'));
     }
 
     /**
@@ -35,7 +39,9 @@ class ProduController extends Controller
         $title = 'Crear Producto';
         $subcategorias = SubCate::all();
         $categorias = Cate::all();
-        return view('producto.create', compact('title', 'productos', 'subcategorias', 'categorias'));
+        $tallas = Talla::all();
+        $colores = Color::all();
+        return view('producto.create', compact('title', 'productos','tallas', 'colores' ,'subcategorias', 'categorias'));
     }
 
     /**
@@ -50,6 +56,7 @@ class ProduController extends Controller
             'nombre' => 'required|unique:cate|max:255',
             'imagen' => 'required | image | max:2000',
         ]);
+
             $producto = new Produ();
             if ($request->hasFile('imagen')) {
                 $imagen = $request->file('imagen');
@@ -65,6 +72,8 @@ class ProduController extends Controller
                 $producto->nombre = $request->nombre;
                 $producto->subcate_id = $request->id_subcategoria;
                 $producto->cate_id = $request->id_categoria;
+
+                $producto->color_id = $request->id_color;
                 $producto->orden = $request->alter;
                 $producto->descripcion = $request->descrip;
                 $producto->save();
@@ -85,6 +94,9 @@ class ProduController extends Controller
                         $imagenes->save();
                     }
                 }
+                $tallas = $request->arrayTallas;
+
+                $producto->talla()->sync($request->input('arrayTallas'));
 
                 return redirect('producto');
     }
@@ -110,7 +122,9 @@ class ProduController extends Controller
     {
         $producto = Produ::findOrfail($id);
         $categorias = Cate::all();
-        return view('producto.edit',compact('producto', 'categorias'));
+        $tallas = Talla::all();
+        $colores = Color::all();
+        return view('producto.edit',compact('producto', 'tallas', 'colores' ,'categorias'));
     }
 
     /**
@@ -134,14 +148,16 @@ class ProduController extends Controller
 
                 $producto->imagen = 'img/producto/'.$filename;
             }
-
+                $producto->color_id = $request->id_color;
                 $producto->nombre = $request->nombre;
                 $producto->subcate_id = $request->id_subcategoria;
                 $producto->cate_id = $request->id_categoria;
                 $producto->descripcion = $request->descrip;
                 $producto->orden = $request->orden;
                 $producto->save();
+                $tallas = $request->arrayTallas;
 
+                $producto->talla()->sync($request->input('arrayTallas'));
                 return redirect('producto');
     }
 
