@@ -84,7 +84,7 @@
 	</div>
 	<nav class="navbar-default navbar-static-top navegador_movil ">
 		<div class="row align-items-center">
-			<div class="col-4">
+			<div class="col-4 align-self-center">
 				<div class="hamburguesita">
 					<div id="nav-icon" class='nav-iconos'>
 						<span></span>
@@ -93,20 +93,50 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
-				<div class="logo_header alienado_centro">
-					<a href="{{ url('/') }}">
-						<img src="{{ asset('img/logo_mini.png') }}" alt="">
-					</a>
-				</div>
-			</div>
-			<div class="col-4">
-				<div class="sociales_header">
-					<div class="icono_social">
-						<a href="https://www.facebook.com/">
-							<img src="{{ asset('img/ico_face.svg') }}" alt="">
+			<div class="col-4 alienado_centro align-self-center">
+				<div class="d-flex justify-content-center">
+					<div class="logo_veinticinco">
+						<img src="{{ asset('img/25aniv2.png') }}" alt="">
+					</div>
+					<div class="logo_header alienado_centro">
+						<a href="{{ url('/') }}">
+							<img src="{{ asset('img/logo_mini.png') }}" alt="">
 						</a>
 					</div>
+					
+				</div>
+			</div>
+			<div class="col-4 alienado_centro align-self-center">
+				<div class="d-flex justify-content-center">
+					<div class="sociales_header">
+						<div class="icono_social">
+							<a href="https://www.facebook.com/miniburbujas/">
+								<img src="{{ asset('img/ico_face.svg') }}" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="sociales_header">
+						<div class="icono_social">
+							<a href="https://www.instagram.com">
+								<img src="{{ asset('img/ico_instagram.svg') }}" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="sociales_header">
+						<div class="icono_social">
+							<a href="https://www.youtube.com/channel/UCkVpFMUB7vrmaJ1TxlPEmZQ">
+								<img src="{{ asset('img/ico_youtube.svg') }}" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="sociales_header">
+						<div class="icono_social">
+							<a href="https://twitter.com/MiniBurbujas">
+								<img src="{{ asset('img/ico_twitter_2.svg') }}" alt="">
+							</a>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 		</div>

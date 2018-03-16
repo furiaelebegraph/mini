@@ -188,7 +188,7 @@
         </div>
         <div data-wow-duration='2s' class="wrap_huarache wow infinite pulse">
           <div data-wow-duration='2s' data-wow-delay="0.2s" delay class="huarache_landing wow infinite pulse">
-            <img src="{{ asset('img/huarache.png') }}" alt="">
+            <img src="{{ asset('img/kids-cheroke-nina1.png') }}" alt="">
           </div>
         </div>
       </div>
@@ -197,41 +197,41 @@
       <div class="col-12 m-t-20 m-b-20">
         <div class="row justify-content-center texto_cont_5">
           <div class="col-6">
-            <img src="{{ asset('img/icono_piel.svg') }}" alt="">
+            <img src="{{ asset('img/icono_arcoiris.svg') }}" alt="">
             <div class="">
-              <p>PARA LLEVARTE</p>
-              <p>UN PRODUCTO</p>
-              <p> <span>HECHO DE PIEL</span> </p>
+              <p>UNA GRAN</p>
+              <p>Y ATRACTIVO</p>
+              <p> <span>COLORIDO.</span> </p>
             </div>
           </div>
           <div class="col-6">
-            <img src="{{ asset('img/icono_talon.svg') }}" alt="">
+            <img src="{{ asset('img/icono_accesorios.svg') }}" alt="">
             <div class="">
-              <p>CON UN <span>BULLON</span></p>
-              <p> <span>ACOJINADO</span>A LA</p>
-              <p>ALTURA DE LOS </p>
-              <p>TOBILLOS.</p>
+              <p><span>ACCESORIOS Y </span></p>
+              <p> <span>APLICACIONES</span></p>
+              <p>QUE DAN UN</p>
+              <p>GRAN ESTILO.</p>
             </div>
           </div>
           <div class="w-100 p-b-30"></div>
           <div class="col-6">
-            <img src="{{ asset('img/icono_arco.svg') }}" alt="">
+            <img src="{{ asset('img/icono_estilos.svg') }}" alt="">
             <div class="">
-              <p>CON UNA </p>
-              <p><span>PLANTILLA</span> </p>
-              <p><span>Y ARCO</span> </p>
-              <p><span>ACOJINADOS</span></p>
+              <p>AMPLIA</p>
+              <p><span>VARIDEDAD DE</span> </p>
+              <p><span>LÍNEAS</span> </p>
+              <p><span>Y MODELOS.</span></p>
             </div>
             
           </div>
           <div class="col-6">
             <img src="{{ asset('img/icono_talon_2.svg') }}" alt="">
             <div class="">
-              <p>UNA <span>SUELA CON</span> </p>
-              <p> <span>COLETA</span>  PARA DAR</p>
-              <p>ESTABILIDAD A </p>
-              <p>ESOS PRIMEROS </p>
-              <p>PASOS DE TU BEBE.</p>
+              <p><span>ATENCIÓN AL </span> </p>
+              <p> <span>DETALLE</span></p>
+              <p> <span>Y UNA ALTA</span></p>
+              <p> <span>CALIDAD</span>  EN LA </p>
+              <p>MANUFACTURA.</p>
             </div>
           </div>
         </div>
