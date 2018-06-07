@@ -1,5 +1,28 @@
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 200){
+    $('.logo_veinticinco').css("top", "0px");
+    $('.logo_header').css("left", "0px");
+  }
+  else {
+    $('.logo_veinticinco').css("top", "-100px");
+    $('.logo_header').css("left", "-80px");
+  }
+});
+
 
 $( document ).ready(function() {
+
+$( "#distribuidor" ).click(function() {
+  $( ".mostrar_suscripcion" ).toggle( "slow" );
+});
+
+if($('.eeexito')){
+  $('.eeexito').delay(2000).fadeToggle();
+}
+
+$( ".abrir_wrap_suscrip" ).click(function() {
+  $( ".mostrar_wrap_formulario" ).toggle( "slow" );
+});
 
   $('#myCarousel .list-inline-item:first-child').addClass('active');
   $('#myCarousel .carousel-item:first-child').addClass('active');

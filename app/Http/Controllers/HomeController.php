@@ -9,6 +9,7 @@ use App\SubCate;
 use App\Tienda;
 use App\Talla;
 use App\Color;
+use App\Noticia;
 
 
 class HomeController extends Controller
@@ -36,11 +37,12 @@ class HomeController extends Controller
         $tiendas = Tienda::all();
         $tallas = Talla::all();
         $colores = Color::all();
+        $noticias = Noticia::all();
 
         $prosdustos = Produ::orderBy('created_at','desc')->take(5)->get();
         $ultimoproductos = Produ::orderBy('created_at','desc')->take(1)->get();
         $ultimacates = Cate::orderBy('created_at','desc')->take(1)->get();
-        return view('home', compact('categorias','colores', 'tallas' ,'productos','subcategorias', 'prosdustos', 'ultimoproductos', 'ultimacates', 'tiendas'));
+        return view('home', compact('categorias','colores', 'tallas' ,'productos','subcategorias', 'noticias','prosdustos', 'ultimoproductos', 'ultimacates', 'tiendas'));
     }
 
     public function layoutAdmin(){

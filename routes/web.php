@@ -24,11 +24,20 @@ Route::get('/baby', 'WelcomeController@sitioBaby');
 
 Route::get('/primeros', 'WelcomeController@sitioPrimeros');
 
+Route::get('/detalle', 'ArticleController@detalleBlog');
+
 Route::get('/contacto', 'WelcomeController@contacto')->name('contacto');
 
 Route::get('/acerca', function () {
     return view('acerca');
-});
+})->name('acerca');
+
+Route::get('/aviso-privacidad', function () {
+    return view('aviso-privacidad');
+})->name('aviso-privacidad');
+
+
+Route::post('suscribirse', 'WelcomeController@suscribirse');
 
 Route::post('enviar_correo', 'WelcomeController@enviarcontacto');
 
@@ -90,6 +99,14 @@ Route::group(['middleware'=> 'auth'],function(){
   Route::get('imagen/{id}/deleteMsg','imaController@DeleteMsg');
 });
 
+//article Routes
+Route::group(['middleware'=> 'auth'],function(){
+  Route::resource('noticia','NoticiaController', ['only' => ['create', 'store', 'index', 'edit']]);
+  Route::post('noticia/{id}/update','NoticiaController@update');
+  Route::delete('noticia/{id}','NoticiaController@destroy')->name('noticia.destroy');
+  Route::get('noticia/{id}/deleteMsg','NoticiaController@DeleteMsg');
+});
+
 Route::get('subcategoria/{id}', 'catalogoController@index')->name('subcategoria');
 
 Route::get('/catalogo/{id}', 'catalogoController@index' )->name('catalogo');
@@ -98,6 +115,9 @@ Route::get('/detalle/{id}', 'catalogoController@detalle')->name('detalle');
 
 Route::get('/logout', 'HomeController@logout');
 
+Route::get('noticias', 'NoticiaController@noticias')->name('noticias');
+
+Route::get('detalle/{id}', 'NoticiaController@noticia');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

@@ -6,11 +6,14 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Mail;
 use App\Mail\NuevoCorreoContacto;
+use App\Mail\mensajeUsuario;
+use App\Mail\EmaiSuscribirse;
 use App\Cate;
 use App\SubCate;
 use App\Tienda;
 use App\Ima;
 use App\Produ;
+use App\Suscripcion;
 
 class WelcomeController extends Controller{
   
@@ -25,13 +28,17 @@ class WelcomeController extends Controller{
 
 
     public function enviarcontacto(Request $request){
-        $this->validate($request,[
-            'correo'        =>  'required|email|min:5',
+        $rules = [
+            'correo'        =>  'required|email',
             'nombre'        =>  'required|min:3',
             'mensaje'       =>  'required|min:3',
             'telefono'      =>  'required',
             'asunto'        =>  'required',
-        ]);
+        ];
+        $mensaje = [
+            'required' => 'Este campo es necesario.'
+        ];
+        $this->validate($request, $rules, $mensaje);
         $data = [
               'nombre' => $request->nombre,
               'correo' => $request->correo,
@@ -39,22 +46,59 @@ class WelcomeController extends Controller{
               'telefono' => $request->telefono,
               'asunto' => $request->asunto
         ];
-        Mail::to('emmanegr@gmail.com')->send(new NuevoCorreoContacto($data));
-        return redirect('/');
+        Mail::to('hola@miniburbujas.mx')->send(new NuevoCorreoContacto($data));
+        return redirect('/')->with('mensaje','Tu mesaje fue enviado, muchas gracias!');
     }
 
    public function update(){
 
    }
 
-   public function enviarCorreo(Request $request){
-      $this->validate($request,[
-         'mensaje'   => 'required| min:5',
-         'email'     => 'required| email',
-         'nombre'    => 'required| min:5'
-      ]);
-      Mail::to('emmanegr@gmail.com')->send(new CorreoContactoAfiliado());
-      return redirect('afiliados/detalle_afiliado');
+
+
+   public function suscribirse(Request $request){
+        $rules = [
+            'nombre'    => 'required|max:255',
+            'correo'    => 'required|email',
+            'edad' => 'required',
+            'genero' => 'required'
+        ];
+        $mensaje = [
+            'required' => 'Este campo es necesario.'
+        ];
+        if(empty($request->distribuidor)){
+          $request->distribuidor = 'no';
+        }
+
+        if(empty($request->numdistribuidor)){
+          $request->numdistribuidor = 'N/A';
+        }
+        if(empty($request->rfc)){
+          $request->rfc = 'N/A';
+        }
+
+        $suscrip = new Suscripcion();
+        $suscrip->genero = $request->genero;
+        $suscrip->distribuidor = $request->distribuidor;
+        $suscrip->numdistribuidor = $request->numdistribuidor;
+        $suscrip->rfc = $request->rfc;
+        $suscrip->nombre = $request->nombre;
+        $suscrip->edad = $request->edad;
+        $suscrip->correo = $request->correo;
+        $this->validate($request, $rules, $mensaje);
+      $data = [
+              'genero' => $request->genero,
+              'distribuidor' => $request->distribuidor,
+              'numdistribuidor' => $request->numdistribuidor,
+              'rfc' => $request->rfc,
+              'nombre' => $request->nombre,
+              'edad' => $request->edad,
+              'correo' => $request->correo,
+        ];
+      Mail::to($suscrip->correo)->send(new mensajeUsuario($data));
+      Mail::to('hola@miniburbujas.mx')->send(new EmaiSuscribirse($data));
+      $suscrip->save();
+      return redirect('/')->with('mensajeSuscrito','Muchas gracias por suscribirte a nuestro boletin');
 
    }
 

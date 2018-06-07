@@ -30,6 +30,7 @@ class NuevoCorreoContacto extends Mailable
     public function build()
     {
         $subject = 'Correo Miniburbujas';
-        return $this->markdown('emails.contacto.correoContacto')->with(['data', $this->data])->subject($subject);
+        $envia = $this->data['correo'];
+        return $this->markdown('emails.contacto.correoContacto')->with(['data', $this->data])->from($envia)->subject($subject);
     }
 }

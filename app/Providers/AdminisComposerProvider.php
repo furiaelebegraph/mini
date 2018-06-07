@@ -7,6 +7,7 @@ use App\Produ;
 use App\Tienda;
 use App\Talla;
 use App\Color;
+use App\Noticia;
 use Illuminate\Support\ServiceProvider;
 
 class AdminisComposerProvider extends ServiceProvider
@@ -20,6 +21,9 @@ class AdminisComposerProvider extends ServiceProvider
     {
         view()->composer('layouts.admin', function($view){
             $view->with('categorias', Cate::all());
+        });        
+        view()->composer('layouts.admin', function($view){
+            $view->with('noticias', Noticia::all());
         });
         view()->composer('layouts.admin', function($view){
             $view->with('subcategorias', SubCate::all());

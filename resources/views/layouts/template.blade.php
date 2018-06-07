@@ -72,7 +72,9 @@
 							<div class="col-7 col-sm-5 alienado_centro">
 								<div> <a href="{{ url('acerca') }}"><img class="icono_navegacion_menu" src="{{ asset('img/logo_blanco_mini.svg') }}" alt=""></a></div>
 							</div>
-
+							<div class="col-7 col-sm-5 alienado_centro">
+								<div> <a href="{{ url('noticias') }}"><img class="icono_navegacion_menu" src="{{ asset('img/logo_blog.png') }}" alt=""></a></div>
+							</div>
 							<div class="col-7 col-sm-5">
 								<div class="contacto_link"> <a href="{{ url('contacto') }}">CONTACTO</a></div>
 							</div>
@@ -83,8 +85,8 @@
 			</div>
 	</div>
 	<nav class="navbar-default navbar-static-top navegador_movil ">
-		<div class="row align-items-center">
-			<div class="col-4 align-self-center">
+		<div class="row align-items-center m-t-10">
+			<div class="col-2 col-md-4 align-self-center">
 				<div class="hamburguesita">
 					<div id="nav-icon" class='nav-iconos'>
 						<span></span>
@@ -94,9 +96,11 @@
 				</div>
 			</div>
 			<div class="col-4 alienado_centro align-self-center">
-				<div class="d-flex justify-content-center">
-					<div class="logo_veinticinco">
-						<img src="{{ asset('img/25aniv2.png') }}" alt="">
+				<div class="d-flex justify-content-center align-items-center">			
+					<div class="logo_veinticinco icono_veinticinco">
+						<a href="{{ route('acerca')}}">
+							<img src="http://elebeweb.com/test/mini/img/25aniv2.png" alt="">
+						</a>
 					</div>
 					<div class="logo_header alienado_centro">
 						<a href="{{ url('/') }}">
@@ -110,28 +114,28 @@
 				<div class="d-flex justify-content-center">
 					<div class="sociales_header">
 						<div class="icono_social">
-							<a href="https://www.facebook.com/miniburbujas/">
+							<a target='_blank' href="https://www.facebook.com/miniburbujas/">
 								<img src="{{ asset('img/ico_face.svg') }}" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="sociales_header">
 						<div class="icono_social">
-							<a href="https://www.instagram.com">
+							<a target='_blank' href="https://www.instagram.com/miniburbujas/">
 								<img src="{{ asset('img/ico_instagram.svg') }}" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="sociales_header">
 						<div class="icono_social">
-							<a href="https://www.youtube.com/channel/UCkVpFMUB7vrmaJ1TxlPEmZQ">
+							<a target='_blank' href="https://www.youtube.com/channel/UCkVpFMUB7vrmaJ1TxlPEmZQ">
 								<img src="{{ asset('img/ico_youtube.svg') }}" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="sociales_header">
 						<div class="icono_social">
-							<a href="https://twitter.com/MiniBurbujas">
+							<a target='_blank' href="https://twitter.com/MiniBurbujas">
 								<img src="{{ asset('img/ico_twitter_2.svg') }}" alt="">
 							</a>
 						</div>
@@ -176,13 +180,13 @@
 					</div>
 				</div>
 				<div class="contacto_footer m-b-10">
-					<p class='texto_bold'>contacto</p>
+					<p class='texto_bold'> <a class="contacto_footer_link" href="{{ url('contacto') }} ">CONTACTO</a> </p>
 					<a href="tel:+524777717373" class="texto_bold">
 					    T. ( 477 ) 7717373
 					</a>
 					<div class='texto_bold'>
 						correo electrónico: <br>
-						info@miniburbujas.mx
+						hola@miniburbujas.mx
 					</div>
 				</div>
 				<div class="contacto_fondo">
@@ -191,9 +195,20 @@
 					</a> 
 				</div>
 				<div class="redes_sociales_footer m-b-10">
+
 					<div>
 						<a href="https://www.facebook.com/miniburbujas/">
 							<img src="{{ asset('img/icono_face_landing.svg') }}" alt="">
+						</a>
+					</div>
+					<div>
+						<a href="https://www.instagram.com/miniburbujas/">
+							<img src="{{ asset('img/ico_instagram_blanco.svg') }}" alt="">
+						</a>
+					</div>
+					<div>
+						<a href="https://www.youtube.com/channel/UCkVpFMUB7vrmaJ1TxlPEmZQ">
+							<img src="{{ asset('img/ico_youtube_blanco.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
@@ -201,27 +216,16 @@
 							<img src="{{ asset('img/icono_twitter.svg') }}" alt="">
 						</a>
 					</div>
-					<div>
-						<a href="https://www.pinterest.com.mx/miniburbujas/">
-							<img src="{{ asset('img/icono_pinterest_landing.svg') }}" alt="">
-						</a>
-					</div>
-					<div>
-						<a href="https://plus.google.com">
-							<img src="{{ asset('img/icono_google.svg') }}" alt="">
-						</a>
-					</div>
 				</div>
 				<div class="footer_institucional p-b-50">
 					<div class="marca texto_bold">
-						Miniburbujas®
+						Mini Burbujas®
 					</div>
 					<div class="aviso_privacidad">
-						<a href="{{ url('terminosycondiciones') }}">Términos y condiciones</a>|
-						<a href="{{ url('aviso_de_privacidad') }}">Aviso de privacidad</a>
+						<a href="{{ url('aviso-privacidad') }}">Aviso de privacidad</a>
 					</div>
 					<div class="derechos texto_bold">
-						2018 Miniburbujas, Todos los derechos reservados.
+						2018 Mini Burbujas, Todos los derechos reservados.
 					</div>
 				</div>
 			</div>
