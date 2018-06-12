@@ -80,7 +80,7 @@
 	</div>
 	<div class="row m-t-100-n">
 		<div class="col-12">
-			<div class="centro_baby">
+			<div class="centro_baby_2">
 				<div class="row align-items-center">
 					<div class="col-12 col-sm-6 wow bounceIn">
 						<div class="fondo_solishito escritorio">
@@ -103,7 +103,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="row fondo_nube">
+	<div class="row fondo_nube_2">
 		<div class="col-12">
 			<div class="centro_360 m-b-100 m-t-100">
 				<div class="threesixty shapatito_baby">
