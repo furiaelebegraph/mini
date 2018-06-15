@@ -998,6 +998,7 @@
       width: auto; }
 
   .fondo_solishito {
+    margin-top: -10px;
     position: relative;
     left: 5%; }
     .fondo_solishito img {
@@ -1009,12 +1010,12 @@
     padding: 1em 2em;
     position: relative;
     margin: auto;
-    top: 20px; }
+    top: -10px; }
     .texto_baby_3 p {
       text-align: justify; }
 
   .fondo_nube_2 {
-    margin-top: 50px; }
+    margin-top: -10px; }
 
   .zapatito_baby_1 {
     margin-top: 0px;
@@ -1043,7 +1044,8 @@
     background-size: 850px; }
 
   .fondo_nube_2 {
-    background-size: 1200px; }
+    background-size: 1200px;
+    margin-top: 10px; }
 
   .texto_baby_1 p {
     text-align: right;
@@ -1091,7 +1093,7 @@
     margin-top: 70px; }
 
   .fondo_solishito img {
-    margin-top: -140px;
+    margin-top: -30px;
     left: 50%;
     width: 500px; }
 
