@@ -47,34 +47,46 @@
 			</div>
 		</div>
 	</div>
-	<div class="row align-items-center m-t-100-n">
-		<div class="col-12 col-sm-6 order-2 order-sm-1 zapato_gigante_baby wow slideInLeft">
-			<img src="{{ asset('img/baby/zapatito_baby_4.png') }}" alt="">
-		</div>
-		<div class="col-12 col-sm-6 order-1 order-sm-2 alienado_centro wow slideInRight">
-			<div class="titulo_baby_4">
-				<p>DISEÑO</p>
-				<p><span>ESPECTACULAR</span> </p>
-			</div>
-			<div class="texto_baby_4 mobiles">
-				<p>
-					Que tu <span>bebé luzca <br> espectacular</span> también <br>
-					es muy importante para<br> nosotros, <span>buscamos <br>accesorios ligeros <br>
-					discretos</span> y <br>
-					adecuados para <br>
-					no lastimar <br>
-					la piel. <br>
-				</p>
-			</div>
-			<div class="texto_baby_4 escritorio">
-				<p>
-					Que tu <span>bebé luzca espectacular</span> también 
-					es muy importante para nosotros, <span>buscamos accesorios ligeros 
-					discretos</span> y 
-					adecuados para 
-					no lastimar 
-					la piel. 
-				</p>
+	<div class="row">
+		<div class="col-12 ">
+			<div class="centro_baby m-t-80">
+				<div class="row m-t-70 ">
+					<div class="col-12">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-6 col-sm-12 zapato_gigante_baby wow slideInLeft ">
+								<img src="{{ asset('img/baby/zapatito_baby_4.png') }}" alt="">
+							</div>
+							<div class="col-12 col-md-6 col-sm-12 wow slideInRight">
+							<div class="wrap_texto_1">
+									<div class="titulo_baby_4 align-items-center">
+										<p>DISEÑO</p>
+										<p><span>ESPECTACULAR</span> </p>
+									</div>
+									<div class="texto_baby_4 mobiles align-items-center">
+										<p>
+											Que tu <span>bebé luzca <br> espectacular</span> también <br>
+											es muy importante para<br> nosotros, <span>buscamos <br>accesorios ligeros <br>
+											discretos</span> y <br>
+											adecuados para <br>
+											no lastimar <br>
+											la piel. <br>
+										</p>
+									</div>
+									<div class="texto_baby_4 escritorio ipad align-items-center">
+										<p>
+											Que tu <span>bebé luzca espectacular</span> también 
+											es muy importante para nosotros, <span>buscamos accesorios ligeros 
+											discretos</span> y 
+											adecuados para 
+											no lastimar 
+											la piel. 
+										</p>
+									</div>
+							</div>
+							</div>
+						</div>	
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -82,7 +94,7 @@
 		<div class="col-12">
 			<div class="centro_baby_2">
 				<div class="row align-items-center">
-					<div class="col-12 col-sm-6 wow bounceIn">
+					<div class="col-12 col-sm-12 col-md-6 wow bounceIn">
 						<div class="fondo_solishito escritorio">
 							<img src="{{ asset('img/baby/zapatito_baby_3.png') }}" alt="">
 						</div>
@@ -91,7 +103,7 @@
 							<img src="{{ asset('img/baby/zapatito_baby_3_1.png') }}" alt="">
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 m-t-n-300 wow slideInUp">
+					<div class="col-12 col-sm-12 col-md-6 m-t-n-300 wow slideInUp">
 						<div class="texto_baby_3">
 							<p>
 								Materiales como

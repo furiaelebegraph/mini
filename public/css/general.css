@@ -605,10 +605,9 @@
 
 .zapatito_baby_1 {
   position: relative;
-  /*margin-top: -320px */
-  left: -178px; }
+  margin-top: -400px; }
   .zapatito_baby_1 img {
-    width: 384px; }
+    margin-left: -365px; }
 
 .fondo_hojas {
   background-image: url("../img/baby/fondo_hoja.svg");
@@ -720,17 +719,19 @@
       z-index: -2;
       font-size: 1em; }
 
-.fondo_solishito img {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0%); }
+.fondo_solishito {
+  margin-top: 50px; }
+  .fondo_solishito img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 390px; }
 
 .texto_baby_3 {
-  width: 270px;
+  width: auto;
   padding: 1em 2em;
   position: relative;
-  margin-top: 100px;
-  margin-left: 25px; }
+  margin-top: 130px; }
   .texto_baby_3 p {
     color: #005f93;
     font-size: 17px;
@@ -753,8 +754,9 @@
     left: 0; }
 
 .titulo_baby_4 {
-  margin: -12px 18px 0px auto;
-  width: 311px; }
+  margin-top: -500px;
+  margin-left: -25px;
+    margin-left-width: auto; }
   .titulo_baby_4 p {
     font-family: margotBold;
     font-size: 80px;
@@ -769,8 +771,7 @@
 .texto_baby_4 {
   max-width: 270px;
   width: 100%;
-  margin: 5px 29px 0px auto;
-  width: 177px; }
+  margin: 5px 29px 0px auto; }
   .texto_baby_4 p {
     text-align: right;
     font-size: 15px;
@@ -781,14 +782,14 @@
 
 .zapato_gigante_baby img {
   position: relative;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
-  left: -70px;
-  margin-top: -320px; }
+  left: -5%;
+  -webkit-transform: translate(-50%, 5%);
+  -moz-transform: translate(-50%, 5%);
+  -ms-transform: translate(-50%, 5%);
+  -o-transform: translate(-50%, 5%);
+  transform: translate(-50%, 5%);
+  margin-left: -90px;
+  width: 600px; }
 
 .wrap_cat_baby {
   width: 100%;
@@ -862,65 +863,85 @@
 .m-t-100-n {
   margin-top: 80px; }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+/* Pantalla entre ipad y mobil */
+@media screen and (min-width: 426px) {
   .zapatito_baby_1 {
     position: relative;
-    margin-left: -60px;
-    left: 9px; }
+    left: 58%; }
     .zapatito_baby_1 img {
-      width: 384px; }
+      width: 480px;
+      height: auto;
+      margin-left: -410px; }
 
   .wrap_texto_1 {
     left: 70%;
     transform: translate(-50%, 0); }
 
-  .fondo_pescait {
-    position: relative; }
-
-  .escritorio {
-    margin-top: 110px;
-    left: 45px; }
+  .fondo_pescaito img {
+    margin-left: -5px; }
 
   .centro_baby {
     margin-top: -100px; }
 
+  .fondo_nube {
+    background-size: 600px;
+    margin-top: -110px; }
+
   .fondo_nube_2 {
-    background-size: 950px; }
+    background-size: 850px;
+    margin-top: -110px; }
 
   .logo_baby {
-    margin-top: 120px; }
+    margin-top: 70px;
+    margin-bottom: 105px; }
 
   .texto_baby_1 {
-    margin-left: -10px; }
+    margin-top: 110px; }
     .texto_baby_1 p {
       font-size: 17px;
       margin-top: -110px; }
 
   .texto_baby_2 p {
     font-size: 17px;
-    width: 300px;
-    text-align: justify; }
+    width: auto;
+    text-align: center; }
     .texto_baby_2 p span {
       display: block; }
 
-  .titulo_baby_2 p {
-    margin-rith: 50px; }
+  .texto_baby_3 {
+    width: auto;
+    max-width: 450px;
+    padding: 1em 2em;
+    position: relative;
+    margin: auto;
+    top: -230px; }
+    .texto_baby_3 p {
+      text-align: justify; }
 
   .m-t-n-300 {
     margin-top: 0px; }
 
-  .fondo_solishito img {
-    top: 10px; }
+  .fondo_solishito {
+    margin-top: 130px;
+    position: relative; }
+    .fondo_solishito img {
+      width: 500px; }
 
   .texto_baby_4 {
-    margin: 0 auto; }
+    width: auto;
+    max-width: 450px;
+    padding: 1em 2em;
+    position: relative;
+    margin: auto;
+    top: -10px;
+    right: -30%; }
     .texto_baby_4 p {
       text-align: right;
       width: 280px;
-      margin-left: -50px; }
+      margin-left: -140px; }
 
-  .titulo_baby_4 {
-    margin-top: -100px; }
+  .titulo_baby_4 p {
+    width: auto; }
 
   .btn_catalogo_baby {
     display: inline-block; }
@@ -928,9 +949,13 @@
   .m-t-100-n {
     margin-top: 59px; }
 
-  .zapato_gigante_baby img {
-    margin-left: 120px;
-    top: 65px; }
+  .zapato_gigante_baby {
+    margin-top: 170px;
+    position: relative;
+    left: 50%; }
+    .zapato_gigante_baby img {
+      width: 500px;
+      margin-left: -120px; }
 
   .fondo_hojas {
     background-image: url("../img/baby/fondo_hoja.svg");
@@ -938,6 +963,77 @@
     background-repeat: no-repeat;
     background-size: 600px;
     height: 400px; } }
+/* solo para ipad */
+@media only screen and (min-width: 768px) {
+  .fondo_pescaito {
+    position: relative;
+    left: 50%; }
+    .fondo_pescaito img {
+      margin-top: -170px;
+      margin-left: -120px; }
+
+  .texto_baby_2 {
+    margin-top: -250px; }
+    .texto_baby_2 p {
+      font-size: 17px;
+      width: 300px;
+      text-align: left; }
+      .texto_baby_2 p span {
+        display: block; }
+
+  .titulo_baby_2 {
+    margin-top: -235px; }
+
+  .zapato_gigante_baby {
+    position: relative;
+    left: 50%; }
+    .zapato_gigante_baby img {
+      width: 500px;
+      margin-left: -120px;
+      margin-top: -250px; }
+
+  .titulo_baby_4 {
+    margin-top: -100px; }
+    .titulo_baby_4 p {
+      width: auto; }
+
+  .fondo_solishito {
+    position: relative;
+    left: 5%; }
+    .fondo_solishito img {
+      width: 400px; }
+
+  .texto_baby_3 {
+    width: auto;
+    max-width: 450px;
+    padding: 1em 2em;
+    position: relative;
+    margin: auto;
+    top: 20px; }
+    .texto_baby_3 p {
+      text-align: justify; }
+
+  .fondo_nube_2 {
+    margin-top: 50px; }
+
+  .zapatito_baby_1 {
+    margin-top: 0px;
+    position: relative;
+    left: 120%; }
+    .zapatito_baby_1 img {
+      width: 480px;
+      height: auto; }
+
+  .texto_baby_1 {
+    margin-top: 110px;
+    left: -9%; }
+    .texto_baby_1 p {
+      font-size: 17px;
+      margin-top: -110px; }
+
+  .texto_baby_4 p {
+    font-size: 17px;
+    margin-left: -150px; } }
 @media only screen and (min-width: 769px) {
   .logo_baby {
     max-width: 480px;
@@ -949,21 +1045,19 @@
   .fondo_nube_2 {
     background-size: 1200px; }
 
-  .texto_baby_1 {
-    padding-left: 0px; }
-    .texto_baby_1 p {
-      text-align: justify;
-      font-size: 17px; }
+  .texto_baby_1 p {
+    text-align: right;
+    font-size: 17px; }
 
   .titulo_baby_1 {
     margin-top: 50px; }
 
   .texto_baby_2 p {
     font-size: 17px;
-    width: 350px;
-    text-align: justify;
-    margin-left: -140px;
-    margin-top: 50px; }
+    width: 200px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 50px; }
 
   .fondo_hojas {
     background-image: url("../img/baby/fondo_hoja.svg");
@@ -977,49 +1071,47 @@
 
   .titulo_baby_2 p {
     font-size: 120px;
-    line-height: 92px;
-    margin-left: -180px; }
+    line-height: 92px; }
 
   .zapatito_baby_1 {
     position: relative;
-    margin-top: 0px;
-    left: 0px; }
+    left: 90%; }
     .zapatito_baby_1 img {
-      width: 100%; }
+      width: 600px;
+      height: auto; }
 
   .fondo_pescaito {
     position: relative;
-    left: 5px; }
+    left: 35%; }
 
   .m-t-n-300 {
     margin-top: 0px; }
-
-  .texto_baby_4 {
-    margin: 0 auto;
-    max-width: 270px;
-    width: 100%; }
-    .texto_baby_4 p {
-      text-align: justify;
-      font-size: 17px; }
 
   .centro_baby_2 {
     margin-top: 70px; }
 
   .fondo_solishito img {
-    margin-top: 60px;
-    width: 600px; }
+    margin-top: -140px;
+    left: 50%;
+    width: 500px; }
 
   .titulo_baby_4 {
-    margin: 0 auto; }
+    margin-top: -80px; }
+
+  .texto_baby_4 p {
+    text-align: right;
+    font-size: 17px; }
 
   .zapato_gigante_baby img {
-    left: 65%;
+    left: -20%;
     -webkit-transform: translate(-50%, 0%);
     -moz-transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%);
     -o-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
-    margin-top: 0px; }
+    margin-top: -350px;
+    width: 600px;
+    height: auto; }
 
   .btn_catalogo_baby {
     display: inline-block; }
@@ -1028,9 +1120,9 @@
     margin-top: -59px; }
 
   .texto_baby_3 {
-    margin-left: 140px;
+    left: 10%;
     margin-top: -5px;
-    width: 370px; }
+    width: 300px; }
     .texto_baby_3 p {
       text-align: justify; } }
 .gusano_cosmico_pri {
