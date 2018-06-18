@@ -1130,13 +1130,13 @@
 .gusano_cosmico_pri {
   background-image: url("../img/primeros/gusano_cosmico_pri.svg");
   background-position: top center;
-  background-size: 780px;
+  background-size: 740px;
   background-repeat: no-repeat; }
 
 .centro_primeros {
   max-width: 850px;
   widh: 80%;
-  margin: 0 auto; }
+  margin-top: -40px; }
 
 .logo_primeros {
   max-width: 640px;
@@ -1180,31 +1180,41 @@
       font-family: margotBold;
       font-size: 23px; }
 
-.img_nubecita img {
-  position: absolute;
-  width: 800px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  z-index: -1; }
+.img_nubecita {
+  margin-top: -500px; }
+  .img_nubecita img {
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: -1; }
+
+.img_zapato_1 {
+  margin-top: 50px; }
+  .img_zapato_1 img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 320px; }
 
 .titulo_pasos_2 {
   text-align: center;
-  position: absolute;
-  top: 50%;
+  position: relative;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 440px;
+  transform: translate(-50%, 90%);
+  width: 300px;
   text-align: center;
-  margin-top: 195px; }
+  margin-top: 345px; }
   .titulo_pasos_2 p {
     color: white;
     font-size: 46px;
     font-family: margotBold;
     line-height: 16px; }
     .titulo_pasos_2 p:nth-child(2) {
-      font-size: 98px;
+      font-size: 70px;
       font-family: mikadoBold;
-      line-height: 74px; }
+      line-height: 64px;
+      margin-top: 10px; }
     .titulo_pasos_2 p:nth-child(3) {
       line-height: 60px; }
     .titulo_pasos_2 p:nth-child(4) {
@@ -1216,9 +1226,10 @@
   margin-top: 350px; }
 
 .zapatito_primero_2 {
+  width: 310px;
   position: relative;
-  left: -160px;
-  max-width: 500px; }
+  left: 50%;
+  transform: translate(-50%, 0%); }
 
 .icono_listado {
   align-self: center; }
@@ -1229,15 +1240,17 @@
   margin-top: -119px; }
 
 .wrap_todo_resiste {
-  margin-top: -158px;
+  margin-top: -60px;
   position: relative;
   right: -11px; }
 
 .zapatito_primeros_3 {
-  position: relative;
   z-index: 1;
-  width: 350px;
-  max-width: 400px; }
+  position: relative;
+  left: 50%;
+  transform: translate(-45%, 0%);
+  width: 360px;
+  margin-top: 10px; }
 
 .detalle_listado {
   color: #2f8188;
@@ -1262,8 +1275,9 @@
 
 .zapatito_primeros_4 {
   position: relative;
-  left: 50%;
-  transform: translate(-50%, 0); }
+  left: 53%;
+  transform: translate(-50%, 0);
+  width: 500px; }
 
 .wrap_zapatito_3 {
   text-align: center;
@@ -1288,7 +1302,24 @@
     width: 160px;
     height: 160px; }
 
-@media (min-width: 550px) and (max-width: 767px) {
+.fondo_nube {
+  background-image: url(../img/baby/nude_magica_bebe.svg);
+  background-position: 45% 30%;
+  background-repeat: no-repeat;
+  background-size: 700px; }
+
+.centro_primeros {
+  max-width: 850px;
+  margin: 0 auto; }
+
+/* Pantalla entre ipad y mobil */
+@media screen and (min-width: 426px) {
+  .mundo_nuevo {
+    position: relative;
+    margin: auto 0;
+    left: 40%;
+    transform: translate(-30%, 0%); }
+
   .escalera_1 {
     width: 204px;
     top: -50px; }
@@ -1366,7 +1397,8 @@
 
   .texto_primeros_4 {
     margin: 0 auto; } }
-@media only screen and (min-width: 768px) {
+/* solo para ipad */
+@media only screen and (min-width: 769px) {
   .escalera_1 {
     width: 204px;
     top: -50px; }

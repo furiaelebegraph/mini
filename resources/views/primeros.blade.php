@@ -13,7 +13,7 @@
 							<img src="{{ asset('img/logo_pasos.svg') }}" alt="">
 						</div>
 					</div>
-					<div class="col-12 flexeado">
+					<div class="col-12 mundo_nuevo flexeado">
 						<div class="escalera_1 wow slideInUp">
 							<img src="{{ asset('img/primeros/escalera_1.svg') }}" alt="">
 						</div>
@@ -36,7 +36,7 @@
 								<div class="col-12 col-md-6 order-1 order-md-2 wow slideInRight">
 									<div class="titulo_pasos_1">
 										<p><span>UN </span>MUNDO</p>
-										<p>NUEVO PARA</p>
+										<p>NUEVO <span>PARA</span></p>
 										<p>EXPLORAR</p>
 									</div>
 								</div>
@@ -45,7 +45,7 @@
 					</div>
 					<div class="col-12">
 						<div class="row">
-							<div class="col-12 col-md-6 order-2 order-md-1">
+							<div class="col-12 col-lg-6 col-md-12 order-2 order-md-1">
 								<div class="wrap_nuvecita">
 									<div class="img_nubecita wow bounceIn"> 
 										<img src="{{ asset('img/primeros/nubecita_pri.svg') }}" alt="">
@@ -58,7 +58,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-md-6 order-1 order-md-2 wow bounceIn">
+							<div class="img_zapato_1 col-12 col-lg-6 col-md-12 order-1 order-md-2 wow bounceIn align-items-center">
 								<img src="{{ asset('img/primeros/zapato_1_primeros.png') }}" alt="">
 							</div>
 						</div>
@@ -71,7 +71,7 @@
 		<div class="col-12">
 			<div class="centro_primeros">
 				<div class="row align-items-center">
-					<div class="col-11 col-md-4 order-2 order-md-1 wow fadeInUp">
+					<div class="col-12 col-md-6 col-sm-12 order-2 order-md-1 wow fadeInUp">
 						<div class="texto_pasos_1">
 							<p>
 								En esta edad tus campeones 
@@ -84,7 +84,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-11 col-md-5 order-1 order-md-2 wow fadeInUp">
+					<div class="col-12 col-md-6 col-sm-12 order-1 order-md-2 wow fadeInUp">
 						<img class='zapatito_primero_2' src="{{ asset('img/primeros/zapato_2_primeros.png') }}" alt="">
 					</div>
 				</div>
@@ -233,7 +233,7 @@
 		</div>
 	</div>
 	<div class="col-12">
-		<div class="centro_baby">
+		<div class="centro_primeros">
 			<div class="row justify-content-center m-b-50">
 				<div class="col-12 col-sm-8">
 					<div class="row justify-content-between">
