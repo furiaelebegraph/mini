@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "margot";
   src: url("../font/Margot-Regular.ttf") format("truetype");
@@ -1166,6 +1165,15 @@
     font-family: margotBold;
     font-size: 21px; }
 
+.texto_pasos_2 {
+  text-align: right;
+  color: #2e318e;
+  font-size: 17px;
+  width: 80%; }
+  .texto_pasos_2 span {
+    font-family: margotBold;
+    font-size: 21px; }
+
 .titulo_pasos_1 {
   font-size: 50px;
   color: #8e278b; }
@@ -1317,9 +1325,10 @@
 @media screen and (min-width: 426px) {
   .mundo_nuevo {
     position: relative;
-    margin: auto 0;
-    left: 40%;
-    transform: translate(-30%, 0%); }
+    left: 93%;
+    margin-left: -202px;
+    transform: translate(-50%, 0%);
+    width: 320px; }
 
   .escalera_1 {
     width: 204px;
@@ -1329,7 +1338,8 @@
 
   .wrap_texto_pasos_1 {
     max-width: 570px;
-    padding-top: 40px; }
+    padding-top: 40px;
+    margin-left: -35px; }
 
   .titulo_pasos_1 {
     font-size: 60px;
@@ -1353,6 +1363,18 @@
       font-family: margotBold;
       font-size: 21px; }
 
+  .texto_pasos_2 {
+    color: #2e318e;
+    width: 294px;
+    position: relative;
+    left: 17%;
+    transform: translate(-2%, 0%);
+    margin-left: -73px;
+    margin-top: 50px; }
+    .texto_pasos_2 span {
+      font-family: margotBold;
+      font-size: 21px; }
+
   .titulo_pasos_2 {
     text-align: center;
     position: absolute;
@@ -1361,7 +1383,7 @@
     transform: translate(-50%, -50%);
     width: 440px;
     text-align: center;
-    margin-top: 0px; }
+    margin-top: 110px; }
     .titulo_pasos_2 p {
       color: white;
       font-size: 50px;
@@ -1378,7 +1400,7 @@
         font-family: margotBold; }
 
   .wrap_todo_resiste {
-    margin-top: -242px;
+    margin-top: -150px;
     position: relative;
     right: 0px; }
 
@@ -1387,30 +1409,71 @@
 
   .zapatito_primero_2 {
     position: relative;
-    left: -100px;
-    max-width: 500px; }
+    transform: translate(-50%, 0%);
+    margin-top: 340px;
+    width: 440px; }
 
   .zapatito_primeros_3 {
-    left: -50px;
-    z-index: 1;
-    margin-top: 0px;
-    max-width: 550px; }
+    position: relative;
+    left: 11%;
+    transform: translate(-10%, 0%);
+    width: 440px;
+    margin-left: -22px; }
 
   .texto_primeros_4 {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .img_nubecita {
+    margin-top: -230px; }
+
+  .img_zapato_1 {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 320px;
+    margin-top: 70px; }
+    .img_zapato_1 img {
+      width: 400px; }
+
+  .texto_primeros_3 {
+    align-self: center;
+    text-align: justify;
+    max-width: 300px; }
+
+  .listado {
+    left: 13%;
+    margin-left: -38px; }
+
+  .fondo_nube {
+    background-image: url(../img/baby/nude_magica_bebe.svg);
+    background-position: 35% 30%;
+    background-repeat: no-repeat;
+    background-size: 700px;
+    margin-top: 20px; }
+
+  .zapatito_primeros_4 {
+    position: relative;
+    left: 53%;
+    transform: translate(-50%, 0);
+    width: 700px; } }
 /* solo para ipad */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .escalera_1 {
+    left: -12%;
     width: 204px;
     top: -50px; }
     .escalera_1 img {
       width: 170px; }
 
-  .wrap_texto_pasos_1 {
-    max-width: 570px;
-    padding-top: 40px; }
+  .texto_pasos_1 {
+    margin-left: -90px;
+    width: 231px; }
+    .texto_pasos_1 span {
+      font-family: margotBold;
+      font-size: 21px; }
 
   .titulo_pasos_1 {
+    margin-left: -108px;
     font-size: 60px;
     color: #8e278b;
     line-height: 42px; }
@@ -1426,11 +1489,10 @@
         font-family: margotBold;
         font-size: 31px; }
 
-  .texto_pasos_1 {
-    width: 231px; }
-    .texto_pasos_1 span {
-      font-family: margotBold;
-      font-size: 21px; }
+  .img_nubecita {
+    margin-top: 206px; }
+    .img_nubecita img {
+      width: 780px; }
 
   .titulo_pasos_2 {
     text-align: center;
@@ -1439,8 +1501,113 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 440px;
+    margin-top: 391px; }
+
+  .img_zapato_1 {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: -94px; }
+    .img_zapato_1 img {
+      width: 500px; }
+
+  .texto_pasos_2 {
+    color: #2e318e;
+    width: 214px;
+    position: relative;
+    left: 17%;
+    transform: translate(-2%, 0%);
+    margin-left: -62px;
+    margin-top: 255px;
+    text-align: left; }
+
+  .zapatito_primero_2 {
+    position: relative;
+    transform: translate(-50%, 0%);
+    margin-top: 272px;
+    width: 401px;
+    margin-left: -155px; }
+
+  .wrap_todo_resiste {
+    margin-top: -195px;
+    position: relative;
+    right: -2%; }
+
+  .zapatito_primeros_3 {
+    position: relative;
+    left: 11%;
+    transform: translate(-10%, 0%);
+    width: 440px;
+    margin-left: -14px; }
+
+  .fondo_nube {
+    background-image: url(../img/baby/nude_magica_bebe.svg);
+    background-position: 38% 30%;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    margin-top: 20px; }
+
+  .texto_primeros_4 {
+    text-align: right;
+    color: #2e318e;
+    width: 116px;
+    font-size: 16px;
+    margin-top: 91px;
+    margin-left: 200px; }
+
+  .zapatito_primeros_4 {
+    position: relative;
+    left: 73%;
+    transform: translate(-50%, 0);
+    width: 700px; } }
+/* escritorio */
+@media only screen and (min-width: 992px) {
+  .escalera_1 {
+    left: -21%;
+    width: 204px;
+    top: -50px; }
+    .escalera_1 img {
+      width: 170px; }
+
+  .wrap_texto_pasos_1 {
+    max-width: 570px;
+    padding-top: 40px; }
+
+  .wrap_nuvecita {
+    margin-top: 220px; }
+
+  .titulo_pasos_1 {
+    font-size: 60px;
+    margin-left: -99px;
+    color: #8e278b;
+    line-height: 42px; }
+    .titulo_pasos_1 p {
+      font-family: margotBold; }
+      .titulo_pasos_1 p:nth-child(2) {
+        font-size: 42px;
+        line-height: 34px; }
+      .titulo_pasos_1 p:nth-child(3) {
+        font-size: 51px;
+        line-height: 45px; }
+      .titulo_pasos_1 p span {
+        font-family: margotBold;
+        font-size: 31px; }
+
+  .texto_pasos_1 {
+    width: 231px;
+    margin-left: -118px; }
+    .texto_pasos_1 span {
+      font-family: margotBold;
+      font-size: 21px; }
+
+  .titulo_pasos_2 {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    width: 440px;
     text-align: center;
-    margin-top: 0px; }
+    margin-top: 158px; }
     .titulo_pasos_2 p {
       color: white;
       font-size: 50px;
@@ -1456,27 +1623,62 @@
         font-size: 40px;
         font-family: margotBold; }
 
+  .img_zapato_1 {
+    position: relative;
+    left: 50%;
+    transform: translate(-96%, 48%);
+    margin-top: -94px; }
+    .img_zapato_1 img {
+      width: 500px; }
+
+  .listado {
+    left: 0;
+    margin-left: 0; }
+
+  .texto_pasos_2 {
+    color: #2e318e;
+    width: 151px;
+    position: relative;
+    left: 17%;
+    transform: translate(-2%, 0%);
+    margin-left: -62px;
+    margin-top: 278px;
+    text-align: left; }
+
   .wrap_todo_resiste {
     margin-top: -242px;
-    position: relative;
-    right: 35px; }
+    position: relative; }
 
   .m-t-350 {
     margin-top: 0px; }
 
   .zapatito_primero_2 {
     position: relative;
-    left: -100px;
-    max-width: 500px; }
+    left: -2%;
+    width: 500px; }
 
   .zapatito_primeros_3 {
-    left: -50px;
     z-index: 1;
     margin-top: 0px;
     max-width: 550px; }
 
   .texto_primeros_4 {
-    margin: 0 auto; } }
+    margin: 0 auto;
+    margin-top: 141px;
+    margin-left: 144px; }
+
+  .fondo_nube {
+    background-image: url(../img/baby/nude_magica_bebe.svg);
+    background-position: 41% 30%;
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    margin-top: 20px; }
+
+  .zapatito_primeros_4 {
+    position: relative;
+    left: 65%;
+    transform: translate(-50%, 0);
+    width: 700px; } }
 * {
   padding: 0;
   margin: 0;
@@ -2644,7 +2846,7 @@ p {
     font-family: MikadoBold;
     color: #005f93; }
   .suscribirse_texto h2 {
-    font-size: 80px;
+    font-size: 57px;
     font-family: MikadoBold;
     line-height: 66px;
     color: #005f93; }
@@ -2653,12 +2855,18 @@ p {
   position: relative;
   display: block; }
 
+.img_zapatito_sus {
+  margin-top: -186px; }
+  .img_zapatito_sus img {
+    max-width: 500px;
+    width: 100%; }
+
 .img_nubesita_sus {
   z-index: -2;
   margin-left: -67px; }
-
-.img_zapatito_sus {
-  margin-top: -350px; }
+  .img_nubesita_sus img {
+    max-width: 600px;
+    width: 100%; }
 
 #myCarousel {
   max-width: 600px;
@@ -2771,6 +2979,12 @@ p {
   margin-left: 0;
   margin-right: 0; }
 
+.centro_sus {
+  max-width: 850px;
+  widh: 80%;
+  margin: 0 auto;
+  margin-top: -50px; }
+
 @media only screen and (min-width: 768px) {
   .altura_80 {
     height: 80vh; }
@@ -2802,6 +3016,9 @@ p {
 
   .imagen_landing_tenis {
     width: 427px; }
+
+  .suscribirse_text h2 {
+    font-size: 66px; }
 
   .huarache_landing {
     width: 600px;
@@ -2876,5 +3093,4 @@ p {
     font-size: 45px;
     line-height: 40px; } }
 
-
-
+/*# sourceMappingURL=general.css.map */

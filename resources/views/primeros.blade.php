@@ -72,7 +72,7 @@
 			<div class="centro_primeros">
 				<div class="row align-items-center">
 					<div class="col-12 col-md-6 col-sm-12 order-2 order-md-1 wow fadeInUp">
-						<div class="texto_pasos_1">
+						<div class="texto_pasos_2">
 							<p>
 								En esta edad tus campeones 
 								tiene gran actividad, por eso 
@@ -116,7 +116,7 @@
 		<div class="col-12">
 			<div class="centro_primeros">
 				<div class="row align-content-center">
-					<div class="col-12 col-sm-6 flexeado wow fadeInRight">
+					<div class="col-12 col-lg-6 col-sm-12 flexeado wow fadeInRight">
 						<div class="texto_primeros_3">
 							<p>
 								Nuestra experiencia en el calzado de 
@@ -126,7 +126,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-6 wow fadeInLeft">
+					<div class="listado col-12 col-lg-6 col-md-12 wow fadeInLeft">
 						<div class="row">
 							<div class="col-10 flexeado">
 								<div class="icono_listado"><img src="{{ asset('img/primeros/iconito_1_miniburgujas.svg') }}" alt=""></div>
