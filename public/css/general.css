@@ -273,7 +273,7 @@
 
 .centro_kids {
   max-width: 920px;
-  widh: 80%;
+  widh: 100%;
   margin: 0 auto; }
 
 .color_verde_kids {
@@ -313,16 +313,20 @@
   position: relative;
   width: 100%; }
 
+.im_zapato_kids_2 {
+  position: relative;
+  width: 100%; }
+
 .im_zapato_kids_4 {
   position: relative;
-  width: 335px; }
+  width: 100%; }
 
 .im_zapato_kids_5 {
   position: relative;
   left: 50%;
   top: -35px;
   z-index: -1;
-  width: 350px;
+  width: 121%;
   transform: translate(-50%, 0%); }
 
 .titulo_kids h2 {
@@ -350,7 +354,6 @@
   font-family: margot; }
 
 .texto_kids_1 {
-  width: 296px;
   margin: 0 auto;
   font-family: margotBold; }
 
@@ -363,9 +366,10 @@
     font-family: margotBold;
     font-size: 18px; }
   .texto_kids_2 p {
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 345px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    max-width: 345px;
     margin: 0 auto;
     text-align: center;
     font-size: 15px; }
@@ -381,8 +385,8 @@
     font-family: margotBold; }
 
 .kids_bloque_1 {
-  width: 80%;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 57px auto; }
 
 .logo_kids_kids {
   max-width: 320px;
@@ -464,6 +468,16 @@
   transform: translate(-50%, -50%); }
 
 @media (min-width: 550px) and (max-width: 950px) {
+  .zapatotecolum {
+    margin-top: -395px; }
+
+  .texto_kids_2 p {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .centro_kids {
+    widh: 80%; }
+
   .kids_bloque_1 {
     max-width: 825px; }
 
@@ -474,8 +488,7 @@
   .logo_kids_kids {
     max-width: 420px;
     width: 80%;
-    min-width: 320px;
-    margin-top: -312px; }
+    min-width: 320px; }
 
   .fondo_lombris_cosmica::after {
     background-size: 1034px;
@@ -483,22 +496,22 @@
 
   .im_zapato_kids_1 {
     position: relative;
-    left: -222px;
+    left: 3%;
     margin-top: 70px;
     width: 625px; }
 
-  .texto_kids_3 {
-    padding: 0px 75px; }
-
-  .titulo_kids_2 {
-    padding: 0px 75px; }
+  .im_zapato_kids_2 {
+    position: relative;
+    left: -12%;
+    margin-top: 70px;
+    width: 123%; }
 
   .zapato_giante_kids {
     position: relative;
-    left: -225px;
+    left: -42%;
     top: -56px;
     width: 950px;
-    transform: translate(0%, 0%); }
+    transform: translate(7%, 0%); }
 
   .im_zapato_kids_5 {
     position: relative;
@@ -509,7 +522,8 @@
     transform: translate(0%, 0%); }
 
   .im_zapato_kids_4 {
-    width: 500px; }
+    width: 415px;
+    margin-top: 154px; }
 
   .m-t-200-n {
     margin-top: -200px; }
@@ -523,7 +537,22 @@
 
   .m-t-150-n {
     margin-top: -150px; } }
+.fondo_nube {
+  background-image: url(../img/baby/nude_magica_bebe.svg);
+  background-position: 35% 30%;
+  background-repeat: no-repeat;
+  background-size: 700px;
+  margin-top: 20px;
+  margin-bottom: 170px; }
+
 @media (min-width: 951px) {
+  .texto_kids_2 p {
+    padding-left: 30px;
+    padding-right: 30px; }
+
+  .centro_kids {
+    widh: 80%; }
+
   .kids_bloque_1 {
     max-width: 825px; }
 
@@ -542,6 +571,13 @@
     background-position: 50% -36%; }
 
   .im_zapato_kids_1 {
+    position: relative;
+    left: -122px;
+    margin-top: 140px;
+    width: 625px;
+    left: -122px; }
+
+  .im_zapato_kids_2 {
     position: relative;
     left: -122px;
     margin-top: 140px;

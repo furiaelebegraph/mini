@@ -9,10 +9,10 @@
 				<div class="col-12">
 					<div class="kids_bloque_1">
 						<div class="row align-items-center">
-							<div class="col-12 col-sm-6 alienado_centro wow bounceInUp">
+							<div class="col-12 col-sm-12 col-md-6 alienado_centro wow bounceInUp">
 								<img class='logo_kids_kids' src="{{ asset('img/logo_kids.svg') }}" alt="">
 							</div>
-							<div class="col-12 col-sm-6">
+							<div class="col-12 col-sm-12 col-md-6">
 								<img class='im_zapato_kids_1 wow slideInRight' src="{{ asset('img/kids/kids_zapatito1.png') }}" alt="">
 								<p class='texto_kids texto_kids_1 color_morado p-l-20 p-r-20 m-t-20'>
 									Tus bebés ahora ya son grandes, andan de arriba para abajo, hasta van a la escuela y  se divierten a lo grande.
@@ -25,7 +25,7 @@
 					<div class="centro_kids">
 						<div class="row align-items-center">
 							<div class="col-12 col-sm-6">
-								<img class="im_zapato_kids_1 wow slideInLeft" src="{{ asset('img/kids/kids_zapatito2.png') }}" alt="">
+								<img class="im_zapato_kids_2 wow slideInLeft" src="{{ asset('img/kids/kids_zapatito2.png') }}" alt="">
 							</div>
 							<div class="col-12 col-sm-6 m-t-20 wow slideInRight">
 								<div class="titulo_kids color_azul_kids alienado_centro ">
@@ -51,7 +51,7 @@
 		<div class="col-12">
 			<div class="centro_kids">
 				<div class="row align-items-center">
-					<div class="col-12 col-sm-6 order-2 order-sm-1 m-t-175-n wow slideInLeft">
+					<div class="col-12 col-sm-6 order-2 order-sm-1 m-t-175-n wow slideInLeft zapatotecolum">
 						<div class="titulo_kids color_verde_kids titulo_kids_2">
 							<h2>DISEÑADOS PARA ELLOS</h2>
 						</div>
