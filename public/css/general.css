@@ -1691,6 +1691,12 @@ p {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px; }
 
+.cuerpo_blog p img {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 80% !important; }
+
 .icono_360 {
   width: 100px;
   margin: auto;

@@ -1,6 +1,4 @@
 @extends('layouts.admin')
-    <script src="//cloud.tinymce.com/stable/tinymce.min.js"></script>
-    <script>tinymce.init({ selector:'textarea',plugins: "lists" });</script>
 @section('contenido')
 
     <div class="content-wrapper">
@@ -32,25 +30,33 @@
                             <input id="titulo" name = "titulo" type="text" class="form-control" value="{!!$noticia->titulo!!}">
                         </div>
                         <div class="form-group">
-                            <label for="empresa">Subtitulo</label>
-                            <input id="subtitulo" name = "subtitulo" type="text" class="form-control" value="{!!$noticia->subtitulo!!}">
-                        </div>
-                        <div class="form-group">
-                            <label for="empresa">Cuerpo</label>
-                            <textarea id="subtitulo" name = "cuerpo" type="text" class="form-control" >{!!$noticia->cuerpo!!}</textarea>
-                        </div>
-                        <div class="form-group">
                             <label for="imagen"Imagen</label>
                             <img src="{{asset($noticia->imagen)}}" alt="">
                             <input id="imagen" name = "imagen" type="file" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Cuerpo</label>
+                            <textarea id="cuerpo" name = "cuerpo" type="text" class="form-control" >{!!$noticia->cuerpo!!}</textarea>
                         </div>
                         <div class="sub-main_crear">
                           <button class="button-two_crear" type = 'submit'><span class="texto_blanco">Actualizar</span></button>
                         </div>
                     </form>
             </div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+    <script>
+      $('#cuerpo').summernote({
+        placeholder: '...',
+        tabsize: 2,
+        height: 500
+      });
+    </script>
         </div>
     </div>
-
 
 @endsection
