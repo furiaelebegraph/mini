@@ -1,6 +1,5 @@
 @extends('layouts.admin')
-    <script src="//cloud.tinymce.com/stable/tinymce.min.js"></script>
-    <script>tinymce.init({ selector:'textarea',plugins: "lists" });</script>
+    
 @section('contenido')
     <div class="content-wrapper">
         <div class="container-fluid">
@@ -62,7 +61,28 @@
                     </form>
                 </div>
 
+
+    
+   
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+    <script>
+      $('#cuerpo').summernote({
+        placeholder: 'Hello bootstrap 4',
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+
+
+
+
         </div>
     </div>
 @endsection
+
 
