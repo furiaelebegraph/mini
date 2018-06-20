@@ -1,10 +1,14 @@
 $azul_fuerte_baby: #005f93
 @media only screen and (min-width: 320px) and (max-width: 425px)
-.centro_baby
+.centro_baby_arriba
   max-width: 850px
   widh: 80%
   margin: 0 auto
   margin-top: -100px
+.centro_baby_category
+  max-width: 850px
+  widh: 80%
+  margin: 0 auto
 .centro_baby_2
   max-width: 850px
   widh: 80%
@@ -73,7 +77,7 @@ $azul_fuerte_baby: #005f93
   background-position: 50% 4%
   background-repeat: no-repeat
   background-size: 200%
-.fondo_nube
+.fondo_nube_baby
   background-image: url('../img/baby/nude_magica_bebe.svg')
   background-position: 50% 4%
   background-repeat: no-repeat
@@ -287,9 +291,11 @@ $azul_fuerte_baby: #005f93
       margin-left: -5px
   .centro_baby
     margin-top: -100px
-  .fondo_nube
-    background-size: 600px
-    margin-top: -110px
+  .fondo_nube_baby
+    background-image: url(../img/baby/nude_magica_bebe.svg)
+    background-position: 36% -12%
+    background-repeat: no-repeat
+    background-size: 800px 
   .fondo_nube_2
       background-size: 850px
       margin-top: -110px
@@ -425,14 +431,21 @@ $azul_fuerte_baby: #005f93
     p
       font-size: 17px
       margin-left: -150px
-      
+  .fondo_nube_baby
+    background-image: url(../img/baby/nude_magica_bebe.svg)
+    background-position: 63% -13%
+    background-repeat: no-repeat
+    background-size: 800px   
 
 @media only screen and ( min-width: 769px ) 
   .logo_baby
     max-width: 480px
     padding: 100px 0px
-  .fondo_nube
-    background-size: 850px
+  .fondo_nube_baby
+    background-image: url(../img/baby/nude_magica_bebe.svg)
+    background-position: 41% -1%
+    background-repeat: no-repeat
+    background-size: 1000px
   .fondo_nube_2
     background-size: 1200px
     margin-top: 10px
@@ -450,10 +463,10 @@ $azul_fuerte_baby: #005f93
       margin-top: 20px
       margin-left: 50px
   .fondo_hojas
-    background-image: url('../img/baby/fondo_hoja.svg')
-    background-position: 10px top
+    background-image: url(../img/baby/fondo_hoja.svg)
+    background-position: 44% top
     background-repeat: no-repeat
-    background-size: 600px 
+    background-size: 800px
     position: relative
     margin-top: 0px
     left: 0px
@@ -486,8 +499,9 @@ $azul_fuerte_baby: #005f93
     p
       text-align: right
       font-size: 17px
-
-
+  .wrap_texto_1
+    left: 62%
+    transform: translate(-47%, 0)
   .zapato_gigante_baby
     img
       left: -20%

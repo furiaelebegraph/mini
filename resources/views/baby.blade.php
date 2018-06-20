@@ -6,8 +6,8 @@
 <div class="escondido">
 	<div class="row m-t-70">
 		<div class="col-12">
-			<div class="centro_baby">
-				<div class="row align-items-center m-t-70 fondo_nube">
+			<div class="centro_baby_arriba">
+				<div class="row align-items-center m-t-70 fondo_nube_baby">
 					<div class="col-12 alienado_centro wow zoomIn">
 						<img class="logo_baby"  src="{{ asset('img/logo_baby.svg') }}" alt="">
 					</div>
@@ -49,7 +49,7 @@
 	</div>
 	<div class="row">
 		<div class="col-12 ">
-			<div class="centro_baby m-t-80">
+			<div class="centro_baby_2 m-t-80">
 				<div class="row m-t-70 ">
 					<div class="col-12">
 						<div class="row justify-content-center">
@@ -132,7 +132,7 @@
 	</div>
 	<div class="row">
 		<div class="col-12 ">
-			<div class="centro_baby m-t-80">
+			<div class="centro_baby_2 m-t-80">
 				<div class="row m-t-70 ">
 					<div class="col-12 fondo_hojas">
 						<div class="row justify-content-center">
@@ -206,7 +206,7 @@
 		</div>
 	</div>
 	<div class="col-12">
-		<div class="centro_baby">
+		<div class="centro_baby_category">
 			<div class="row justify-content-center m-b-50">
 				<div class="col-12 col-sm-8">
 					<div class="row justify-content-between">
