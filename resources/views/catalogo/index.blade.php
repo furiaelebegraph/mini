@@ -27,12 +27,12 @@
 								@foreach ($productos as $producto)
 									<div class="col-11 col-sm-5 ">
 										<div class="wrap_catalogo_kids">
-											<a href=" {{ route('detalle' , $producto->id) }} ">
+											<a href=" {{ url('detalleproducto' , $producto->id) }} ">
 												<img class='imagen_catalogo_kids' src="{{ asset( $producto->imagen ) }}" alt="">
 											</a>
 										</div>
 										<div class="m-t-20 alienado_centro">
-											<a class='titulo_kids_cata' href=" {{ route('detalle' , $producto->id) }}"> {{ $producto->nombre }} </a>
+											<a class='titulo_kids_cata' href=" {{ url('detalleproducto' , $producto->id) }}"> {{ $producto->nombre }} </a>
 										</div>
 									</div>	
 								@endforeach

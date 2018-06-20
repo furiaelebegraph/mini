@@ -111,7 +111,7 @@ Route::get('subcategoria/{id}', 'catalogoController@index')->name('subcategoria'
 
 Route::get('/catalogo/{id}', 'catalogoController@index' )->name('catalogo');
 
-Route::get('/detalle/{id}', 'catalogoController@detalle')->name('detalle');
+Route::get('/detalleproducto/{id}', 'catalogoController@detalleSubcate')->name('detalleproducto');
 
 Route::get('/logout', 'HomeController@logout');
 
