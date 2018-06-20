@@ -3,7 +3,7 @@
 
 <div class="escondido">
     <div class="row">
-        <div class="col-12 gusano_universal_blog  m-t-100">
+        <div class="col-12 gusano_universal_blog m-t-200">
             <div class="centro_baby">
                 <div class="row">
                     <div class="col-12 m-t-20  m-b-30 wow zoomIn">

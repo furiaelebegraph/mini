@@ -16,7 +16,7 @@ class NoticiaController extends Controller
     public function index()
     {
         $title = 'Index - noticia';
-        $noticias = Noticia::orderBy('id', 'desc')->paginate(3);
+        $noticias = Noticia::orderBy('id', 'desc')->paginate(5);
         return view('noticia.index',compact('noticias','title'));
     }
 
@@ -156,7 +156,7 @@ class NoticiaController extends Controller
         return redirect('noticia')->with('mensaje', 'Noticia eliminada');
     }
     public function noticias(){
-        $noticias = Noticia::orderBy('created_at', 'ASC')->paginate(3);
+        $noticias = Noticia::orderBy('created_at', 'desc')->paginate(3);
         return view('noticia.noticias', compact('noticias'));
     }
 }
