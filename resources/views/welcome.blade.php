@@ -245,7 +245,7 @@
     </div>
     <div class="row justify-content-center m-b-70">
       <div class="col-12">
-        <div class="centro_baby">
+        <div class="centro_sus">
           <div class="row justify-content-center align-items-center">
             <div class="col-12 col-sm-6">
               <div class="wrap_imagen_suscribirse">

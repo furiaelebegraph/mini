@@ -95,7 +95,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4 alienado_centro align-self-center">
+			<div class="col-5 col-md-4 alienado_centro align-self-center">
 				<div class="d-flex justify-content-center align-items-center">			
 					<div class="logo_veinticinco icono_veinticinco">
 						<a href="{{ route('acerca')}}">
