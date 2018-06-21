@@ -86,7 +86,7 @@
 									</div>
 								</div>
 								<div class="col-12">
-									<div class="row fondo_nube">
+									<div class="row fondo_nube_juvenil">
 										<div class="col-12">
 											<div class="centro_360 m-b-100 m-t-100">
 												<div class="threesixty shapatito_baby">
@@ -110,7 +110,7 @@
 												<p class='m-t-30'>
 													<span>IDEAL</span>
 												</p>
-												<p class='textos_juvenil'>
+												<p class='textos_juvenil_ideal'>
 													para esas ocasiones especiales donde deben lucir como verdaderos príncipes y enorgullecer a la familia.
 												</p>
 											</div>
