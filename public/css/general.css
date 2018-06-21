@@ -2272,7 +2272,7 @@ p.texto_light_acerca {
     width: 50px; }
 
 .icono_social {
-  width: 30px;
+  width: 23px;
   margin: 0 auto; }
   .icono_social img {
     width: 100%; }
@@ -3066,6 +3066,9 @@ p {
   margin-top: -50px; }
 
 @media only screen and (min-width: 768px) {
+  .icono_social {
+    width: 30px; }
+
   .altura_80 {
     height: 80vh; }
 
