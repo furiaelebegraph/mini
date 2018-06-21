@@ -24,7 +24,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
   </ol>
-  <div class="carousel-inner">
+  <div class="carousel-inner altura_80">
     <div class="carousel-item active aniversario_landing">
       <div class="wrap_aniversario">
         
@@ -34,7 +34,7 @@
           <div class="col-12 texto_header upperca alienado_centro py-5">
             <div data-wow-delay="0.5s" class="panel-heading textoBold azulverde wow zoomIn">Celebramos un año más </div>
             <div data-wow-delay="1s" class="naranja textoBold wow zoomIn">
-              <span>de</span> vanguardia y calidad
+              <span>de</span> vanguardia y calidad,
             </div>
             <div data-wow-delay="1.5s" class="azulverde textoBold wow zoomIn">
               creando zapatos <span>de</span>
@@ -95,16 +95,20 @@
             <div class="collapse_lista">
               <div id="headingResistencia">
                 <button class='titulo_collapse'  data-toggle="collapse" data-target="#collapseResistencia" aria-expanded="false" aria-controls="collapseResistencia">
-                  RESISTENCIA
+                  RESISTENTES Y SUAVES
                 </button>
               </div>
               <div id="collapseResistencia" class="collapse" aria-labelledby="headingResistencia" data-parent="#accordion">
                 <div class="card-body">
                     <div class="row">
                       <div class="col-12 texto_cont_dropdown">
-                        <p>PARA LLEVARTE</p>
-                        <p>UN PRODUCTO</p>
-                        <p> <span>HECHO DE PIEL</span> </p>
+
+                        <p>La piel además de permitirnos </p>
+                        <p>ofrecerte un producto suave,</p>
+                        <p> es mucho más resistente </p>
+                        <p>y dura más que lo sintético.</p>
+                        <p>Límpialos, lústralos y…   </p>
+                        <p><span> otra vez como nuevos!</span> </p>
                       </div>
                       <div class="col-12 col-sm-6">
                         
@@ -123,10 +127,11 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="col-12 texto_cont_dropdown">
-                        <p>CON UN <span>BULLON</span></p>
-                        <p> <span>ACOJINADO</span>A LA</p>
-                        <p>ALTURA DE LOS </p>
-                        <p>TOBILLOS.</p>
+                        <p>Con suelas que amortiguan </p>
+                        <p>el impacto al andar y pieles</p> 
+                        <p> que logran mantener</p> 
+                        <p>secos los piecitos </p>
+                        <p>de tus pequeños.</p>
                       </div>
                       <div class="col-12 col-sm-6">
                         
@@ -138,38 +143,19 @@
             <div class="collapse_lista">
               <div id='headingSuavidad'>
                 <button class='titulo_collapse'  data-toggle="collapse" data-target="#collapseSuavidad" aria-expanded="false" aria-controls="collapseSuavidad">
-                  SUAVIDAD
+                  MODA
                 </button> 
               </div>
               <div id="collapseSuavidad" class="collapse" aria-labelledby="headingSuavidad" data-parent="#accordion">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-12 texto_cont_dropdown">
-                        <p>LA SELECCIÓN </p>
-                        <p>DE PIELES</p>
-                        <p> <span>HECHO DE PIEL</span> </p>
-                      </div>
-                      <div class="col-12 col-sm-6">
                         
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              
-            </div>
-            <div class="collapse_lista">
-              <div id='headingDiseno'>
-                <button class='titulo_collapse'  data-toggle="collapse" data-target="#collapseDiseno" aria-expanded="false" aria-controls="collapseDiseno">
-                  DISEÑO
-                </button> 
-              </div>
-              <div id="collapseDiseno" class="collapse" aria-labelledby="headingDiseno" data-parent="#accordion">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-12 texto_cont_dropdown">
-                        <p>PARA LLEVARTE</p>
-                        <p>UN PRODUCTO</p>
-                        <p> <span>HECHO DE PIEL</span> </p>
+                        <p>Sabemos que tú quieres</p> 
+                        <p>lo mejor para tus  niños, </p>
+                        <p>es por eso que te ofrecemos</p> 
+                        <p>una amplia gama de colores y modelos</p> 
+                        <p>para todas las etapas de crecimiento.</p>
                       </div>
                       <div class="col-12 col-sm-6">
                         
@@ -205,7 +191,7 @@
             <p> EN EL <span>PROCESO DE FABRICACIÓN</span></p> 
             <p> DEL CALZADO </p>
             <p> Y <span> LA ANATOMÍA DEL</span> </p>
-            <p> <span>PIÉ TU PEQUEÑO</span> </p>
+            <p> <span>PIE TU PEQUEÑO.</span> </p>
         </div>
         <div data-wow-duration='2s' class="wrap_huarache wow infinite pulse">
           <div data-wow-duration='2s' data-wow-delay="0.2s" delay class="huarache_landing wow infinite pulse">
@@ -238,7 +224,7 @@
             <img src="{{ asset('img/icono_estilos.svg') }}" alt="">
             <div class="">
               <p>AMPLIA</p>
-              <p><span>VARIDEDAD DE</span> </p>
+              <p><span>VARIEDAD DE</span> </p>
               <p><span>LÍNEAS</span> </p>
               <p><span>Y MODELOS.</span></p>
             </div>
@@ -259,7 +245,7 @@
     </div>
     <div class="row justify-content-center m-b-70">
       <div class="col-12">
-        <div class="centro_sus">
+        <div class="centro_baby">
           <div class="row justify-content-center align-items-center">
             <div class="col-12 col-sm-6">
               <div class="wrap_imagen_suscribirse">
@@ -267,7 +253,7 @@
                   <img src="{{ asset('img/nubesita_viajera_suscribirse.png') }}" alt="">
                 </div>
                 <div class="img_zapatito_sus">
-                  <img src="{{ asset('img/zapatito_suscribirse.png') }}" alt="">
+                  <img class='w-100' src="{{ asset('img/zapatito_suscribirse.png') }}" alt="">
                 </div>
               </div>
             </div>
@@ -340,6 +326,23 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="row m-t-100 m-b-50 justify-content-center align-items-center">
+      <div class="col-11 col-sm-10 suscribirse_texto ">
+        <p>Nuestros clientes</p>
+
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="{{ asset('img/clientes_1.png') }}" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="{{ asset('img/clientes_2.png') }}" alt="Second slide">
+              </div>
+            </div>
+          </div>
+
       </div>
     </div>
 @endsection
