@@ -63,6 +63,12 @@
   position: relative;
   z-index: 1; }
 
+.fondo_nube_juvenil {
+  background-image: url(../img/baby/nude_magica_bebe.svg);
+  background-position: 45% 30%;
+  background-repeat: no-repeat;
+  background-size: 109%; }
+
 .textos_juvenil {
   max-width: 320px;
   min-width: 165px;
@@ -118,24 +124,27 @@
 
 .imagen_seccion_juvenil_1 {
   position: relative;
-  left: -185px;
+  left: -205px;
   max-width: 400px;
-  margin-top: -200px; }
+  margin-top: -174px; }
 
 .imagen_seccion_juvenil_2 {
   position: relative;
-  left: 70px;
+  left: -15%;
   max-width: 400px;
-  top: -50px; }
+  top: -2px;
+  width: 133%; }
 
 .texto_nautica, .texto_coleccion_nautica, .imagen_vivorita {
   margin-left: 30%; }
 
 .texto_nautica {
-  margin-top: 10px; }
+  margin-top: 18px; }
 
 .descripcion_nautica {
-  padding-left: 100px; }
+  padding-left: 51px;
+  text-align: right;
+  margin-left: 38px; }
 
 .cilindro_catalogo {
   background: #324f5b;
@@ -212,7 +221,15 @@
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg); } }
-@media only screen and (min-width: 768px) {
+.imagen_seccion_juvenil_2 {
+  margin: 0 auto;
+  width: 112%;
+  left: 0; }
+
+.textos_juvenil_ideal {
+  left: 0; }
+
+@media (min-width: 951px) {
   .fondo_detalles_nautica {
     background-size: 1500px; }
 
@@ -246,7 +263,7 @@
     max-width: 520px; }
 
   .texto_nautica {
-    margin-top: 30px; }
+    margin-top: 48px; }
 
   .texto_nautica, .texto_coleccion_nautica, .imagen_vivorita {
     margin-left: 0px; }
@@ -646,7 +663,8 @@
 
 .zapatito_baby_1 {
   position: relative;
-  margin-top: -400px; }
+  margin-top: -360px;
+  left: 48%; }
   .zapatito_baby_1 img {
     margin-left: -365px; }
 
