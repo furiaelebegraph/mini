@@ -2813,8 +2813,8 @@ p.texto_light_acerca {
 
 .circulito_1::before, .circulitos_2::before {
   content: "";
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   display: inline-block; }
 
@@ -2827,7 +2827,7 @@ p.texto_light_acerca {
 .circulitos_2 {
   color: #33baaf;
   font-family: mikadoBold;
-  font-size: 26px; }
+  font-size: 20px; }
 
 .centro_240 {
   max-width: 240px;
@@ -3066,6 +3066,11 @@ p {
   margin-top: -50px; }
 
 @media only screen and (min-width: 768px) {
+  .circulito_1::before, .circulitos_2::before {
+    content: "";
+    width: 15px;
+    height: 15px; }
+
   .icono_social {
     width: 30px; }
 
