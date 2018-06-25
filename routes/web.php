@@ -44,7 +44,7 @@ Route::post('enviar_correo', 'WelcomeController@enviarcontacto');
 Route::get('/', 'WelcomeController@index')->name('inicio');
 
 Route::group(['prefix' => 'adminis'], function(){
-	Auth::routes();
+  Auth::routes();
 });
 
 Route::group(['middleware'=> 'auth'],function(){

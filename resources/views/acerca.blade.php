@@ -71,13 +71,13 @@
 			<div class="tipo_calzado_acerca escritorio">
 				<div class='texto_acerca_2'>
 					<div class="row justify-content-center">
-						<div class='col-6 col-ms-4'><p  class='circulito_1 wow zoomIn'> Sport </p> </div>
-						<div class='col-6 col-ms-4'><p data-wow-delay="0.2s" class='circulito_1 wow zoomIn'> De vestir </p> </div>
-						<div class='col-6 col-ms-4'><p data-wow-delay="0.4s" class='circulito_1 wow zoomIn'> Botas </p> </div>
+						<div class='col-4'><p  class='circulito_1 wow zoomIn'> Sport </p> </div>
+						<div class='col-4'><p data-wow-delay="0.2s" class='circulito_1 wow zoomIn'> De vestir </p> </div>
+						<div class='col-4'><p data-wow-delay="0.4s" class='circulito_1 wow zoomIn'> Botas </p> </div>
 						<div class="w-100"></div>
-						<div class='col-6 col-ms-4'><p data-wow-delay="0.6s" class='circulito_1 wow zoomIn'> Casuales </p> </div>
-						<div class='col-6 col-ms-4'><p data-wow-delay="0.8s" class='circulito_1 wow zoomIn'> Sandalias </p> </div>
-						<div class='col-6 col-ms-4'><p data-wow-delay="1s" class='circulito_1 wow zoomIn'> Moda </p> </div>
+						<div class='col-4'><p data-wow-delay="0.6s" class='circulito_1 wow zoomIn'> Casuales </p> </div>
+						<div class='col-4'><p data-wow-delay="0.8s" class='circulito_1 wow zoomIn'> Sandalias </p> </div>
+						<div class='col-4'><p data-wow-delay="1s" class='circulito_1 wow zoomIn'> Moda </p> </div>
 
 					</div>
 				</div>
