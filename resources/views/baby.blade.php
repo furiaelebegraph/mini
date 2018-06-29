@@ -24,7 +24,8 @@
 								<div class="texto_baby_2">
 									<p>
 										<span>Utilizamos pieles </span>
-										tamboreadas muy suaves ideales para estar en contacto con el recién llegado.
+										tamboreadas muy suaves ideales para estar en contacto con el recién nacido.
+
 									</p>
 									<p class='m-t-10'>
 										<span>Forro y plantilla </span>
@@ -64,7 +65,7 @@
 									</div>
 									<div class="texto_baby_4 mobiles align-items-center">
 										<p>
-											Que tu <span>bebé luzca <br> espectacular</span> también <br>
+											Que tu <span>bebé luzca <br> maravilloso</span> también <br>
 											es muy importante para<br> nosotros, <span>buscamos <br>accesorios ligeros <br>
 											discretos</span> y <br>
 											adecuados para <br>
@@ -201,7 +202,7 @@
 		</div>
 	</div>
 	<div class="col-sm-5">
-		<div class="btn_catalogo_baby">
+		<div id='seccion_catalogo_return' class="btn_catalogo_baby">
 			CATÁLOGO
 		</div>
 	</div>

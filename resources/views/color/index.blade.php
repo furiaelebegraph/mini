@@ -5,10 +5,15 @@
 
         <div class="container-fluid">
 
+            @if(Session::has('info'))
+                <div class="alert alert-info">
+                    {{ Session::get('info') }}
+                </div>
+            @endif
             <!-- Breadcrumbs -->
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="#">Dashboard</a>
+                <a href="{{url('/home')}}">Dashboard</a>
               </li>
               <li class="breadcrumb-item active">My Dashboard</li>
             </ol>

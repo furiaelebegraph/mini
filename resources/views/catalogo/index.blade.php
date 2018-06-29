@@ -11,7 +11,7 @@
 							<div class="row justify-content-center align-items-start">
 								<div class="col-9">
 									<div class="regresar p-t-20 p-b-20">
-										<a href="{{ url(strtolower ( $subcategoria->cate->url ))}}">
+										<a href="{{ url(strtolower ( $subcategoria->cate->url ))}}#seccion_catalogo_return">
 											<i class="fas fa-angle-left"></i> Regresar
 										</a>
 									</div>

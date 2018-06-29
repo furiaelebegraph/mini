@@ -5,10 +5,15 @@
 
         <div class="container-fluid">
 
+            @if(Session::has('info'))
+                <div class="alert alert-info">
+                    {{ Session::get('info') }}
+                </div>
+            @endif
             <!-- Breadcrumbs -->
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="#">Dashboard</a>
+                <a href="{{url('/home')}}">Dashboard</a>
               </li>
               <li class="breadcrumb-item active">My Dashboard</li>
             </ol>
@@ -40,7 +45,6 @@
                                         <td>Talla</td>
                                         <td>Orden</td>
                                         <td>BORRAR</td>
-                                        <td>EDITAR</td>
                                         <td>INFO</td>
                                     </tr>
                                 </thead>
@@ -52,9 +56,6 @@
                                         </td>
                                         <td>
                                             {{$talla->orden}}
-                                        </td>
-                                        <td>
-                                            <a href="/talla/{!!$talla->id!!}/delete" data-toggle="modal"  class = 'delete btn btn-danger btn-xs'><i class = 'material-icons'>Borrar</i></a>
                                         </td>
                                         <td>
                                             <form action="{{ route('talla.destroy', ['id' => $talla->id]) }}" method="post">

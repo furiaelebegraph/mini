@@ -27,23 +27,23 @@
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                                     <div class="form-group col-11 col-md-6">
-                                        <input type="text" name='nombre' class="form-control" id="exampleInputText" aria-describedby="nombreHelp" placeholder="NOMBRE">
+                                        <input type="text" name='nombre' class="form-control" id="exampleInputText" aria-describedby="nombreHelp" placeholder="Nombre">
                                         @if ($errors->has('nombre')) <p class="help-block">{{ $errors->first('nombre') }}</p> @endif
                                     </div>
                                     <div class="form-group col-11 col-md-6">
-                                        <input type="email" name='correo' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e-MAIL">
+                                        <input type="email" name='correo' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
                                         @if ($errors->has('correo')) <p class="help-block">{{ $errors->first('correo') }}</p> @endif
                                     </div>
                                     <div class="form-group col-11 col-md-6">
-                                        <input type="text" name='asunto' class="form-control" id="exampleInputText" aria-describedby="companiaHelp" placeholder="ASUNTO">
+                                        <input type="text" name='asunto' class="form-control" id="exampleInputText" aria-describedby="companiaHelp" placeholder="Asunto">
                                         @if ($errors->has('asunto')) <p class="help-block">{{ $errors->first('asunto') }}</p> @endif
                                     </div>
                                     <div class="form-group col-11 col-md-6">
-                                        <input type="text" name='telefono' class="form-control" id="exampleInputEmail1" aria-describedby="telefonoHelp" placeholder="TELÉFONO">
+                                        <input type="text" name='telefono' class="form-control" id="exampleInputEmail1" aria-describedby="telefonoHelp" placeholder="Teléfono">
                                         @if ($errors->has('telefono')) <p class="help-block">{{ $errors->first('telefono') }}</p> @endif
                                     </div>
                                     <div class="form-group col-11 col-md-12">
-                                        <textarea class="form-control" name='mensaje' id="exampleTextarea" rows="3" placeholder="MENSAJE"></textarea>
+                                        <textarea class="form-control" name='mensaje' id="exampleTextarea" rows="3" placeholder="Mensaje"></textarea>
                                         @if ($errors->has('mensaje')) <p class="help-block">{{ $errors->first('mensaje') }}</p> @endif
                                     </div>
                                     <div class="form-group col-12 alineado_centro">

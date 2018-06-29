@@ -76,10 +76,7 @@
 							<p>
 								En esta edad tus campeones 
 								tiene gran actividad, por eso 
-								seleccionamos <span>materiales 
-								de piel como napa y 
-								charoles</span> además de 
-								algunos sintéticos. 
+								diseñamos <span> calzado que le proporciona a tus niños seguridad</span> en cada paso.
 
 							</p>
 						</div>
@@ -185,16 +182,13 @@
 					<div class="col-12 col-md-6">
 						<div class="texto_primeros_4">
 							<p>
-								A partir de esta etapa el
+								A partir de esta etapa nuestro
 							</p>
 							<p>
-								<span>zapato cuenta con arco 
+								<span>zapato cuenta con
 							</p>
 							<p>
-								<span>almendra marcado</span>
-							</p>
-							<p>
-								que, junto al 
+								<span>arco almendra</span>
 							</p>
 							<p>
 								<span>
@@ -228,7 +222,7 @@
 		</div>
 	</div>
 	<div class="col-sm-5">
-		<div class="btn_catalogo_baby">
+		<div id='seccion_catalogo_return' class="btn_catalogo_baby">
 			CATÁLOGO
 		</div>
 	</div>

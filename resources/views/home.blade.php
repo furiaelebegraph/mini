@@ -277,7 +277,7 @@
           </div>
           <div class="card-body">
             <div class="table-responsive">
-              <table class="table table-bordered" width="100%" id="dataTable" cellspacing="0">
+              <table class="table table-bordered" width="100%" id="dataTable">
                 <thead>
                   <tr>
                     <th>Nombre</th>
@@ -300,18 +300,25 @@
                     @foreach($prosdustos as $prosdusto)
                     <tr>
                         <td>{{$prosdusto->nombre}}</td>
-                        <td><img src="{{asset($prosdusto ->imagen)}}" alt=""></td>
+                        <td><img class="w-100" src="{{asset($prosdusto ->imagen)}}" alt=""></td>
                         <td>{{$prosdusto->subcate->nombre}}</td>
-                        <td><a href="{{ route('producto.edit', $prosdusto->id) }}" class = 'viewEdit btn btn-primary btn-xs'><i class = 'material-icons'>edit</i></td>
-                        <td><a href="/producto/{!!$prosdusto->id!!}/delete" class = "delete btn btn-danger btn-xs"><i class = 'material-icons'>Borrar</i></a></td>
+                        <td>
+                          <a href="{{ route('producto.edit', $prosdusto->id) }}" class = 'viewEdit btn btn-primary btn-xs'><i class = 'material-icons'>edit</i>
+                        </td>
+                        <td>
+                          <form action="{{ route('producto.destroy', ['id' => $prosdusto->id]) }}" method="post">
+                            {{ csrf_field() }}
+                            {{ method_field('DELETE') }}
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar</button>
+                            </div>
+                          </form>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>
               </table>
             </div>
-          </div>
-          <div class="card-footer small text-muted">
-            Updated yesterday at 11:59 PM
           </div>
         </div>
 

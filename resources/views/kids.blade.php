@@ -33,10 +33,7 @@
 								</div>
 								<div class="texto_kids azul_fuerte texto_kids_2">
 									<p >
-										Nuestras líneas estan especialmente diseñadas para los niños más independientes, es esta etapa nuestro calzado cuenta con el
-										<span>arco almendra marcado</span>, 
-										así como <span>el forro y la plantilla de piel de cerdo</span> que reduce la humedad y mantiene saludables
-										los pies de tu chiquitín.
+										Nuestras líneas estan especialmente creadas para hacer a tus niños más independientes, <span>disfrutando diariamente de un mundo lleno de aventuras.</span>
 									</p>
 								</div>
 							</div>
@@ -82,7 +79,7 @@
 							<div class="col-12 col-sm-6 wow slideInRight">
 								<div class="texto_kids color_morado_cafe  texto_kids_3">
 									<p>
-										Y como olvidar esas ocasiones especiales en que deben verse a la altura de <span>cualquier ceremonia.</span>
+										Y como olvidar esas ocasiones especiales en que los peques deben <span>lucir hermosos y espectaculares.</span>
 										
 									</p>
 								</div>
@@ -146,7 +143,7 @@
 		</div>
 	</div>
 	<div class="col-sm-5">
-		<div class="btn_catalogo_kids">
+		<div id='seccion_catalogo_return' class="btn_catalogo_kids">
 			CATÁLOGO
 		</div>
 	</div>

@@ -189,11 +189,6 @@
 						hola@miniburbujas.mx
 					</div>
 				</div>
-				<div class="contacto_fondo">
-					<a href="{{ url('catalogo') }}">
-						CATÁLOGO
-					</a> 
-				</div>
 				<div class="redes_sociales_footer m-b-10">
 
 					<div>

@@ -128,7 +128,7 @@
 			</div>
 			<div class="row">
 				<div class="col-12 alienado_centro margen_negativo_150">
-					<div class="cilindro_catalogo">
+					<div id='seccion_catalogo_return' class="cilindro_catalogo">
 						CATÁLOGO
 					</div>
 				</div>	

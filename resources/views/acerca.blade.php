@@ -52,12 +52,12 @@
 
 						<div class="texto_acerca m-t-20 m-b-20  wow zoomIn">
 							<p class='alineado_justificado'>
-								Iniciamos como una empresa que desarrolla zapato exclusivamente para bebés, pero hemos ampliado nuestros horizontes preocupados por ofrecerte una excelente opción.
+								Iniciamos como una empresa que desarrollaba zapato exclusivamente para bebés, pero hemos ampliado nuestros horizontes preocupados por
 							</p>
 						</div>
 						<div class="texto_acerca m-t-20 m-b-20  wow zoomIn">
 							<p class='texto_acerca_2 m-b-10'>
-								Atendemos las <br> necesidades de calzado de tus niños en todas sus etapas
+								Atender las <br> necesidades de calzado para tus niños en todas sus etapas
 							</p>
 							<p>
 								desde que nacen hasta la pubertad, con líneas que satisfacen todos los gustos.
@@ -70,7 +70,7 @@
 			</div>
 			<div class="tipo_calzado_acerca escritorio">
 				<div class='texto_acerca_2'>
-					<div class="row justify-content-center">
+					<div class="row justify-content-start">
 						<div class='col-4'><p  class='circulito_1 wow zoomIn'> Sport </p> </div>
 						<div class='col-4'><p data-wow-delay="0.2s" class='circulito_1 wow zoomIn'> De vestir </p> </div>
 						<div class='col-4'><p data-wow-delay="0.4s" class='circulito_1 wow zoomIn'> Botas </p> </div>
@@ -78,19 +78,23 @@
 						<div class='col-4'><p data-wow-delay="0.6s" class='circulito_1 wow zoomIn'> Casuales </p> </div>
 						<div class='col-4'><p data-wow-delay="0.8s" class='circulito_1 wow zoomIn'> Sandalias </p> </div>
 						<div class='col-4'><p data-wow-delay="1s" class='circulito_1 wow zoomIn'> Moda </p> </div>
-
+						<div class="w-100"></div>
+						<div class='col-4'><p data-wow-delay="1.2s" class='circulito_1 wow zoomIn'> Ceremonia </p> </div>
+						<div class='col-4'><p data-wow-delay="1.4s" class='circulito_1 wow zoomIn'> Escolares </p> </div>
 					</div>
 				</div>
 			</div>
 			<div class="tipo_calzado_acerca mobiles">
 				<div class='texto_acerca_2'>
-					<div class="row justify-content-center">
+					<div class="row justify-content-start">
 						<div class='col-6'><p  class='circulito_1 wow zoomIn'> Sport </p> </div>
 						<div class='col-6'><p data-wow-delay="0.2s" class='circulito_1 wow zoomIn'> De vestir </p> </div>
 						<div class='col-6'><p data-wow-delay="0.4s" class='circulito_1 wow zoomIn'> Botas </p> </div>
 						<div class='col-6'><p data-wow-delay="0.6s" class='circulito_1 wow zoomIn'> Casuales </p> </div>
 						<div class='col-6'><p data-wow-delay="0.8s" class='circulito_1 wow zoomIn'> Sandalias </p> </div>
 						<div class='col-6'><p data-wow-delay="1s" class='circulito_1 wow zoomIn'> Moda </p> </div>
+						<div class='col-6'><p data-wow-delay="1.2s" class='circulito_1 wow zoomIn'> Ceremonia </p> </div>
+						<div class='col-6'><p data-wow-delay="1.4s" class='circulito_1 wow zoomIn'> Escolares </p> </div>
 
 					</div>
 				</div>
@@ -102,7 +106,7 @@
 						<div class="fondo_mapamundi">
 							<div class="texto_acerca">
 								<p>
-									Con la intención de estar actualizados  participamos en exposiciones de moda y calzado 
+									Con la intención de estar crecer y actualizarnos participamos en exposiciones de moda y calzado
 								</p>
 								<div class="d-flex align-items-center justify-content-center">
 									<img class='logo_sapica wow zoomIn' src="{{ asset('img/logo_sapica.png') }}" alt="">
@@ -111,7 +115,7 @@
 							</div>
 							<div class="texto_acerca">
 								<p>
-									Nos hemos extendido al extrajero:
+									Hemos asistido a exposiciones en el extranjero:
 								</p>
 							</div>
 							<div class="texto_acerca">
@@ -142,7 +146,7 @@
 							</div>
 							<div class="texto_acerca m-t-30 m-b-30">
 								<p class='alineado_justificado'>
-									Queremos convertirnos en una gran empresa, con más de <span>400 trabajadores</span> dedicados a realizar el calzado con la mejor calidad y entusiasmo, con el único objetivo de tener clientes satisfechos.
+									Nos hemos convertido en una gran empresa con más de <span>400 trabajadores</span> dedicados a realizar con entusiasmo el mejor calzado para bebes y niños, con el único objetivo de tener clientes satisfechos.
 								</p>
 							</div>
 							
@@ -160,10 +164,10 @@
 						</div>
 						<div class="texto_acerca m-t-20 m-b-20">
 							<p class='futuro_acerca'>
-								Tenemos la mirada puesta <br>
-								<span>en el futuro y a corto plazo </span>
+								Tenemos la mirada <br>
+								<span>puesta en el futuro, </span>
 							</p>
-							<p>nos hemos convertido en la empresa que hace </p>
+							<p>por lo que nos hemos convertido en la empresa que hace </p>
 						</div>
 						<div class="texto_acerca m-t-50">
 							<div class="wrap_el_mejor">

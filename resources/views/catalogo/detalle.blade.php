@@ -31,9 +31,6 @@
 							</a>
 						@endforeach
 
-                        <a class="carousel-control left pt-3" href="#myCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                        <a class="carousel-control right pt-3" href="#myCarousel" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-
                     </div>
                     <!-- main slider carousel nav controls -->
 
@@ -61,7 +58,7 @@
 				</div>
 				<div class="col-12 m-t-40">
 					<h4 class="titulo nombres_categorias_producto">
-						<a href="{{ url($producto->cate->url) }}">{{$producto->cate->nombre}}</a> / <a href="{{ url('catalogo/'.$producto->subcate->id ) }}">{{$producto->subcate->nombre}}</a> 
+						<a href="{{ url($producto->cate->url) }}#seccion_catalogo_return">{{$producto->cate->nombre}}</a> / <a href="{{ url('catalogo/'.$producto->subcate->id ) }}">{{$producto->subcate->nombre}}</a> 
 					</h4>
 				</div>
 				<div class="col-12 m-t-30">

@@ -44,7 +44,7 @@
             </div>
           </div>
         </div>
-        <img data-wow-delay="4s" src="{{ asset('img/logo_mini_g.png ') }}" alt="Nike 19" class='imagen_logo_landig'>
+        
 
       </div>
     </div>
@@ -101,14 +101,12 @@
               <div id="collapseResistencia" class="collapse" aria-labelledby="headingResistencia" data-parent="#accordion">
                 <div class="card-body">
                     <div class="row">
-                      <div class="col-12 texto_cont_dropdown">
+                      <div class="col-12">
+                        <div class="texto_cont_dropdown">
+                          <p>La piel además de permitirnos ofrecerte un producto suave, es mucho más resistente y dura más que lo sintético. Límpialos, lústralos y…  <span> otra vez como nuevos!</span> </p>          
+                        </div>
 
-                        <p>La piel además de permitirnos </p>
-                        <p>ofrecerte un producto suave,</p>
-                        <p> es mucho más resistente </p>
-                        <p>y dura más que lo sintético.</p>
-                        <p>Límpialos, lústralos y…   </p>
-                        <p><span> otra vez como nuevos!</span> </p>
+
                       </div>
                       <div class="col-12 col-sm-6">
                         
@@ -126,12 +124,11 @@
               <div id="collapseComodidad" class="collapse" aria-labelledby="headingComodidad" data-parent="#accordion">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-12 texto_cont_dropdown">
-                        <p>Con suelas que amortiguan </p>
-                        <p>el impacto al andar y pieles</p> 
-                        <p> que logran mantener</p> 
-                        <p>secos los piecitos </p>
-                        <p>de tus pequeños.</p>
+                      <div class="col-12">
+                        <div class="texto_cont_dropdown">
+                          <p>Con suelas que amortiguan el impacto al andar y pieles que logran mantener secos los piecitos de tus pequeños.</p>
+                          
+                        </div>
                       </div>
                       <div class="col-12 col-sm-6">
                         
@@ -149,13 +146,11 @@
               <div id="collapseSuavidad" class="collapse" aria-labelledby="headingSuavidad" data-parent="#accordion">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-12 texto_cont_dropdown">
-                        
-                        <p>Sabemos que tú quieres</p> 
-                        <p>lo mejor para tus  niños, </p>
-                        <p>es por eso que te ofrecemos</p> 
-                        <p>una amplia gama de colores y modelos</p> 
-                        <p>para todas las etapas de crecimiento.</p>
+                      <div class="col-12 ">
+                        <div class="texto_cont_dropdown">
+                          <p>Sabemos que tú quieres lo mejor para para tu niño y niña, es por eso que te ofrecemos una amplia gama de colores y models para sus primeros pasos.</p>
+                          
+                        </div>
                       </div>
                       <div class="col-12 col-sm-6">
                         
@@ -172,8 +167,8 @@
         </div>
         <div class="alienado_centro texto_cont_3">
           <div class="alienado_derecha">
-            <p>NUESTRO OBJETIVO ES EL </p>
-            <p> <span>DESARROLLO Y LA SALUD</span> </p>
+            <p>NUESTRO OBJETIVO ES EL CONTRIBUIR</p>
+            <p> <span>AL DESARROLLO Y LA SALUD</span> </p>
             <p> <span>DEL PIE DE TU NIÑO</span> </p>
             <p>EN TODAS LAS ETAPAS DE SU </p>
             <p> <span>CRECIMIENTO.</span></p>
