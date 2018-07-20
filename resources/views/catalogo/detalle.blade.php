@@ -67,14 +67,14 @@
 					</div>
 				</div>
 				<div class="col-12 linea_gris_cat"></div>
-				<div class="col-12 m-t-30">
+				<div class="col-sm-7 col-md-12 col-lg-8 m-t-30">
 					<h2 class='titulo_catalogo'>
 						Tallas
 					</h2>
 					@if ($tallaOrden->count() > 0)
 						<ul class='row no-gutters justify-content-start align-items-center'>
 							@foreach ($tallaOrden as $numeros)
-								<li class='col-5 col-sm-4 tallas_detalle'>{{ $numeros->numero }}</li>
+								<li class='col-sm-7  col-lg-4 tallas_detalle'>{{ $numeros->numero }}</li>
 							@endforeach
 						</ul>
 					@else
