@@ -1826,7 +1826,8 @@ p {
   padding: 5px 0px;
   font-size: 15px;
   font-family: mikadoBold;
-  color: #293968; }
+  color: #293968;
+  max-width: 20%; }
 
 .detalle_color {
   width: 30px; }
