@@ -21,7 +21,7 @@
 				</div>
 			</div>
 		</div>
-        <div class="col-12 col-md-7" id="slider">
+        <div class="col-12 col-md-5" id="slider">
                 <div id="myCarousel" class="carousel slide">
                     <!-- main slider carousel items -->
                     <div class="carousel-inner">
@@ -38,7 +38,7 @@
         </div>
 		<div class="col-8 col-md-4 margen_top_producto">
 			<div class="row align-content-center">
-				<div class="col-12 m-b-10">
+				<div class="col-12">
 					<img class='logo_detalle_producto' src=" {{ asset($producto->cate->imagen) }}" alt=""> 
 				</div>
 				<div class="col-12">
@@ -46,12 +46,12 @@
 						{{$producto->nombre}}
 					</h2>
 				</div>
-				<div class="col-12 m-t-10">
+				<div class="col-12">
 					<h4 class="titulo nombres_categorias_producto">
 						<a href="{{ url($producto->cate->url) }}#seccion_catalogo_return">{{$producto->cate->nombre}}</a> / <a href="{{ url('catalogo/'.$producto->subcate->id ) }}">{{$producto->subcate->nombre}}</a> 
 					</h4>
 				</div>
-				<div class="col-12 m-t-10">
+				<div class="col-12">
 					<h2 class='titulo_catalogo'>
 						Color
 					</h2>
@@ -67,7 +67,7 @@
 					</div>
 				</div>
 				<div class="col-12 linea_gris_cat"></div>
-				<div class="col-12 m-t-30">
+				<div class="col-12">
 					<h2 class='titulo_catalogo'>
 						Tallas
 					</h2>
@@ -81,7 +81,7 @@
 						<p class='m-t-10 m-b-10'>No hay tallas para mostrar.</p>
 					@endif
 				</div>
-				<div class="col-12 m-t-10">
+				<div class="col-12 ">
 					<h2 class='titulo_catalogo'>
 						Descripcion
 					</h2>
