@@ -80,7 +80,7 @@
 							<p class='m-t-10 m-b-10'>No hay colores para mostrar.</p>
 						@endif
 					</div>
-				</div>s
+				</div>
 				<div class="col-sm-7 col-md-12 col-lg-8 m-t-30">
 					<h2 class='titulo_catalogo'>
 						Tallas
