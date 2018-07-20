@@ -6,10 +6,10 @@
 <div class="escondido">
 	<div class="row justify-content-center m-t-150">
 		<div class="col-12">
-			<div class="centro_800">
+			<div class="centro_1100">
 				<div class="row justify-content-center">
 					<div class="col-10 alienado_centro m-b-30">
-                        <h1 class='titulo_aviso_privacidad_mini'>AVÍSO DE PRIVACIDAD</h1>
+                        <h1 class='titulo_aviso_privacidad_mini'>AVISO DE PRIVACIDAD</h1>
                     </div>
 					<div class="col-12">
 						<div class="texto_aviso wow zoomIn">

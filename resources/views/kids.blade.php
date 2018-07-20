@@ -68,8 +68,8 @@
 				
 			</div>
 		</div>
-		<div class="col-12">
-			<div class="row m-t-250-n">
+		<div class="col-12 m-t-50">
+			<div class="row">
 				<div class="col-12">
 					<div class="centro_kids">
 						<div class="row align-items-center">
@@ -142,12 +142,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-sm-5">
-		<div id='seccion_catalogo_return' class="btn_catalogo_kids">
-			CATÁLOGO
-		</div>
-	</div>
-	<div class="col-12">
+	<div id="seccion_catalogo_return" class="col-12">
 		<div class="centro_kids">
 			<div class="row justify-content-center m-b-50">
 				<div class="col-12 col-sm-8">

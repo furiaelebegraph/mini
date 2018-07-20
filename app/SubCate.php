@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class SubCate extends Model
 {
-    function produ(){
-    	return $this->hasMany(Produ::class, 'cate_id'); 
+    public function produ(){
+    	return $this->hasMany(Produ::class, 'subcate_id', 'id'); 
     }
-    function cate(){
-    	return $this->belongsTo(Cate::class, 'cate_id');
+    public function cate(){
+    	return $this->belongsTo(Cate::class, 'cate_id', 'id');
     }
 
     public static function obtenerSubCategoria($id){

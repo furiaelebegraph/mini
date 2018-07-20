@@ -1,5 +1,5 @@
 $azul_fuerte_baby: #005f93
-
+@media only screen and (min-width: 320px) and (max-width: 425px)
 .centro_baby_arriba
   max-width: 850px
   widh: 80%
@@ -15,24 +15,20 @@ $azul_fuerte_baby: #005f93
   margin: 0 auto
   margin-top: -50px 
   img
-    max-width: 420px
-    width: 120%
+    width: 420px
     margin-left: -10px
-
 .wrap_texto_1
-  max-width: 260px
-  width: 90%
+  width: 260px
   position: relative
-  margin: 0 auto
-
-.zapatito_baby_1
+  left: 58%
+  right: 0
+  transform: translate(-50%,0)
+.zapatito_baby_1    
+  position: relative
+  margin-top: -329px
+  left: 48%
   img
-    max-width: 480px
-    width: 120%
-    position: relative
-    left: 50%
-    transform: translateX(-50%)
-
+    margin-left: -365px
 .fondo_hojas
   background-image: url('../img/baby/fondo_hoja.svg')
   background-position: left bottom
@@ -55,8 +51,9 @@ $azul_fuerte_baby: #005f93
   max-width: 320px
   width: 100%
   margin-top: 20px
+  padding-left: 77px
   p
-    text-align: left
+    text-align: right
     font-size: 15px
     color: $azul_fuerte_baby
     span
@@ -64,12 +61,11 @@ $azul_fuerte_baby: #005f93
       line-height: 18px
       color: $azul_fuerte_baby
 .titulo_baby_2
-  text-align: center
   p
-    font-size: 109px
-    color: #f90
+    font-size: 80px
+    color: #ff9900
     font-family: mikadoBold
-    line-height: 89px
+    line-height: 70px
     margin-left: -5px
 .logo_baby
   max-width: 280px
@@ -89,18 +85,13 @@ $azul_fuerte_baby: #005f93
   background-repeat: no-repeat
 .fondo_pescaito
   position: relative
+  left: -195px
+  top: -83px
   z-index: -1
-  img
-    left: 50%
-    z-index: -1
-    transform: translateX(-50%)
-    max-width: 700px
-    width: 166%
-    position: relative
 .titulo_baby_1
   p
     color: $azul_fuerte_baby
-    font-size: 33px
+    font-size: 45px
     font-family: margotBold
     &:nth-child(1)
       &:after
@@ -176,6 +167,9 @@ $azul_fuerte_baby: #005f93
     border-right: none
     left: 0
 .titulo_baby_4
+  margin-top: -500px
+  margin-left: -25px
+    width: auto
   p
     font-family: margotBold
     font-size: 80px
@@ -199,11 +193,15 @@ $azul_fuerte_baby: #005f93
       color: $azul_fuerte_baby
 .zapato_gigante_baby
   img
-    max-width: 600px
-    width: 130%
     position: relative
-    left: 50%
-    transform: translateX(-50%)
+    left: -5%
+    -webkit-transform: translate(-50%, 5%)
+    -moz-transform: translate(-50%, 5%)
+    -ms-transform: translate(-50%, 5%)
+    -o-transform: translate(-50%, 5%)
+    transform: translate(-50%, 5%)
+    margin-left: -90px
+    width: 600px
 .wrap_cat_baby
   width: 100%
   border-top: 10px solid #fffa8c
@@ -277,23 +275,17 @@ $azul_fuerte_baby: #005f93
 .m-t-100-n
   margin-top: 80px
 /* Pantalla entre ipad y mobil*/
-
-.wrap_texto_5
-  max-width: 258px
-  width: 98%
-  position: relative
-  margin: 0 auto
-  z-index: 2
-  .texto_baby
-    text-align: left
-
-@media screen and (min-width: 426px)
-  .titulo_baby_1
-    p
-      font-size: 45px
+@media screen and (min-width: 426px)  
   .zapatito_baby_1
+    position: relative
+    left: 58%
     img
+      width: 480px
       height: auto
+      margin-left: -410px
+  .wrap_texto_1
+      left: 70%
+      transform: translate(-50%, 0)
   .fondo_pescaito
       position: relative
       left: -20%
@@ -321,7 +313,7 @@ $azul_fuerte_baby: #005f93
     p
       font-size: 17px
       width: auto 
-      text-align: left
+      text-align: center
       span
         display: block
   .texto_baby_3
@@ -343,14 +335,20 @@ $azul_fuerte_baby: #005f93
   .texto_baby_4
     width: auto
     max-width: 450px
-    padding: 1em 0em
+    padding: 1em 2em
+    position: relative
     margin: auto
+    top: -10px
+    right: -30%
     p
       text-align: right
+      width: 280px
+      margin-left: -140px
   .titulo_baby_4
         widht: auto
         left: 4%
         position: relative
+        margin-top: -100px
       p
         width: auto
     
@@ -358,6 +356,13 @@ $azul_fuerte_baby: #005f93
     display: inline-block
   .m-t-100-n
     margin-top: 59px
+  .zapato_gigante_baby
+    margin-top: 170px
+    position: relative
+    left: 50%
+    img 
+      width: 500px
+      margin-left: -120px
   .fondo_hojas
     background-image: url('../img/baby/fondo_hoja.svg')
     background-position: 30px top
@@ -368,8 +373,10 @@ $azul_fuerte_baby: #005f93
 @media only screen and ( min-width: 768px )
   .fondo_pescaito 
       position: relative
+      left: 50%
       img 
         margin-top: -170px
+        margin-left: -120px
   .texto_baby_2
     margin-top: -250px
     p
@@ -381,10 +388,14 @@ $azul_fuerte_baby: #005f93
   .titulo_baby_2
     margin-top: -235px
   .zapato_gigante_baby
+    position: relative
+    left: 50%
     img 
-      width: 540px
-      margin-top: -66px
+      width: 500px
+      margin-left: -120px
+      margin-top: -250px
   .titulo_baby_4
+    margin-top: -100px
     p
       width: auto
   .fondo_solishito 
@@ -405,7 +416,9 @@ $azul_fuerte_baby: #005f93
   .fondo_nube_2
     margin-top: -10px
   .zapatito_baby_1
-    margin-top: 0px
+    margin-top: 0px  
+    position: relative
+    left: 120%
     img
       width: 480px
       height: auto
@@ -419,6 +432,7 @@ $azul_fuerte_baby: #005f93
   .texto_baby_4 
     p
       font-size: 17px
+      margin-left: -150px
   .fondo_nube_baby
     background-image: url(../img/baby/nude_magica_bebe.svg)
     background-position: 63% -13%
@@ -464,6 +478,8 @@ $azul_fuerte_baby: #005f93
       font-size: 120px
       line-height: 92px
   .zapatito_baby_1
+    position: relative
+    left: 90%
     img
       width: 600px
       height: auto
@@ -479,10 +495,26 @@ $azul_fuerte_baby: #005f93
       margin-top: -30px
       left: 50%
       width: 500px
+  .titulo_baby_4
+    margin-top: -80px
   .texto_baby_4
     p
       text-align: right
       font-size: 17px
+  .wrap_texto_1
+    left: 62%
+    transform: translate(-47%, 0)
+  .zapato_gigante_baby
+    img
+      left: -20%
+      -webkit-transform: translate(-50%, 0%)
+      -moz-transform: translate(-50%, 0%)
+      -ms-transform: translate(-50%, 0%)
+      -o-transform: translate(-50%, 0%)
+      transform: translate(-50%, 0%)
+      margin-top: -350px
+      width: 600px
+      height: auto
   .btn_catalogo_baby
     display: inline-block
   .m-t-100-n

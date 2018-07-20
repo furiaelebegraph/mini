@@ -53,7 +53,7 @@
             <ul class="sidenav-second-level collapse" id="collapseCATEGO">
               @foreach($categorias as $categos)
                 <li>
-                  <a href="/categoria/{{$categos->id}}">{{$categos->nombre}} ({{$categos->subcate->count()}} Sub Categorias)</a>
+                  <a href="{{ url('categoria/'.$categos->id.'/edit') }}">{{$categos->nombre}} ({{$categos->subcate->count()}} Sub Categorias)</a>
                 </li>
               @endforeach
             </ul>
@@ -67,7 +67,7 @@
             <ul class="sidenav-second-level collapse" id="collapseSubCATEGO">
               @foreach($subcategorias as $subcatego)
                 <li>
-                  <a href="/subcategoria/{{$subcatego->id}}">{{$subcatego->nombre}} ({{$subcatego->produ->count()}} Productos)</a>
+                  <a href="{{ url('subcategoria/'.$subcatego->id.'/edit') }}">{{$subcatego->nombre}} ({{$subcatego->produ->count()}} Productos)</a>
                 </li>
               @endforeach
             </ul>
@@ -187,9 +187,14 @@
             </form>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" href="{{ url('/logout') }}">
-              <i class="fa fa-fw fa-sign-out"></i>
-              Logout</a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: one;">
+                {{ csrf_field() }}
+            </form>
+            <a class="nav-link" href="{{ route('logout') }}"
+             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <i class="fa fa-fw fa-sign-out"></i>
+                Logout</a>
+            </a>
           </li>
         </ul>
       </div>

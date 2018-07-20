@@ -39,12 +39,20 @@ class WelcomeController extends Controller{
             'required' => 'Este campo es necesario.'
         ];
         $this->validate($request, $rules, $mensaje);
+
+        if($request->distribuidor){
+          $distribuidor = 'Quiero ser distribuidor';
+        }else{
+          $distribuidor = ' ';
+        }
+
         $data = [
               'nombre' => $request->nombre,
               'correo' => $request->correo,
               'mensaje' => $request->mensaje,
               'telefono' => $request->telefono,
-              'asunto' => $request->asunto
+              'asunto' => $request->asunto,
+              'distribuidor' => $distribuidor
         ];
         Mail::to('hola@miniburbujas.mx')->send(new NuevoCorreoContacto($data));
         return redirect('/')->with('mensaje','Tu mesaje fue enviado, muchas gracias!');

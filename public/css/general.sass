@@ -11,7 +11,6 @@ $azulito: #93d3ef
 
 @import "_font-hlp"
 
-
 @include declare-font-face('margot', 'Margot-Regular', 'regular')
 @include declare-font-face('margotBold', 'Margot-Bold', 'bold')
 @include declare-font-face('margotItalica', 'Margot-BoldItalic', 'bold', 'italic' )
@@ -61,7 +60,12 @@ p
 .titulo_aviso_privacidad_mini
   font-family: mikadoBold
   color: #33baaf
-  font-size: 2.5em
+  font-size: 1.8em
+
+.centro_submenu
+  max-width: 800px
+  width: 90%
+  margin: 0 auto
 
 .altura_80
   height: 100vh
@@ -80,11 +84,24 @@ p
 .nombre_producto
   font-family: mikado
   color: $azulVerde
+  mix-blend-mode: multiply
+
+.btn_tienda_linea
+  width: 150px
+  margin-top: 5px
+  padding: 6px 0
+  background-color: #ff5c57
+  position: relative
+  left: 50%
+  transform: translateX(-50%)
+  a
+    color: white
 
 .nombres_categorias_producto
   a
     font-family: mikado
     color: $verde2
+    mix-blend-mode: exclusion
 
 .titulo_catalogo
   font-family: mikado
@@ -125,7 +142,7 @@ p
   position: fixed
   width: 0
   height: 100vh
-  z-index: 5
+  z-index: 3
   overflow-x: hidden
   top: 0
   background: rgb(51,102,255)
@@ -213,6 +230,7 @@ p
 .opciones_submenu
   position: relative
   z-index: 7
+  margin-top: 70px
 
 .cerrar_navega
   padding: 30px 0
@@ -272,7 +290,8 @@ p
   color: $gris
   margin-bottom: 50px
   margin-top: 104px
-  width: 340px
+  max-width: 340px
+  width: 100%
   margin-left: auto
   margin-right: auto
   p
@@ -351,7 +370,7 @@ p
   margin-right: auto
   max-width: 300px
   width: 90%
-  text-align: justify
+  text-align: left
   p 
     color: white
     margin-bottom: 0px
@@ -484,7 +503,7 @@ p
   height: 100%
 
 .titulo_collapse
-  font-size: 35px
+  font-size: 27px
   font-family: mikadoBold
   letter-spacing: -3px
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.64)
@@ -519,11 +538,11 @@ p
     line-height: 23px
   p:nth-child(5)
     color: #33baaf
-    line-height: 10px
+    line-height: 19px
   p:nth-child(6)
     color: #4c7cff
     font-size: 30px
-    line-height: 30px
+    line-height: 34px
 
 p.texto_light_acerca
   max-width: 300px 
@@ -607,6 +626,11 @@ p.texto_light_acerca
   margin-top: -15px
   padding: 0px 5px
 
+.centro_1100
+  max-width: 1100px
+  width: 90%
+  margin: 0 auto
+
 .centro_800
   max-width: 800px
   margin: 0 auto
@@ -627,7 +651,7 @@ p.texto_light_acerca
 .fondo_triangulo
   position: relative
   img
-    width: 100px
+    width: 85px
 
 .texto_acerca
   max-width: 320px
@@ -640,7 +664,8 @@ p.texto_light_acerca
     line-height: 28px
 
 .texto_aviso
-  max-width: 320px
+  max-width: 580px
+  width: 90%
   margin: 0 auto
   font-size: 20px
   text-align: justify
@@ -648,6 +673,16 @@ p.texto_light_acerca
     font-family: mikadoBold
     font-size: 30px
     line-height: 28px
+
+.fondo_detalle_produ
+  background-image: url('../img/fondo_detalle.jpg')
+  background-size: 320%
+  background-position: right bottom
+  background-repeat: no-repeat
+
+.galelaeano
+  img
+    mix-blend-mode: multiply
 
 .fondo_circulo_acerca
   background-color: white
@@ -764,11 +799,12 @@ p.texto_light_acerca
 
 .navegador_movil
   width: 100vw
-  background: white
+  background: #fff
   position: fixed
   z-index: 3
   height: 98px
   top: -13px
+  padding-top: 19px
 
 .inspired-by
   display: block
@@ -980,7 +1016,7 @@ p.texto_light_acerca
 .titulo_generico_mini
   font-family: mikadoBold
   color: #33baaf
-  font-size: 4em 
+  font-size: 36px
 
 .card__wish-list
   display: block
@@ -1375,8 +1411,24 @@ p
   margin: 0 auto
   margin-top: -50px
 
+.separacion_cate_baby
+  margin-top: 300px
+
 
 @media only screen and ( min-width: 768px )
+  .separacion_cate_baby
+    margin-top: 0px
+  .fondo_detalle_produ
+    background-size: 220%
+  .texto_cont_dropdown
+    text-align: justify
+  .titulo_generico_mini
+    font-size: 4em
+  .navegador_movil
+    padding-top: 0px
+    height: 104px
+  .titulo_collapse
+    font-size: 35px
   .zapatito_acerca_2
     right: 48px
   .el_mejor_acerca
@@ -1397,7 +1449,7 @@ p
     position: relative
     transition: all 1s
     img
-      width: 120px
+      width: 110px
   .logo_header
     width: 80px
     transition: all 1s
@@ -1423,10 +1475,10 @@ p
   #myCarousel .carousel-inner, .carousel-item
     height: auto
   .margen_menu
-    margin-top: 50px
-    margin-bottom: 50px
+    margin-top: 10px
+    margin-bottom: 10px
   .icono_navegacion_menu
-    max-width: 220px
+    max-width: 150px
   .margen_top_producto
     margin-top: 0px
   .coleccion_3
@@ -1462,7 +1514,7 @@ p
   .desde_padding
     padding: 60px 0 0 0
   .texto_aviso
-    max-width: 650px
+    max-width: 100%
   .texto_acerca
     max-width: 455px
   .texto_acerca_2

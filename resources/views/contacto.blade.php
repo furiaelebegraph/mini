@@ -12,12 +12,15 @@
     }
 </style>
 
-	<div class="row m-t-100 ">
+	<div class="row m-t-200">
 		<div class="col-12">
 			<div class="centro_baby">
 				<div class="row justify-content-center align-items-center">
                     <div class="col-10 alienado_centro m-b-30">
                         <h1 class='titulo_generico_mini'>CONTACTO</h1>
+                    </div>
+                    <div class="col-10 alienado_centro m-b-30">
+                      <p>¿Te interesa vender nuestros producto?, déjanos tus datos para contactarte.</p>
                     </div>
 					<div class="col-10">
 
@@ -45,6 +48,11 @@
                                     <div class="form-group col-11 col-md-12">
                                         <textarea class="form-control" name='mensaje' id="exampleTextarea" rows="3" placeholder="Mensaje"></textarea>
                                         @if ($errors->has('mensaje')) <p class="help-block">{{ $errors->first('mensaje') }}</p> @endif
+                                    </div>                                    
+                                    <div class="form-group col-11 col-md-12">
+                                        <input type="checkbox" id="subscribeNews" name="distribuidor" value="distribuidor">
+                                        <label for="subscribeNews">Quiero ser distribuidor.</label>
+                                       
                                     </div>
                                     <div class="form-group col-12 alineado_centro">
                                         <button type="submit" class="btn_submit_mini texto_bold centrado">ENVIAR</button>
@@ -78,7 +86,7 @@
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 6,
+          zoom: 8,
           center: new google.maps.LatLng(21.132455, -101.681463),
           mapTypeId: 'roadmap'
         });
@@ -112,7 +120,7 @@
         features.forEach(function(feature) {
 
             var infowindow = new google.maps.InfoWindow({
-              content: feature.contentString
+              content: '<div style="width: 200px;">'+ feature.contentString+'</div>'
             });
 
           var marker = new google.maps.Marker({

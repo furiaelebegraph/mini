@@ -24,14 +24,15 @@ class catalogoController extends Controller
     public function detalleSubcate($id, Request $request)
     {
         $producto = Produ::with('Ima')->findOrfail($id);
-        
-        return view('catalogo.detalle', compact('producto'));
+        $tallaOrden = Produ::find($id)->talla()->orderBy('orden', 'desc')->get();
+        return view('catalogo.detalle', compact('producto', 'tallaOrden'));
     }
     public function detalle($id, Request $request)
     {
         $producto = Produ::with('Ima')->findOrfail($id);
-        
-        return view('catalogo.detalle', compact('producto'));
+        $tallaOrden = Produ::find($id)->talla()->orderBy('orden')->get();
+        dd($tallaOrden);
+        return view('catalogo.detalle', compact('producto', 'tallaOrden'));
     }
 
     /**

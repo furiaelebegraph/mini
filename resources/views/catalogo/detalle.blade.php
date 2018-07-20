@@ -5,28 +5,28 @@
 @stop
 
 @section('content')
-	<div class="container">
-		<div class='m-t-100'>
-			<div class="row justify-content-center">
-				<div class="col-9 ">
-					<div class="regresar p-t-20 p-b-20">
-						<a href="{{ url()->previous() }}">
-							<i class="fas fa-caret-left"></i> Regresar
-						</a>
+
+
+    <div class="row justify-content-center m-t-20 p-b-100 fondo_detalle_produ">
+		<div class="container">
+			<div class='m-t-100'>
+				<div class="row justify-content-center">
+					<div class="col-9 ">
+						<div class="regresar p-t-20 p-b-20">
+							<a href="{{ url()->previous() }}">
+								<i class="fas fa-caret-left"></i> Regresar
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-
-    <div class="row justify-content-center m-t-20 m-b-100">
         <div class="col-12 col-md-7" id="slider">
                 <div id="myCarousel" class="carousel slide">
                     <!-- main slider carousel items -->
                     <div class="carousel-inner">
                     	@foreach($producto->ima as $key=>$imagenes)
-							<a data-fancybox="gallery" class='item carousel-item' data-slide-number="{{$key}}" href="{{asset($imagenes->imagen)}}">
+							<a data-fancybox="gallery" class='item carousel-item galelaeano' data-slide-number="{{$key}}" href="{{asset($imagenes->imagen)}}">
 								<img class='w-100' src="{{asset($imagenes->imagen)}}" alt="">
 							</a>
 						@endforeach
@@ -34,21 +34,11 @@
                     </div>
                     <!-- main slider carousel nav controls -->
 
-
-                    <ul class="carousel-indicators list-inline m-t-60">
-                    	@foreach($producto->ima as $key=>$imagenes)
-							<li class='list-inline-item'  data-slide-to="{{$key}}" data-target="#myCarousel" ">
-								<a id="carousel-selector-{{$key}}" class="selected" data-slide-to="{{$key}}" data-target="#myCarousel">
-	                                <img src="{{asset($imagenes->imagen)}}" class="img-fluid">
-	                            </a>
-							</li>
-						@endforeach
-                    </ul>
             </div>
         </div>
 		<div class="col-8 col-md-4 margen_top_producto">
 			<div class="row align-content-center">
-				<div class="col-12 m-b-30">
+				<div class="col-12 m-b-10">
 					<img class='logo_detalle_producto' src=" {{ asset($producto->cate->imagen) }}" alt=""> 
 				</div>
 				<div class="col-12">
@@ -56,12 +46,12 @@
 						{{$producto->nombre}}
 					</h2>
 				</div>
-				<div class="col-12 m-t-40">
+				<div class="col-12 m-t-10">
 					<h4 class="titulo nombres_categorias_producto">
 						<a href="{{ url($producto->cate->url) }}#seccion_catalogo_return">{{$producto->cate->nombre}}</a> / <a href="{{ url('catalogo/'.$producto->subcate->id ) }}">{{$producto->subcate->nombre}}</a> 
 					</h4>
 				</div>
-				<div class="col-12 m-t-30">
+				<div class="col-12 m-t-10">
 					<h2 class='titulo_catalogo'>
 						Color
 					</h2>
@@ -81,17 +71,17 @@
 					<h2 class='titulo_catalogo'>
 						Tallas
 					</h2>
-					@if ($producto->talla()->count() > 0)
+					@if ($tallaOrden->count() > 0)
 						<ul class='row no-gutters justify-content-start align-items-center'>
-							@foreach ($producto->talla as $numeros)
-								<li class='col-10 col-sm-5 tallas_detalle'>{{ $numeros->numero }}</li>
+							@foreach ($tallaOrden as $numeros)
+								<li class='col-5 col-sm-4 tallas_detalle'>{{ $numeros->numero }}</li>
 							@endforeach
 						</ul>
 					@else
 						<p class='m-t-10 m-b-10'>No hay tallas para mostrar.</p>
 					@endif
 				</div>
-				<div class="col-12 m-t-30">
+				<div class="col-12 m-t-10">
 					<h2 class='titulo_catalogo'>
 						Descripcion
 					</h2>

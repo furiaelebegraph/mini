@@ -6,20 +6,20 @@ use Illuminate\Database\Eloquent\Model;
 
 class Produ extends Model
 {
-    function talla(){
-        return $this->belongsToMany(Talla::class, 'produ_talla')->orderBy('orden', 'asc');
+    public function talla(){
+        return $this->belongsToMany(Talla::class, 'produ_talla')->orderBy('orden');
     }
-    function color(){
-    	return $this->belongsTo(Color::class, 'color_id');
+    public function color(){
+    	return $this->belongsTo(Color::class, 'color_id', 'id');
     }
-    function ima(){
+    public function ima(){
         return $this->hasMany(Ima::class);
     }
-    function cate(){
-    	return $this->belongsTo(Cate::class, 'cate_id');
+    public function cate(){
+    	return $this->belongsTo(Cate::class, 'cate_id', 'id');
     }
-    function subcate(){
-    	return $this->belongsTo(SubCate::class, 'subcate_id');
+    public function subcate(){
+    	return $this->belongsTo(SubCate::class, 'subcate_id', 'id');
     }
     public static function obtenerProductos($id){
         return Produ::where('subcate_id', '=', $id)->select('nombre','id', 'imagen', 'descripcion')->get();

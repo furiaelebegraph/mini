@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Ima extends Model
 {
     function produ(){
-    	return $this->belongsTo(Produ::class, 'produ_id');
+    	return $this->belongsTo(Produ::class, 'produ_id', 'id');
     }
     public static function obtenerImagenes($id){
     	return Ima::where('produ_id', '=', $id)->select('imagen','id', 'nombre')->orderBy('orden', 'asc')->get();

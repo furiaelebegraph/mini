@@ -76,7 +76,39 @@
                                 </select> 
                             </div>
                         @endif
+                        @if( $tallasprodu->count() > 0 )
+                            <div class="form-group m-b-30">
+                                <label for="talla">Editar Talla</label>
+                                    @foreach ($tallas as $talla)
+                                        <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" 
+                                                @foreach ($tallasprodu as $numerotalla)
+                                                    @if($talla->numero == $numerotalla->numero)
+                                                        checked
+                                                    @endif
+                                                @endforeach
+                                             name="arrayTallas[]" value="{{ $talla->id }}">
+                                            {{ $talla->numero }}
+                                        </label>
+                                        </div>
+                                    @endforeach
+                            </div>
 
+                        @else
+                            <div class="form-group m-b-30">
+                                <label for="color">Talla</label>
+
+                                    @foreach ($tallas as $talla)
+                                        <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="arrayTallas[]" value="{{ $talla->id }}">
+                                            {{ $talla->numero }}
+                                        </label>
+                                        </div>
+                                    @endforeach
+                            </div>
+                        @endif
                         <div class="form-group m-b-30">
                             <label for="orden">Orden</label>
                             <input id="orden" name = "orden" type="text" class="form-control" value="{!!$producto->orden!!}"> 

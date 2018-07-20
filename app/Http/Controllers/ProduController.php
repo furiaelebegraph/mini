@@ -39,7 +39,7 @@ class ProduController extends Controller
         $title = 'Crear Producto';
         $subcategorias = SubCate::all();
         $categorias = Cate::all();
-        $tallas = Talla::all();
+        $tallas = Talla::orderBy('numero', 'asc')->get();
         $colores = Color::all();
         return view('producto.create', compact('title', 'productos','tallas', 'colores' ,'subcategorias', 'categorias'));
     }
@@ -122,9 +122,10 @@ class ProduController extends Controller
     {
         $producto = Produ::findOrfail($id);
         $categorias = Cate::all();
-        $tallas = Talla::all();
+        $tallas = Talla::orderBy('numero', 'asc')->get();
+        $tallasprodu = $producto->talla()->get();
         $colores = Color::all();
-        return view('producto.edit',compact('producto', 'tallas', 'colores' ,'categorias'));
+        return view('producto.edit',compact('producto', 'tallas','tallasprodu' ,'colores' ,'categorias'));
     }
 
     /**
@@ -155,6 +156,7 @@ class ProduController extends Controller
                 $producto->descripcion = $request->descrip;
                 $producto->orden = $request->orden;
                 $producto->save();
+
                 $tallas = $request->arrayTallas;
 
                 $producto->talla()->sync($request->input('arrayTallas'));

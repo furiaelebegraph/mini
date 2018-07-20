@@ -22,7 +22,7 @@
 								<div class="col-12 col-md-6 order-2 order-md-1 wow slideInLeft">
 									<div class="texto_pasos_1">
 										<p>
-											Cuando tu bebé comienza a 
+											Cuando tus hijos comienzan a 
 											caminar se abre un mundo 
 											nuevo para explorar, en esta 
 											importante etapa necesita de 
@@ -116,8 +116,7 @@
 					<div class="col-12 col-lg-6 col-sm-12 flexeado wow fadeInRight">
 						<div class="texto_primeros_3">
 							<p>
-								Nuestra experiencia en el calzado de 
-								bebés, nos ha llevado a implementar 
+								Nuestra experiencia en calzado, nos ha llevado a implementar 
 								tecnología que brinde una total 
 								comodidad y seguridad:
 							</p>
@@ -188,7 +187,7 @@
 								<span>zapato cuenta con
 							</p>
 							<p>
-								<span>arco almendra</span>
+								<span>arco almendra, </span>
 							</p>
 							<p>
 								<span>

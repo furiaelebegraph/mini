@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ asset('css/threesixty.css') }}">
 	<div class="row fondo_olas">
 		<div class="col-12 primero_header ">
-			<div class="row ">
+			<div class="row no-gutters">
 				<div class="col-12  wow bounceInUp">
 					<div class="logo_juvenil_1">
 						<img src="{{ asset('img/logo_junior.svg') }}" alt="">
@@ -12,8 +12,8 @@
 					
 				</div>
 				<div class="col-12 m-t-50 wow slideInRight">
-					<div class="row justify-content-center align-items-center bloques_juvenil">
-						<div class="col-11 col-sm-6" id='juveniles_carru'>
+					<div class="row justify-content-center align-items-center bloques_juvenil no-gutters">
+						<div class="col-12 col-sm-6" id='juveniles_carru'>
 
 							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 							  <ol class="carousel-indicators">

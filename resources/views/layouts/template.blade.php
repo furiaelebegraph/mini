@@ -22,6 +22,15 @@
     <link href="{{ asset('css/animate.css') }}"  rel="stylesheet">
     @yield('cssgaleria')
     <link href="{{ asset('css/general.css') }}"  rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121775714-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-121775714-1');
+	</script>
 </head>
 <body>
 
@@ -37,7 +46,7 @@
 					
 				</div>
 				<div class="col-12">
-					<div class="centro_baby">
+					<div class="centro_submenu">
 						<div class="row justify-content-center align-items-center">
 							<div class="col-7 col-sm-5 baby_navega margen_menu alienado_centro">
 								<div>
@@ -69,13 +78,13 @@
 								</div>
 							</div>
 
-							<div class="col-7 col-sm-5 alienado_centro">
+							<div class="col-7 col-sm-5 alienado_centro m-t-20">
 								<div> <a href="{{ url('acerca') }}"><img class="icono_navegacion_menu" src="{{ asset('img/logo_blanco_mini.svg') }}" alt=""></a></div>
 							</div>
-							<div class="col-7 col-sm-5 alienado_centro">
+							<div class="col-7 col-sm-5 alienado_centro m-t-20">
 								<div> <a href="{{ url('noticias') }}"><img class="icono_navegacion_menu" src="{{ asset('img/logo_blog.png') }}" alt=""></a></div>
 							</div>
-							<div class="col-7 col-sm-5">
+							<div class="col-7 col-sm-5 m-t-20">
 								<div class="contacto_link"> <a href="{{ url('contacto') }}">CONTACTO</a></div>
 							</div>
 						</div>
@@ -111,36 +120,47 @@
 				</div>
 			</div>
 			<div class="col-4 alienado_centro align-self-center">
-				<div class="d-flex justify-content-center">
-					<div class="sociales_header">
-						<div class="icono_social">
-							<a target='_blank' href="https://www.facebook.com/miniburbujas/">
-								<img src="{{ asset('img/ico_face.svg') }}" alt="">
+
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<div class="d-flex justify-content-center">
+							<div class="sociales_header">
+								<div class="icono_social">
+									<a target='_blank' href="https://www.facebook.com/miniburbujas/">
+										<img src="{{ asset('img/ico_face.svg') }}" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="sociales_header">
+								<div class="icono_social">
+									<a target='_blank' href="https://www.instagram.com/miniburbujas/">
+										<img src="{{ asset('img/ico_instagram.svg') }}" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="sociales_header">
+								<div class="icono_social">
+									<a target='_blank' href="https://www.youtube.com/channel/UCkVpFMUB7vrmaJ1TxlPEmZQ">
+										<img src="{{ asset('img/ico_youtube.svg') }}" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="sociales_header">
+								<div class="icono_social">
+									<a target='_blank' href="https://twitter.com/MiniBurbujas">
+										<img src="{{ asset('img/ico_twitter_2.svg') }}" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="btn_tienda_linea">
+							<a target="_blank" href="#">
+								Tienda en línea 
 							</a>
 						</div>
 					</div>
-					<div class="sociales_header">
-						<div class="icono_social">
-							<a target='_blank' href="https://www.instagram.com/miniburbujas/">
-								<img src="{{ asset('img/ico_instagram.svg') }}" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="sociales_header">
-						<div class="icono_social">
-							<a target='_blank' href="https://www.youtube.com/channel/UCkVpFMUB7vrmaJ1TxlPEmZQ">
-								<img src="{{ asset('img/ico_youtube.svg') }}" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="sociales_header">
-						<div class="icono_social">
-							<a target='_blank' href="https://twitter.com/MiniBurbujas">
-								<img src="{{ asset('img/ico_twitter_2.svg') }}" alt="">
-							</a>
-						</div>
-					</div>
-					
 				</div>
 			</div>
 		</div>

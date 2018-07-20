@@ -83,7 +83,7 @@
     <div class="row">
       <div class="col-12 contenedor_2">
         <div class="alienado_centro texto_cont_2">
-          <p>COMO NADIE.</p>
+          <p>COMO NADIE</p>
           <p><span>CONOCEMOS</span></p>
           <p> A LA PERFECCIÓN</p>
           <p><span>LO QUE NECESITAN</span></p> 
@@ -148,7 +148,7 @@
                     <div class="row">
                       <div class="col-12 ">
                         <div class="texto_cont_dropdown">
-                          <p>Sabemos que tú quieres lo mejor para para tu niño y niña, es por eso que te ofrecemos una amplia gama de colores y models para sus primeros pasos.</p>
+                          <p>Sabemos que tú quieres lo mejor para tu niño y niña, es por eso que te ofrecemos una amplia gama de colores y modelos para sus primeros pasos.</p>
                           
                         </div>
                       </div>
@@ -330,10 +330,13 @@
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="{{ asset('img/clientes_1.png') }}" alt="First slide">
+                <img class="d-block w-100" src="{{ asset('img/clientes_1.jpg') }}" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="{{ asset('img/clientes_2.png') }}" alt="Second slide">
+                <img class="d-block w-100" src="{{ asset('img/clientes_2.jpg') }}" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="{{ asset('img/clientes_3.jpg') }}" alt="Third slide">
               </div>
             </div>
           </div>

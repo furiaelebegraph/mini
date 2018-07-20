@@ -106,7 +106,7 @@
 						<div class="fondo_mapamundi">
 							<div class="texto_acerca">
 								<p>
-									Con la intención de estar crecer y actualizarnos participamos en exposiciones de moda y calzado
+									Con la intención de crecer y actualizarnos participamos en exposiciones de moda y calzado
 								</p>
 								<div class="d-flex align-items-center justify-content-center">
 									<img class='logo_sapica wow zoomIn' src="{{ asset('img/logo_sapica.png') }}" alt="">

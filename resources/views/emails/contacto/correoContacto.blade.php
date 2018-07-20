@@ -5,7 +5,8 @@
 	{{$data['nombre']}}<br>
 	{{$data['asunto']}}<br>
 	{{$data['correo']}}<br>
-	{{$data['mensaje']}}
+	{{$data['mensaje']}}<br>
+	{{$data['distribuidor']}}
 @endcomponent
 
 Gracias,<br>

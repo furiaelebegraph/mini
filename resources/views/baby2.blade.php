@@ -11,16 +11,16 @@
 					<div class="col-12 alienado_centro wow zoomIn">
 						<img class="logo_baby"  src="{{ asset('img/logo_baby.svg') }}" alt="">
 					</div>
-					<div class="col-12 col-md-6">
-						<div class="row justify-content-center">
-							<div class="col-12 col-sm-5">
+					<div class="col-6">
+						<div class="row">
+							<div class="col-12 col-sm-6">
 								<div class="titulo_baby_2">
 									<p class='wow slideInLeft'>CÓ</p>
 									<p data-wow-delay="0.2s" class='wow slideInLeft'>MO</p>
 									<p data-wow-delay="0.3s" class='wow slideInLeft'>DO</p>
 								</div>
 							</div>
-							<div class="col-12 col-sm-5">
+							<div class="col-12 col-sm-6">
 								<div class="texto_baby_2">
 									<p>
 										<span>Utilizamos pieles </span>
@@ -36,7 +36,7 @@
 						</div>
 					</div>
 
-					<div class="col-12 col-md-6">
+					<div class="col-6">
 						<div class="fondo_pescaito escritorio">
 							<img src="{{ asset('img/baby/zapatito_baby_2.png') }}" alt="">
 						</div>
@@ -54,10 +54,10 @@
 				<div class="row m-t-70 ">
 					<div class="col-12">
 						<div class="row justify-content-center">
-							<div class="col-12 order-2 order-md-1 col-md-6 col-sm-12 zapato_gigante_baby wow slideInLeft ">
+							<div class="col-12 col-sm-12 col-md-6  zapato_gigante_baby wow slideInLeft ">
 								<img src="{{ asset('img/baby/zapatito_baby_4.png') }}" alt="">
 							</div>
-							<div class="col-12 order-1 order-md-2 col-md-6 col-sm-12 wow slideInRight">
+							<div class="col-12 col-sm-12col-md-6  wow slideInRight">
 								<div class="wrap_texto_1">
 										<div class="titulo_baby_4 align-items-center">
 											<p>DISEÑO</p>
@@ -65,13 +65,13 @@
 										</div>
 										<div class="texto_baby_4 mobiles align-items-center">
 											<p>
-												Que tu <span>bebé luzca maravilloso</span> también 
-												es muy importante para nosotros, <span>buscamos accesorios ligeros
-												discretos</span> y 
-												adecuados para 
-												no lastimar 
-												su piel 
-												delicada. 
+												Que tu <span>bebé luzca <br> maravilloso</span> también <br>
+												es muy importante para<br> nosotros, <span>buscamos <br>accesorios ligeros <br>
+												discretos</span> y <br>
+												adecuados para <br>
+												no lastimar <br>
+												su piel <br>
+												delicada. <br>
 											</p>
 										</div>
 										<div class="texto_baby_4 escritorio ipad align-items-center">
@@ -144,7 +144,7 @@
 								</div>
 							</div>
 							<div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 wow slideInRight">
-								<div class="wrap_texto_5">
+								<div class="wrap_texto_1">
 									<div class="titulo_baby_1">
 										<p data-texto='HERMOSOS'>HERMOSOS</p>
 										<p data-texto='MODA'><span data-texto='Y A LA'>Y A LA </span>  MODA</p>
@@ -166,12 +166,12 @@
 									<div class="texto_baby_1 mobiles">
 										<div class="texto_baby">
 											<p>
-												Para los más pequeños 
-												de la casa lo escencial es
-												<span> la comodidad y permitir el desarrollo 
-												de su pie,</span>
-												pero también 
-												verse hermosos
+												Para los más pequeños <br>
+												de la casa lo escencial es<br>
+												<span> la comodidad y  <br>permitir el  <br>desarrollo <br>
+												de su pie,</span><br>
+												pero también <br>
+												verse hermosos<br>
 												y a la moda.
 
 											</p>
@@ -185,42 +185,47 @@
 			</div>
 		</div>
 	</div>
-	<div class="row separacion_cate_baby align-items-center">
-		<div class="col-12 col-sm-7">
-			<div class="wrap_cat_baby">
-				<div class="texto_cat_baby alienado_derecha">
-					<h1>
-						Categorías <br>
-						<span>
-							BABY
-						</span>
-						
-					</h1>
-				</div>
+</div>
+<div class="row m-t-80 align-items-center">
+	<div class="col-12 col-sm-7">
+		<div class="wrap_cat_baby">
+			<div class="texto_cat_baby alienado_derecha">
+				<h1>
+					Categorías <br>
+					<span>
+						BABY
+					</span>
+					
+				</h1>
 			</div>
 		</div>
-		<div id='seccion_catalogo_return' class="col-12">
-			<div class="centro_baby_category">
-				<div class="row justify-content-center m-b-50">
-					<div class="col-12 col-sm-8">
-						<div class="row justify-content-between">
-							@foreach ($babies as $baby)
-								<div class="col-11 col-sm-5">
-									<div class="wrap_catalogo_baby">
-										<a href=" {{ route('catalogo' , $baby->id) }} ">
-											<img class='imagen_catalogo_kids' src="{{ asset( $baby->imagen ) }}" alt="">
-										</a>
-									</div>
-									<div class="m-t-20 alienado_centro">
-										<a class='titulo_baby_cata' href=" {{ route('catalogo' , $baby->id) }}"> {{ $baby->nombre }} </a>
-									</div>
-								</div>	
-							@endforeach
-						</div>
+	</div>
+	<div class="col-sm-5">
+		<div class="btn_catalogo_baby">
+			CATÁLOGO
+		</div>
+	</div>
+	<div id='seccion_catalogo_return' class="col-12">
+		<div class="centro_baby_category">
+			<div class="row justify-content-center m-b-50">
+				<div class="col-12 col-sm-8">
+					<div class="row justify-content-between">
+						@foreach ($babies as $baby)
+							<div class="col-11 col-sm-5">
+								<div class="wrap_catalogo_baby">
+									<a href=" {{ route('catalogo' , $baby->id) }} ">
+										<img class='imagen_catalogo_kids' src="{{ asset( $baby->imagen ) }}" alt="">
+									</a>
+								</div>
+								<div class="m-t-20 alienado_centro">
+									<a class='titulo_baby_cata' href=" {{ route('catalogo' , $baby->id) }}"> {{ $baby->nombre }} </a>
+								</div>
+							</div>	
+						@endforeach
 					</div>
 				</div>
-				
 			</div>
+			
 		</div>
 	</div>
 </div>
