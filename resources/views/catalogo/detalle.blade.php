@@ -21,12 +21,27 @@
 				</div>
 			</div>
 		</div>
-        <div class="col-12 col-md-5" id="slider">
+        <div class="col-12 col-md-5 mobiles" id="slider">
                 <div id="myCarousel" class="carousel slide">
                     <!-- main slider carousel items -->
                     <div class="carousel-inner">
                     	@foreach($producto->ima as $key=>$imagenes)
 							<a data-fancybox="gallery" class='item carousel-item galelaeano' data-slide-number="{{$key}}" href="{{asset($imagenes->imagen)}}">
+								<img class='w-100' src="{{asset($imagenes->imagen)}}" alt="">
+							</a>
+						@endforeach
+
+                    </div>
+                    <!-- main slider carousel nav controls -->
+
+            </div>
+        </div>
+        <div class="col-12 col-md-5 escritorio" id="slider">
+                <div id="myCarousel" class="carousel slide">
+                    <!-- main slider carousel items -->
+                    <div class="carousel-inner">
+                    	@foreach($producto->ima as $key=>$imagenes)
+							<a data-zoom-image="{{asset($imagenes->imagen)}}" id='example-2' class='item carousel-item galelaeano'  href="{{asset($imagenes->imagen)}}">
 								<img class='w-100' src="{{asset($imagenes->imagen)}}" alt="">
 							</a>
 						@endforeach
@@ -67,7 +82,7 @@
 					</div>
 				</div>
 				<div class="col-12 linea_gris_cat"></div>
-				<div class="col-12">
+				<div class="col-12 m-t-10">
 					<h2 class='titulo_catalogo'>
 						Tallas
 					</h2>
@@ -98,5 +113,12 @@
 
 	@push('jsgaleria')
     <!-- flot charts scripts-->
+	    <script src="{{asset('js/jquery.elevatezoom.js')}}"></script>
 	    <script src="{{asset('js/jquery.fancybox.min.js')}}"></script>
+	    <script>
+	    	$('#example-2').elevateZoom({
+            	zoomWindowWidth:350,
+            	zoomWindowHeight:350
+			});
+	    </script>
 	@endpush
