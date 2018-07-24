@@ -20,22 +20,22 @@
 
         <!-- Icon Cards -->
             <div class="row">
-                <div class="col-md-8 col-xs-12 col-centered">
-                    <div class="col-xs-12 col-centered">
-                        <div class="row">
-                            <div class="col-xs-6 col-centered">
+                <div class="col-12 col-centered">
+                    <div class="row justify-content-center align-items-center">
+                        
+                            <div class="col-6 col-centered">
                                 <form  method = 'get' action = '{{url("/home")}}'>
                                     <button class="button-two" type = 'submit'><span class="texto_blanco">ADMIN</span></button>
                                 </form>
                             </div>
-                            <div class="col-xs-6 col-centered">
+                            <div class="col-6 col-centered">
                                 <form class = 'col s3' method = 'get' action = '{!!url("cliente")!!}/create'>
                                     <div class="sub-main">
-                                      <button class="button-two" type = 'submit'><span class="texto_blanco">Crear Nuevo cliente</span></button>
+                                      <button class="button-two" type = 'submit'><span class="texto_blanco">Crear Nuevo Cliente</span></button>
                                     </div>
                                 </form>
                             </div>
-                        </div>
+             
                     </div>
                       <div class="col-md-12 col-centered">
                         <div class="table-responsive">
