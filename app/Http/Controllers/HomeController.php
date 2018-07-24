@@ -11,7 +11,7 @@ use App\Talla;
 use App\Color;
 use App\Banner;
 use App\Noticia;
-
+use App\Cliente;
 
 class HomeController extends Controller
 {
@@ -40,11 +40,13 @@ class HomeController extends Controller
         $colores = Color::all();
         $banneres = Banner::all();
         $noticias = Noticia::all();
+        $clientes = Cliente::all();
 
         $prosdustos = Produ::orderBy('created_at','desc')->take(5)->get();
         $ultimoproductos = Produ::orderBy('created_at','desc')->take(1)->get();
         $ultimacates = Cate::orderBy('created_at','desc')->take(1)->get();
-        return view('home', compact('categorias','colores', 'banneres','tallas' ,'productos','subcategorias', 'noticias','prosdustos', 'ultimoproductos', 'ultimacates', 'tiendas'));
+        
+        return view('home', compact('categorias','colores', 'banneres','tallas' ,'productos','subcategorias', 'noticias','clientes','prosdustos', 'ultimoproductos', 'ultimacates', 'tiendas'));
     }
 
     public function layoutAdmin(){
@@ -54,7 +56,8 @@ class HomeController extends Controller
         $tiendas = Tienda::all();
         $tallas = Talla::all();
         $colores = Color::all();
-        return view('layouts.admin', compact('categorias','colores', 'tallas', 'tiendas' ,'productos','subcategorias'));     
+        $clientes = Cliente::all();
+        return view('layouts.admin', compact('categorias','colores','clientes', 'tallas', 'tiendas' ,'productos','subcategorias'));     
     }
     public function logout() {
         //logout user

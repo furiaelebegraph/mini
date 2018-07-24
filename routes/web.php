@@ -98,6 +98,13 @@ Route::group(['middleware'=> 'auth'],function(){
 });
 
 Route::group(['middleware'=> 'auth'],function(){
+  Route::resource('cliente','ClienteController', ['only' => ['create', 'store', 'index', 'edit']]);
+  Route::post('cliente/{id}/update','ClienteController@update');
+  Route::delete('cliente/{id}/delete','ClienteController@destroy')->name('cliente.destroy');
+  Route::get('cliente/{id}/deleteMsg','ClienteController@DeleteMsg');
+});
+
+Route::group(['middleware'=> 'auth'],function(){
   Route::resource('imagen','imaController', ['only' => ['store', 'index', 'edit']]);
   Route::post('imagen/cargarGale', 'imaController@cargarGaleria');
   Route::get('imagen/create/{id}', 'imaController@create');
