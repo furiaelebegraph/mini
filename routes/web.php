@@ -49,6 +49,12 @@ Route::group(['prefix' => 'adminis'], function(){
 
 
 Route::group(['middleware'=> 'auth'],function(){
+  Route::resource('banner','BannerController', ['only' => ['create', 'store', 'index', 'edit']]);
+  Route::post('banner/{id}/update','BannerController@update');
+  Route::delete('banner/{id}/delete','BannerController@destroy')->name('banner.destroy');
+  Route::get('banner/{id}/deleteMsg','BannerController@DeleteMsg');
+});
+Route::group(['middleware'=> 'auth'],function(){
   Route::resource('categoria','cateController', ['only' => ['create', 'store', 'index', 'edit']]);
   Route::post('categoria/{id}/update','cateController@update');
   Route::delete('categoria/{id}/delete','cateController@destroy')->name('categoria.destroy');

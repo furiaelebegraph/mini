@@ -8,7 +8,7 @@
 
 
     <div class="row justify-content-center m-t-20 p-b-100 fondo_detalle_produ">
-		<div class="container">
+		<div class="col-12">
 			<div class='m-t-100'>
 				<div class="row justify-content-center">
 					<div class="col-9 ">
@@ -81,23 +81,25 @@
 						@endif
 					</div>
 				</div>
-				<div class="col-sm-7 col-md-12 col-lg-8 m-t-30">
+				<div class="col-sm-7 col-md-12 col-lg-8 m-t-10">
 					<h2 class='titulo_catalogo'>
 						Tallas
 					</h2>
-					@if ($tallaOrden->count() > 0)
-						<ul class='row no-gutters justify-content-start align-items-center'>
-							@foreach ($tallaOrden as $numeros)
-								<li class='col-sm-7  col-lg-4 tallas_detalle'>{{ $numeros->numero }}</li>
-							@endforeach
-						</ul>
-					@else
-						<p class='m-t-10 m-b-10'>No hay tallas para mostrar.</p>
-					@endif
+					<div class="width_talla">
+						@if ($tallaOrden->count() > 0)
+							<ul class='row no-gutters justify-content-start align-items-center'>
+								@foreach ($tallaOrden as $numeros)
+									<li class='col-sm-7  col-lg-4 tallas_detalle'>{{ $numeros->numero }}</li>
+								@endforeach
+							</ul>
+						@else
+							<p class='m-t-10 m-b-10'>No hay tallas para mostrar.</p>
+						@endif
+					</div>
 				</div>
 				<div class="col-12 ">
 					<h2 class='titulo_catalogo'>
-						Descripcion
+						Descripción
 					</h2>
 					
 					<p class='color_gris'>

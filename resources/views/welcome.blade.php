@@ -324,7 +324,7 @@
       </div>
     </div>
     <div class="row m-t-100 m-b-50 justify-content-center align-items-center">
-      <div class="col-11 col-sm-10 suscribirse_texto ">
+      <div class="col-11 col-sm-10 col-md-8 col-lg-5 suscribirse_texto ">
         <p>Nuestros clientes</p>
 
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">

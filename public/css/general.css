@@ -1820,14 +1820,15 @@ p {
 .tallas_detalle {
   list-style: none;
   text-align: center;
-  border: 1px solid #2bb572;
+  border: 1px solid #aee8f5;
   margin-left: -1px;
   margin-bottom: -1px;
-  padding: 5px 0px;
+  padding: 10px 0px;
   font-size: 15px;
   font-family: mikadoBold;
-  color: #293968;
-  max-width: 20%; }
+  color: white;
+  max-width: 20%;
+  background-color: #17a2b8; }
 
 .detalle_color {
   width: 30px; }
@@ -2352,9 +2353,13 @@ p.texto_light_acerca {
     font-size: 30px;
     line-height: 28px; }
 
+.width_talla {
+  max-width: 300px;
+  width: 100%; }
+
 .texto_aviso {
   max-width: 580px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   font-size: 20px;
   text-align: justify; }
@@ -3084,11 +3089,8 @@ p {
     margin-top: 0px; }
 
   .fondo_detalle_produ {
-    background-size: 170%;
-    background-position: center; }
-
-  .texto_cont_dropdown {
-    text-align: justify; }
+    background-size: 130%;
+    background-position: center bottom; }
 
   .titulo_generico_mini {
     font-size: 4em; }
