@@ -26,7 +26,8 @@ $( ".abrir_wrap_suscrip" ).click(function() {
 
   $('#myCarousel .list-inline-item:first-child').addClass('active');
   $('#myCarousel .carousel-item:first-child').addClass('active');
-
+  $('#carouselExampleSlidesOnly div:nth-child(2)').addClass('active');
+  
 $('#nav-icon').on('click', function(){
   $('#navegacion_miniburbuajas').removeClass();
   $('#navegacion_miniburbuajas').addClass('abierto_minis');

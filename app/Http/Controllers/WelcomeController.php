@@ -14,11 +14,13 @@ use App\Tienda;
 use App\Ima;
 use App\Produ;
 use App\Suscripcion;
+use App\Cliente;
 
 class WelcomeController extends Controller{
   
    public function index(){
-    return view('welcome');
+    $clientes = Cliente::all();
+    return view('welcome',compact("clientes"));
     
    }
 

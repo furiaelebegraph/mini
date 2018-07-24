@@ -47,12 +47,6 @@ Route::group(['prefix' => 'adminis'], function(){
   Auth::routes();
 });
 
-Route::group(['middleware' => 'auth:web_seller'], function(){
-
-  Route::post('seller_logout', 'SellerAuth\LoginController@logout')->name('seller_logout');
-  Route::get('/dash','SellerController@index')->name('dash');
-
-});
 
 Route::group(['middleware'=> 'auth'],function(){
   Route::resource('categoria','cateController', ['only' => ['create', 'store', 'index', 'edit']]);
@@ -95,6 +89,13 @@ Route::group(['middleware'=> 'auth'],function(){
   Route::post('producto/{id}/update','ProduController@update');
   Route::delete('producto/{id}/delete','ProduController@destroy')->name('producto.destroy');
   Route::get('producto/{id}/deleteMsg','ProduController@DeleteMsg');
+});
+
+Route::group(['middleware'=> 'auth'],function(){
+  Route::resource('cliente','ClienteController', ['only' => ['create', 'store', 'index', 'edit']]);
+  Route::post('cliente/{id}/update','ClienteController@update');
+  Route::delete('cliente/{id}/delete','ClienteController@destroy')->name('cliente.destroy');
+  Route::get('cliente/{id}/deleteMsg','ClienteController@DeleteMsg');
 });
 
 Route::group(['middleware'=> 'auth'],function(){
