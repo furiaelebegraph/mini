@@ -329,17 +329,11 @@
 
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-               @foreach($clientes as $cliente)
+              @foreach($clientes as $cliente)
               <div class="carousel-item">
                 <img class="d-block w-100" src="{{asset($cliente->img) }}" alt="First slide">
               </div>
-              @endforeach 
-              <!-- <div class="carousel-item">
-                <img class="d-block w-100" src="{{ asset('img/clientes_2.jpg') }}" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="{{ asset('img/clientes_3.jpg') }}" alt="Third slide">
-              </div> -->
+              @endforeach
             </div>
           </div>
 

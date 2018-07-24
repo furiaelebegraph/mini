@@ -59,6 +59,7 @@ class BannerController extends Controller
         }
 
         $banner->nombre = $request->nombre;
+        $banner->url = $request->url;
         $banner->save();
         return redirect('banner');
     }
@@ -88,7 +89,7 @@ class BannerController extends Controller
      * @param  \App\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function edit(Banner $banner)
+    public function edit($id, Request $request)
     {
         $title = 'Editar banner';
         if($request->ajax())
@@ -107,7 +108,7 @@ class BannerController extends Controller
      * @param  \App\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Banner $banner)
+    public function update($id, Request $request)
     {
         $banner = Banner::findOrfail($id);
         if ($request->hasFile('imagen')) {
@@ -125,6 +126,7 @@ class BannerController extends Controller
         }
 
         $banner->nombre = $request->nombre;
+        $banner->url = $request->url;
         $banner->save();
         return redirect('banner');
     }

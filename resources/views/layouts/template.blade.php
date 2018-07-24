@@ -212,22 +212,22 @@
 				<div class="redes_sociales_footer m-b-10">
 
 					<div>
-						<a href="https://www.facebook.com/miniburbujas/">
+						<a target="_blank" href="https://www.facebook.com/miniburbujas/">
 							<img src="{{ asset('img/icono_face_landing.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
-						<a href="https://www.instagram.com/miniburbujas/">
+						<a target="_blank" href="https://www.instagram.com/miniburbujas/">
 							<img src="{{ asset('img/ico_instagram_blanco.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
-						<a href="https://www.youtube.com/channel/UCkVpFMUB7vrmaJ1TxlPEmZQ">
+						<a target="_blank" href="https://www.youtube.com/channel/UCkVpFMUB7vrmaJ1TxlPEmZQ">
 							<img src="{{ asset('img/ico_youtube_blanco.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
-						<a href="https://twitter.com/MiniBurbujas">
+						<a target="_blank" href="https://twitter.com/MiniBurbujas">
 							<img src="{{ asset('img/icono_twitter.svg') }}" alt="">
 						</a>
 					</div>

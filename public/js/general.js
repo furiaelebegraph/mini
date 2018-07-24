@@ -85,23 +85,6 @@ function particula(maximo, duracioon, camino, agregar){
   console.log(anchosParticulas);
 
 
-  var createElements = (function() {
-    var fragment = document.createDocumentFragment();
-    for (var i = 0; i < maxElements; i++) {
-      var el = document.createElement('div');
-      el.classList.add('particula_potato');
-      let anchooos = Math.round(Math.random(anchosParticulas)*200) + 'px';
-      console.log(anchooos);
-      el.style.width = anchooos;
-      el.style.height = anchooos;
-      el.style.color = colors;
-      el.style.background = colors;
-      toAnimate.push(el);
-      fragment.appendChild(el);
-    }
-    agregar[0].appendChild(fragment);
-  })();
-
   var animate = function(el, i) {
     var angle = Math.random() * Math.PI * 2;
     anime({
