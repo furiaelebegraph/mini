@@ -27,7 +27,7 @@ Route::get('/primeros', 'WelcomeController@sitioPrimeros');
 Route::get('/detalle', 'ArticleController@detalleBlog');
 
 Route::get('/escolar', 'WelcomeController@sitioEscolar');
-Route::get('/escolar', 'WelcomeController@sitioMomentos');
+Route::get('/momentos', 'WelcomeController@sitioMomentos');
 
 Route::get('/contacto', 'WelcomeController@contacto')->name('contacto');
 
