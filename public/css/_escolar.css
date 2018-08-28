@@ -1,0 +1,43 @@
+.fondo_escolar {
+  background-image: url("../img/escolar/cabecera_escolar.svg");
+  background-size: 101%;
+  background-position: top center;
+  background-repeat: no-repeat; }
+
+.fondo_azul_exolcar {
+  background: #61e1e3;
+  background: -moz-linear-gradient(left, #61e1e3 0%, #abffff 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #61e1e3), color-stop(100%, #abffff));
+  background: -webkit-linear-gradient(left, #61e1e3 0%, #abffff 100%);
+  background: -o-linear-gradient(left, #61e1e3 0%, #abffff 100%);
+  background: -ms-linear-gradient(left, #61e1e3 0%, #abffff 100%);
+  background: linear-gradient(to right, #61e1e3 0%, #abffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61e1e3', endColorstr='#abffff', GradientType=1 ); }
+
+.fondo_azul_2 {
+  background: -moz-linear-gradient(90deg, #004474 0%, #8fcfeb 51%, #fff6f2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff6f2), color-stop(49%, #8fcfeb), color-stop(100%, #004474));
+  background: -webkit-linear-gradient(90deg, #004474 0%, #8fcfeb 51%, #fff6f2 100%);
+  background: -o-linear-gradient(90deg, #004474 0%, #8fcfeb 51%, #fff6f2 100%);
+  background: -ms-linear-gradient(90deg, #004474 0%, #8fcfeb 51%, #fff6f2 100%);
+  background: linear-gradient(0deg, #004474 0%, #8fcfeb 51%, #fff6f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff6f2', endColorstr='#004474',GradientType=0 ); }
+
+.width_escolar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.fondo123 {
+  background-image: url(../img/escolar/123.svg);
+  background-repeat: no-repeat;
+  background-size: 58%;
+  background-position-x: 9%; }
+
+.eescolar_1 {
+  max-width: 550px;
+  width: 44%;
+  position: relative;
+  top: -50%; }
+
+/*# sourceMappingURL=_escolar.css.map */

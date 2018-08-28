@@ -21,11 +21,14 @@
 @endif
 <div id="carouselExampleIndicators" class="carousel slide carusel_landing" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    @foreach($banners as $key=>$contador)
+      <li data-target="#carouselExampleIndicators" data-slide-to="{{$key+1}}"></li>
+      
+    @endforeach
   </ol>
-  <div class="carousel-inner altura_80">
-    <div class="carousel-item active aniversario_landing">
+  <div class="carousel-inner altura_80 aniversario_landing">
+    <div class="carousel-item active">
       <div class="wrap_aniversario">
         
         <img src="{{ asset('img/25aniv.png') }}" alt="baby" class="primera_imagen_landing card__will-animate wow bounceIn">
@@ -48,27 +51,16 @@
 
       </div>
     </div>
-    <div class="carousel-item vercatalogo">
-      <div class="wrap_vercatalogo">
-        <a href="{{ url('catalogo') }}">
-          <img data-wow-delay="0.5s" src="{{ asset('img/nino_coleccion.png') }}" alt="baby" class="primera_imagen_landing card__will-animate coleccion_1 wow slideInLeft">
-
-          <div data-wow-delay="0.5s" class="card__subtitle card__will-animate coleccion_2 wow zoomIn">
-            <img src="{{ asset('img/coleccion_primavera_icono.png') }}" alt="">
-          </div>
-
-          <div class="card__price card__will-animate">
-          </div>
-          <h1 class="card__title card__will-animate"></h1>
-          <span class="card__subtitle card__will-animate"></span>
-
-          <img data-wow-delay="0.5s" src="{{ asset('img/nina_coleccion.png') }}" alt="Nike 19" class="card__image card__will-animate coleccion_3 wow slideInRight">
-          <span class="card__category card__will-animate no_mostrar"></span>
-          <div class="card__wish-list card__wish-list--19 card__will-animate no_mostrar"></div>
-
+    @foreach($banners as $banner)
+    <div class="carousel-item">
+      <div class="d-flex h-100 align-items-center justify-content-center">
+        <a href="{{$banner->url}}">
+          <img alt="{{$banner->nombre}}" data-wow-delay="0.3s"  class="d-block wow fadeIn" src="{{asset($banner->imagen) }}" alt="First slide">
         </a>
+        
       </div>
     </div>
+    @endforeach
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -166,7 +158,7 @@
           </div>
         </div>
         <div class="alienado_centro texto_cont_3">
-          <div class="alienado_derecha">
+          <div class=alienado_centro">
             <p>NUESTRO OBJETIVO ES EL CONTRIBUIR</p>
             <p> <span>AL DESARROLLO Y LA SALUD</span> </p>
             <p> <span>DEL PIE DE TU NIÑO</span> </p>
@@ -186,7 +178,7 @@
             <p> EN EL <span>PROCESO DE FABRICACIÓN</span></p> 
             <p> DEL CALZADO </p>
             <p> Y <span> LA ANATOMÍA DEL</span> </p>
-            <p> <span>PIE TU PEQUEÑO.</span> </p>
+            <p> <span>PIE DE TU PEQUEÑO.</span> </p>
         </div>
         <div data-wow-duration='2s' class="wrap_huarache wow infinite pulse">
           <div data-wow-duration='2s' data-wow-delay="0.2s" delay class="huarache_landing wow infinite pulse">
@@ -201,7 +193,7 @@
           <div class="col-6 col-sm-3">
             <img  src="{{ asset('img/icono_arcoiris.svg') }}" alt="">
             <div class="">
-              <p>UNA GRAN</p>
+              <p>UN GRAN</p>
               <p>Y ATRACTIVO</p>
               <p> <span>COLORIDO.</span> </p>
             </div>
@@ -324,7 +316,7 @@
       </div>
     </div>
     <div class="row m-t-100 m-b-50 justify-content-center align-items-center">
-      <div class="col-11 col-sm-10 col-md-8 col-lg-5 suscribirse_texto ">
+      <div class="col-11 col-sm-10 col-md-8 col-lg-6 suscribirse_texto ">
         <p>Nuestros clientes</p>
 
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -335,6 +327,12 @@
               </div>
               @endforeach
             </div>
+              <ol class="carousel-indicators" id="carouselClientes">
+                @foreach($clientes as $key=>$contador)
+                  <li data-target="#carouselExampleSlidesOnly" data-slide-to="{{$key}}"></li>
+                  
+                @endforeach
+              </ol>
           </div>
 
       </div>

@@ -26,7 +26,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="row justify-content-center m-t-150">
+	<div class="row no-gutters justify-content-center m-t-150">
 		<div class="col-12">
 			<div class="centro_800">
 				<div class="row">
@@ -101,7 +101,7 @@
 			</div>
 
 			<div class="centro_800 m-t-50">
-				<div class="row">
+				<div class="row no-gutters">
 					<div class="col-12">
 						<div class="fondo_mapamundi">
 							<div class="texto_acerca">

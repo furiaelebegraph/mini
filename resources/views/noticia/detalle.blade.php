@@ -4,7 +4,7 @@
 <div class="escondido">
     <div class="row">
         <div class="col-12 gusano_universal_blog m-t-100">
-            <div class="centro_baby textos_blog">
+            <div class="alineado_centro textos_blog">
                 <div class="row">
                     <div class="col-12 m-t-20">
                         <img class='w-100' src="{{ asset('img/blog_mini.png') }}" alt="">

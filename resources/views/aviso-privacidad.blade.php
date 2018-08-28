@@ -4,9 +4,11 @@
 
 
 <div class="escondido">
-	<div class="row justify-content-center m-t-150">
-		<div class="col-12">
-			<div class="centro_1100">
+	<div class="row no-gutters justify-content-center m-t-150">
+		<div class="offset-0 offset-sm-1"></div>
+
+		<div class="col-12 col-sm-10">
+			<div class="w-100">
 				<div class="row justify-content-center">
 					<div class="col-10 alienado_centro m-b-30">
                         <h1 class='titulo_aviso_privacidad_mini'>AVISO DE PRIVACIDAD</h1>
@@ -38,7 +40,7 @@
 								•	Firma autógrafa.<br>
 								•	Datos laborales o profesionales como: nombre de la empresa, domicilio convencional y teléfono de la misma (fijo y/o celular), puesto o cargo.<br>
 								•	Datos académicos como: trayectoria educativa, grado académico y título profesional, número de cédula o título, copia de certificados académicos, reconocimientos o constancias de capacitación o comprobantes de estudio.<br>
-								•	Datos fiscales o legales, como son el Registro Federal de Contribuyente (RFC) y/o la Clave Ún	ica de Registro de Población (CURP), el nombre de la persona física a la cual se facturará o la que expedirá la factura, recibo o comprobante fiscal.<br>
+								•	Datos fiscales o legales, como son el Registro Federal de Contribuyente (RFC) y/o la Clave única de Registro de Población (CURP), el nombre de la persona física a la cual se facturará o la que expedirá la factura, recibo o comprobante fiscal.<br>
 								•	Datos patrimoniales y financieros como: nivel de ingresos o de egresos, historial crediticio, plazos de pago y/o nivel de compra, referencias personales, actividades o negocios que realiza. Número de cuenta bancara o clave interbancaria.
 								</p>
 								     <p>
@@ -50,8 +52,8 @@
 
 								<p>
 									
-									Es importante informarle que usted tiene derecho al Acceso, Rectificación y Cancelación de sus datos personales, a Oponerse al tratamiento de los mismos o a revocar el consentimiento que para dicho fin nos haya otorgado, para conocer el procedimiento y requisitos para el ejercicio de los derechos ARCO usted podrá dirigir su petición al correo electrónico apatlan@miniburbujas.com  con atención a la C. Claudia Alejandra Muñoz Patlán, Jefe de mercadotecnia, Encargada del tratamiento de datos personales; solicitándole su confirmación para garantizar su correcta recepción o comunicarse al número telefónico 01 (477)  771 73 73    o en su defecto enviar la solicitud en los términos que marca la Ley Federal de protección de Datos en Posesión de los particulares,  en su Art. 29 al área de Mercadotecnia  al correo apatlan@miniburbujas.com ,  con atención a la C. Claudia Alejandra Muñoz Patlán, Jefe de mercadotecnia, responsable de nuestro Departamento de Protección de Datos Personales, ubicado Blvd. La Luz 1728, colonia San Pedro de los Hernandez CP. 37280, León, Guanajuato,  México,
-								En caso de que no desee de recibir mensajes promocionales, información, publicidad de nuestra parte, puede enviarnos su solicitud por medio de la dirección apatlan@miniburbujas.com  
+									Es importante informarle que usted tiene derecho al Acceso, Rectificación y Cancelación de sus datos personales, a oponerse al tratamiento de los mismos o a revocar el consentimiento que para dicho fin nos haya otorgado, para conocer el procedimiento y requisitos para el ejercicio de los derechos ARCO usted podrá dirigir su petición al correo electrónico apatlan@miniburbujas.com  con atención a la C. Claudia Alejandra Muñoz Patlán, Jefe de mercadotecnia, Encargada del tratamiento de datos personales; solicitándole su confirmación para garantizar su correcta recepción o comunicarse al número telefónico 01 (477)  771 73 73    o en su defecto enviar la solicitud en los términos que marca la Ley Federal de protección de Datos en Posesión de los particulares,  en su Art. 29 al área de Mercadotecnia  al correo apatlan@miniburbujas.com ,  con atención a la C. Claudia Alejandra Muñoz Patlán, Jefe de mercadotecnia, responsable de nuestro Departamento de Protección de Datos Personales, ubicado Blvd. La Luz 1728, colonia San Pedro de los Hernandez CP. 37280, León, Guanajuato,  México,
+								En caso de que no desee recibir mensajes promocionales, información, publicidad de nuestra parte, puede enviarnos su solicitud por medio de la dirección apatlan@miniburbujas.com  
 								</p>
 								<p>
 									
@@ -59,14 +61,14 @@
 															<br>
 															<br>
 								<p>
-									Así mismo se hace de su conocimiento que si usted desea negar su consentimiento para que sus datos personales sean tratados conforme a lo señalado en el presente aviso de privacidad, dirija un correo a la siguiente dirección:  apatlan@miniburbujas.com    confirmando su recepción, o comunicándose a  los teléfonos 01 (477) 771 73 73, en donde se le proporcionara el formato para el debido cumplimiento de su petición.  
+									Así mismo se hace de su conocimiento que si usted desea negar su consentimiento para que sus datos personales sean tratados conforme a lo señalado en el presente aviso de privacidad, dirija un correo a la siguiente dirección:  apatlan@miniburbujas.com    confirmando su recepción, o comunicándose a  los teléfonos 01 (477) 771 73 73, en donde se le proporcionará el formato para el debido cumplimiento de su petición.  
 								</p>
 								<p></p>
 															<br>
 															<br>
 								 
 								 <p>
-								 En caso de no recibir notificación alguna respecto a lo mencionado en el párrafo anterior, usted otorgará su consentimiento para que sus datos sean tratados conforme a lo señalado en el presente aviso de privacidad.  De igual forma le informamos que sus datos personales pueden ser transferidos y tratados dentro y fuera del país, por personas distintas a esta negociación mercantil. En ese sentido, su información puede ser compartida única y exclusivamente con los fines mencionados en el presente aviso de privacidad, por lo que si usted no manifiesta su oposición para que sus datos personales sean transferidos, se entenderá que ha otorgado su consentimiento para ello. Se le recuerda que dicha oposición la puede hacer contactando al responsable del tratamiento de los datos personales en la siguiente Dirección de Correo electrónico apatlan@miniburbujas.com  o al teléfono 01 (477) 771 73 73  en donde se le proporcionara el formato para dar cumplimiento de su petición. 	
+								 En caso de no recibir notificación alguna respecto a lo mencionado en el párrafo anterior, usted otorgará su consentimiento para que sus datos sean tratados conforme a lo señalado en el presente aviso de privacidad.  De igual forma le informamos que sus datos personales pueden ser transferidos y tratados dentro y fuera del país, por personas distintas a esta negociación mercantil. En ese sentido, su información puede ser compartida única y exclusivamente con los fines mencionados en el presente aviso de privacidad, por lo que si usted no manifiesta su oposición para que sus datos personales sean transferidos, se entenderá que ha otorgado su consentimiento para ello. Se le recuerda que dicha oposición la puede hacer contactando al responsable del tratamiento de los datos personales en la siguiente Dirección de Correo electrónico apatlan@miniburbujas.com  o al teléfono 01 (477) 771 73 73  en donde se le proporcionará el formato para dar cumplimiento de su petición. 	
 								 </p>
 								<p>
 									
@@ -91,6 +93,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="offset-0 offset-sm-1"></div>
 	</div>
 </div>
 

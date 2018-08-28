@@ -48,7 +48,7 @@ class BannerController extends Controller
             $imagen = $request->file('imagen');
             $filename = time().'.'.$imagen->getClientOriginalExtension();
             $path = 'img/banner/'.$filename;
-            Image::make($imagen)->resize(null, 400, function ($constraint) {
+            Image::make($imagen)->resize(null, 700, function ($constraint) {
                 $constraint->aspectRatio();
                 $constraint->upsize();
             })->save($path);
@@ -115,7 +115,7 @@ class BannerController extends Controller
             $imagen = $request->file('imagen');
             $filename = time().'.'.$imagen->getClientOriginalExtension();
             $path = 'img/banner/'.$filename;
-            Image::make($imagen)->resize(null, 400, function ($constraint) {
+            Image::make($imagen)->resize(null, 700, function ($constraint) {
                 $constraint->aspectRatio();
                 $constraint->upsize();
             })->save($path);
@@ -137,7 +137,7 @@ class BannerController extends Controller
      * @param  \App\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Banner $banner)
+    public function destroy($id, Request $request)
     {
         $product = Banner::find($id);
         $product->delete();

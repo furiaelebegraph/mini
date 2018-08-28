@@ -156,7 +156,7 @@
 												de la casa lo escencial es
 												<span> la comodidad y  permitir el desarrollo 
 												de su pie,</span>
-												pero tambíen 
+												pero también 
 												verse hermosos
 												y a la moda.
 
