@@ -22,7 +22,7 @@
                 <div class="col-xl-3 col-sm-6 mb-3">
                     <div class="card-columns">
                         <div class="card mb-3">
-                            <img class="card-img-top img-fluid w-100"  src="{{asset($producto->imagen)}}" alt="">
+                            <img class="card-img-top img-fluid ancho_imagen_adminis"  src="{{asset($producto->imagen)}}" alt="">
                         </div>
                         <div class="card-body">
                               <h6 class="card-title mb-1">

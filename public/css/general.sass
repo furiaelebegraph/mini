@@ -21,7 +21,8 @@ $azulito: #93d3ef
 @import "_kids"
 @import "_baby"
 @import "_primeros"
- 
+@import "_escolar"
+
 *
   padding: 0
   margin: 0
@@ -50,6 +51,21 @@ p
   img
     width: 100%
 
+.fondo_proximamente
+  background-image: url('../img/fondo_proximamente.jpg')
+  background-size: cover
+
+#carouselExampleIndicators
+  .carousel-item
+    width: 100%
+    height: inherit
+    img
+      margin: 0 auto
+      margin-top: 90px
+      max-width: 750px
+      width: 90%
+
+
 .regresar
   text-align: leftx
   a
@@ -77,6 +93,66 @@ p
   img
     width: 70px
 
+
+.page-link
+  position: relative
+  display: block
+  padding: .5rem .75rem
+  margin-left: -1px
+  line-height: 1.25
+  color: #007bff
+  background-color: #d9f2fd
+  border: 0px
+  border-radius: 19px
+  width: 37px
+  height: 37px
+
+.page-item.disabled
+  background-color: transparent
+  border: 0px
+  border-radius: 19px
+  width: 37px
+  height: 37px
+  
+.page-item.disabled .page-link
+  color: #6c757d
+  pointer-events: none
+  cursor: auto
+  background-color: #b8fffe
+  border: 0px
+  border-radius: 19px
+  width: 37px
+  height: 37px
+  margin-left: -13px
+
+.page-item:first-child .page-link
+  border-radius: 19px
+  width: 37px
+  height: 37px
+
+.page-item.active .page-link 
+  z-index: 1
+  color: #fff
+  background-color: #007bff
+  border-color: #007bff
+  border-radius: 19px
+  width: 37px
+  height: 37px
+
+.page-link:hover 
+  color: #0056b3
+  text-decoration: none
+  background-color: #e9ecef
+  border-color: #dee2e6
+  border-radius: 19px
+  width: 37px
+  height: 37px
+
+.page-item:last-child .page-link
+  border-top-right-radius: 19px
+  border-bottom-right-radius: 19px
+
+
 .icono_aparece
   transition: all 2s
   display: none
@@ -86,12 +162,16 @@ p
   color: $azulVerde
   mix-blend-mode: multiply
 
+.threesixty_images
+  cursor: ew-resize
+
 .btn_tienda_linea
   width: 150px
   margin-top: 5px
   padding: 6px 0
   background-color: #ff5c57
   position: relative
+  margin-left: auto
   left: 50%
   transform: translateX(-50%)
   a
@@ -112,7 +192,7 @@ p
   width: 100% !important
 
 .margen_top_producto
-  margin-top: 80px
+  margin-top: 40px
 
 .cerrado_minis
   width: 0 !important
@@ -373,7 +453,6 @@ p
   margin-right: auto
   max-width: 300px
   width: 90%
-  text-align: left
   p 
     color: white
     margin-bottom: 0px
@@ -506,9 +585,9 @@ p
   height: 100%
 
 .titulo_collapse
-  font-size: 27px
+  font-size: 25px
   font-family: mikadoBold
-  letter-spacing: -3px
+  letter-spacing: -1px
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.64)
   transition: all 0.2s
   &:hover
@@ -682,9 +761,9 @@ p.texto_light_acerca
     line-height: 28px
 
 .fondo_detalle_produ
-  background-image: url('../img/fondo_detalle.jpg')
-  background-size: 240%
-  background-position: right bottom
+  background-image: url('../img/fondo_detalle.png')
+  background-size: 104%
+  background-position: center bottom
   background-repeat: no-repeat
 
 .galelaeano
@@ -741,7 +820,6 @@ p.texto_light_acerca
   width: 32px
   height: 45px
   position: relative
-  margin: 0 auto
   -webkit-transform: rotate(0deg)
   -moz-transform: rotate(0deg)
   -o-transform: rotate(0deg)
@@ -1391,15 +1469,22 @@ p
     font-family: mikadoBold
     color: #ff3b37
 
+#carouselExampleSlidesOnly
+  .carousel-indicators
+    bottom: -30px
+    
+button:focus
+  outline: none
+
+
 .pagination
   display: inline-block
   text-align: center
   li
     display: inline-block
-    background-color: #6cd3a7
     margin: 0px 5px
     color: white
-    padding: 3px 10px
+    padding: 1px
     border-radius: 50%
     a 
       color: #366852
@@ -1419,15 +1504,26 @@ p
   margin-top: -50px
 
 .separacion_cate_baby
-  margin-top: 300px
+  margin-top: 70px
 
+@media (min-width: 400px) and (max-width: 480px)
+  .fondo_detalle_produ
+    background-size: 85%
+@media (min-width: 481px) and (max-width: 767px)
+  .fondo_detalle_produ
+    background-size: 60%
+  .separacion_cate_baby
+    margin-top: 240px
 
 @media only screen and ( min-width: 768px )
+  .btn_tienda_linea
+    left: 0
+    transform: translateX(0%)
   .separacion_cate_baby
     margin-top: 0px
   .fondo_detalle_produ
-    background-size: 130%
-    background-position: center bottom
+    background-size: 40%
+    background-position: right bottom
   .titulo_generico_mini
     font-size: 4em
   .navegador_movil

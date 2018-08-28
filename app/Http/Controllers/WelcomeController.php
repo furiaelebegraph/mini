@@ -14,13 +14,15 @@ use App\Tienda;
 use App\Ima;
 use App\Produ;
 use App\Suscripcion;
+use App\Banner;
 use App\Cliente;
 
 class WelcomeController extends Controller{
   
    public function index(){
     $clientes = Cliente::all();
-    return view('welcome',compact("clientes"));
+    $banners = Banner::all();
+    return view('welcome',compact("clientes","banners"));
     
    }
 
@@ -133,4 +135,13 @@ class WelcomeController extends Controller{
     $primeros = SubCate::obtenerSubCategoria(2);
       return view( 'primeros', compact('primeros') );
    }
+
+   public function sitioEscolar(){
+     $escolares = SubCate::obtenerSubCategoria(5);
+     return view( 'escolar', compact('escolares') );
+   }
+   public function sitioMomentos(){
+    $momentos = SubCate::obtenerSubCategoria(6);
+    return view( 'momentos', compact('momentos') );
+  }
 }

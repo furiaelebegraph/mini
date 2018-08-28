@@ -33,7 +33,7 @@
 								</div>
 								<div class="texto_kids azul_fuerte texto_kids_2">
 									<p >
-										Nuestras líneas estan especialmente creadas para hacer a tus niños más independientes, <span>disfrutando diariamente de un mundo lleno de aventuras.</span>
+										Nuestras líneas están especialmente creadas para hacer a tus niños más independientes, <span>disfrutando diariamente de un mundo lleno de aventuras.</span>
 									</p>
 								</div>
 							</div>

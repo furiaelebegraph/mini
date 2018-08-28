@@ -26,6 +26,9 @@ Route::get('/primeros', 'WelcomeController@sitioPrimeros');
 
 Route::get('/detalle', 'ArticleController@detalleBlog');
 
+Route::get('/escolar', 'WelcomeController@sitioEscolar');
+Route::get('/momentos', 'WelcomeController@sitioMomentos');
+
 Route::get('/contacto', 'WelcomeController@contacto')->name('contacto');
 
 Route::get('/acerca', function () {
@@ -105,12 +108,13 @@ Route::group(['middleware'=> 'auth'],function(){
 });
 
 Route::group(['middleware'=> 'auth'],function(){
-  Route::resource('imagen','imaController', ['only' => ['store', 'index', 'edit']]);
-  Route::post('imagen/cargarGale', 'imaController@cargarGaleria');
-  Route::get('imagen/create/{id}', 'imaController@create');
-  Route::post('imagen/{id}/update','imaController@update');
-  Route::delete('imagen/{id}/delete','imaController@destroy')->name('ima.destroy');
-  Route::get('imagen/{id}/deleteMsg','imaController@DeleteMsg');
+  Route::resource('imagen','ImaController', ['only' => ['store', 'index']]);
+  Route::post('imagen/cargarGale', 'ImaController@cargarGaleria');
+  Route::get('imagen/create/{id}', 'ImaController@create');
+  Route::get('imagen/{id}/edit','ImaController@edit')->name('imagen.edit');
+  Route::post('imagen/{id}/update','ImaController@update');
+  Route::delete('imagen/{id}/delete','ImaController@destroy')->name('imagen.destroy');
+  Route::get('imagen/{id}/deleteMsg','ImaController@DeleteMsg');
 });
 
 //article Routes
@@ -122,6 +126,10 @@ Route::group(['middleware'=> 'auth'],function(){
 });
 
 Route::get('subcategoria/{id}', 'catalogoController@index')->name('subcategoria');
+
+Route::get('/proximamente', function () {
+    return view('proximamente');
+})->name('proximamente');
 
 Route::get('/catalogo/{id}', 'catalogoController@index' )->name('catalogo');
 
@@ -140,3 +148,5 @@ Route::get('/ajaxSucate/{id}', 'ProduController@ajaxSucate');
 Route::get('/ajaxProdu/{id}', 'ProduController@ajaxProdu');
 
 Route::get('/ajaxIma/{id}', 'ProduController@ajaxIma');
+
+

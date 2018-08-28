@@ -66,8 +66,8 @@
                                             <td>
                                                 {{$producto->subcate->nombre}}
                                             </td>
-                                            <td> 
-                                                <img class='w-100' src="{!!$producto->imagen!!}" alt=""> 
+                                            <td>
+                                                <img class='ancho_imagen_adminis' src="{!!$producto->imagen!!}" alt=""> 
                                             </td>
                                             <td>
                                                 {{$producto->orden}}

@@ -56,7 +56,7 @@
                                     <tr>
                                         <td>{!!$banner->nombre!!}</td>
                                         <td> <img class='al_100' src="{{asset($banner->imagen) }}" alt=""> 
-                                        <td> <img class='al_100' src="{{asset($banner->url) }}" alt=""> 
+                                        <td> <a target='_blank' href="{{$banner->url}}" class="btn btn-primary"> LINK </a>  
                                         </td>
                                         <td>
                                             <form action="{{ route('banner.destroy', ['id' => $banner->id]) }}" method="post">

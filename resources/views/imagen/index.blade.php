@@ -54,14 +54,13 @@
                                 <tbody>
                                     @foreach($imagenes as $imagen) 
                                     <tr>
-                                        <td>{!!$imagen->nombre!!}</td>
-                                        <td>
-                                            {{$imagen->produ->nombre}}
-                                        </td>
-                                        <td>
-                                            {{$imagen->subcate->nombre}}
-                                        </td>
                                         <td> <img class='al_100' src="{!!$imagen->imagen!!}" alt=""> 
+                                        </td>
+                                        <td>
+                                            {{$imagen->produ['nombre']}}
+                                        </td>
+                                        <td>
+                                            {{$imagen->subcate['nombre']}}
                                         </td>
                                         <td>
                                             {{$imagen->orden}}

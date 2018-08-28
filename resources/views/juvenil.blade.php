@@ -44,7 +44,7 @@
 
 						</div>
 						<div class="col-11 col-sm-5">
-							<p class='textos_juvenil'>
+							<p class='textos_juvenil alineado_centro'>
 								<span>
 									Hay niños que destacan
 								</span><br>
@@ -126,22 +126,27 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-12 alienado_centro margen_negativo_150">
-					<div id='seccion_catalogo_return' class="cilindro_catalogo">
-						CATÁLOGO
-					</div>
-				</div>	
-
-			</div>
 		</div>
 	</div>
 	<div class="row fondo_olitas alienado_centro">
+		<div class="col-12 col-sm-7">
+			<div class="wrap_cat_juvenil">
+				<div class="texto_cat_baby alienado_derecha">
+					<h1>
+						Categorías <br>
+						<span>
+							JUVENIL
+						</span>
+						
+					</h1>
+				</div>
+			</div>
+		</div>
 		<div class="col-12">
-			<div class="row">
+			<div class="row justify-content-center">
 
 				@foreach ($juveniles as $juvenil)
-				<div class="col-11 wow zoomIn">
+				<div class="col-11 col-sm-5 wow zoomIn">
 					<div class="wrap_imagen_catalogo">
 						<a href=" {{ route('catalogo' , $juvenil->id) }} ">
 							<img class='imagen_catalogo_juvenil' src="{{ asset( $juvenil->imagen ) }}" alt="">

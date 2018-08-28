@@ -1,7 +1,6 @@
-@extends('layouts.app')
-@section('content')
-
-    <div class="content-wrapper">
+@extends('layouts.admin')
+@section('contenido')
+ <div class="content-wrapper">
 
       <div class="container-fluid">
 
@@ -17,33 +16,31 @@
           </li>
           <li class="breadcrumb-item active">My Dashboard</li>
         </ol>
-
-            <section class="contenedor">
-                <section class="row row-centered">
-                    <div class="col-md-8 col-xs-12 col-centered">
-                        <div class="row">
-                            <div class="col-xs-6 col-centered">
-                                <form  method = 'get' action = '{{url("/home")}}'>
-                                    <button class="button-two" type = 'submit'><span class="texto_blanco">DASHBOARD</span></button>
-                                </form>
-                            </div>
-                            <div class="col-xs-6 col-centered">
-                                <form method = 'get' action = '{!!url("imagen")!!}'>
-                                    <button class = 'btn btn-danger'>Ver todos las SubCategorias</button>
-                                </form>
-                            </div>
-                            
+        <section class="contenedor">
+            <section class="row row-centered">
+                <div class="col-md-8 col-xs-12 col-centered">
+                    <div class="row">
+                        <div class="col-xs-6 col-centered">
+                            <form  method = 'get' action = '{{url("/home")}}'>
+                                <button class="button-two" type = 'submit'><span class="texto_blanco">DASHBOARD</span></button>
+                            </form>
                         </div>
+                        <div class="col-xs-6 col-centered">
+                            <form method = 'get' action = '{!!url("color")!!}'>
+                                <button class = 'btn btn-danger'>Ver todos las Colores</button>
+                            </form>
+                        </div>
+                        
                     </div>
+                </div>
                     <div class="col-xs-12 col-md-8 col-centered">
                         <div class='titulo_seccion'>
                             Crear Album
                         </div class='titulo_seccion'>
                     </div>
-
-                    @foreach($errors->all() as $error)
-                    <p class="alert alert-danger">{{ $error }}</p>
-                    @endforeach
+                        @foreach($errors->all() as $error)
+                            <p class="alert alert-danger">{{ $error }}</p>
+                        @endforeach
 
                     <div class="col-xs-12 col-md-8 col-centered formularios">
                         <form method = 'POST' action = '{!!url("imagen")!!}' enctype="multipart/form-data">
@@ -75,8 +72,9 @@
                         </form>
                     </div>
 
-                </section> 
-            </section>
+            </section>  
+        </section>
     </div>
 </div>
+
 @endsection

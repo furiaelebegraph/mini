@@ -46,7 +46,7 @@
                         </div>
                         <div class="form-group m-b-30">
                             <label for="imagen">imagen</label>
-                            <img class='w-100' src="{!! asset($producto->imagen)!!}" alt="">
+                            <img class='ancho_imagen_adminis' src="{!! asset($producto->imagen)!!}" alt="">
                             <input id="imagen" name = "imagen" type="file" class="form-control" value="{!!$producto->imagen!!}"> 
                         </div>
                         <div class="form-group m-b-30">
@@ -169,9 +169,9 @@
                                         <div class="card-deck">
                                             @foreach($producto->ima as $imagen)
                                             <div class="card">
-                                                <img class="card-img-top" src="{{asset($imagen->imagen)}}" alt="">
+                                                <img class="card-img-top ancho_imagen_adminis" src="{{asset($imagen->imagen)}}" alt="">
                                                 <div class="card-block">
-                                                    <a class="btn btn-primary" href="/imagen/{{$imagen->id}}/edit">Editar</a>
+                                                    <a class="btn btn-primary" href="{{ route('imagen.edit', $imagen->id) }}">Editar</a>
                                                 </div>
                                             </div>
                                             @endforeach

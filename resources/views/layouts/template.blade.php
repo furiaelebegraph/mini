@@ -82,7 +82,7 @@
 								<div> <a href="{{ url('acerca') }}"><img class="icono_navegacion_menu" src="{{ asset('img/logo_blanco_mini.svg') }}" alt=""></a></div>
 							</div>
 							<div class="col-7 col-sm-5 alienado_centro m-t-20">
-								<div> <a href="{{ url('noticias') }}"><img class="icono_navegacion_menu" src="{{ asset('img/logo_blog.png') }}" alt=""></a></div>
+								<div> <a href="{{ url('proximamente') }}"><img class="icono_navegacion_menu" src="{{ asset('img/logo_blog.png') }}" alt=""></a></div>
 							</div>
 							<div class="col-7 col-sm-5 m-t-20">
 								<div class="contacto_link"> <a href="{{ url('contacto') }}">CONTACTO</a></div>
@@ -95,7 +95,8 @@
 	</div>
 	<nav class="navbar-default navbar-static-top navegador_movil ">
 		<div class="row align-items-center m-t-10">
-			<div class="col-2 col-md-4 align-self-center">
+			<div class="offset-0 offset-sm-1"></div>
+			<div class="col-2 col-md-3 align-self-center">
 				<div class="hamburguesita">
 					<div id="nav-icon" class='nav-iconos'>
 						<span></span>
@@ -104,7 +105,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-5 col-md-4 alienado_centro align-self-center">
+			<div class="col-5 col-sm-4 alienado_centro align-self-center">
 				<div class="d-flex justify-content-center align-items-center">			
 					<div class="logo_veinticinco icono_veinticinco">
 						<a href="{{ route('acerca')}}">
@@ -116,14 +117,12 @@
 							<img src="{{ asset('img/logo_mini.png') }}" alt="">
 						</a>
 					</div>
-					
 				</div>
 			</div>
-			<div class="col-4 alienado_centro align-self-center">
-
+			<div class="col-4 col-sm-3 alienado_centro align-self-center">
 				<div class="row justify-content-center">
 					<div class="col-12">
-						<div class="d-flex justify-content-center">
+						<div class="d-flex justify-content-center justify-content-md-end">
 							<div class="sociales_header">
 								<div class="icono_social">
 									<a target='_blank' href="https://www.facebook.com/miniburbujas/">
@@ -156,13 +155,14 @@
 					</div>
 					<div class="col-12">
 						<div class="btn_tienda_linea">
-							<a target="_blank" href="#">
+							<a target="_blank" href="{{ route('proximamente') }}">
 								Tienda en línea 
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="offset-0 offset-sm-1"></div>
 		</div>
 	</nav>
 
@@ -212,22 +212,22 @@
 				<div class="redes_sociales_footer m-b-10">
 
 					<div>
-						<a href="https://www.facebook.com/miniburbujas/">
+						<a target="_blank" href="https://www.facebook.com/miniburbujas/">
 							<img src="{{ asset('img/icono_face_landing.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
-						<a href="https://www.instagram.com/miniburbujas/">
+						<a target="_blank" href="https://www.instagram.com/miniburbujas/">
 							<img src="{{ asset('img/ico_instagram_blanco.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
-						<a href="https://www.youtube.com/channel/UCkVpFMUB7vrmaJ1TxlPEmZQ">
+						<a target="_blank" href="https://www.youtube.com/channel/UCkVpFMUB7vrmaJ1TxlPEmZQ">
 							<img src="{{ asset('img/ico_youtube_blanco.svg') }}" alt="">
 						</a>
 					</div>
 					<div>
-						<a href="https://twitter.com/MiniBurbujas">
+						<a target="_blank" href="https://twitter.com/MiniBurbujas">
 							<img src="{{ asset('img/icono_twitter.svg') }}" alt="">
 						</a>
 					</div>

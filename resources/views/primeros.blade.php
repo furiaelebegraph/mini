@@ -25,7 +25,7 @@
 											Cuando tus hijos comienzan a 
 											caminar se abre un mundo 
 											nuevo para explorar, en esta 
-											importante etapa necesita de 
+											importante etapa necesitan de 
 											un <span> calzado que le de 
 											conﬁanza</span> y a su vez 
 											ayude al <span> correcto 
@@ -75,7 +75,7 @@
 						<div class="texto_pasos_2">
 							<p>
 								En esta edad tus campeones 
-								tiene gran actividad, por eso 
+								tienen gran actividad, por eso 
 								diseñamos <span> calzado que le proporciona a tus niños seguridad</span> en cada paso.
 
 							</p>
@@ -218,11 +218,6 @@
 					
 				</h1>
 			</div>
-		</div>
-	</div>
-	<div class="col-sm-5">
-		<div id='seccion_catalogo_return' class="btn_catalogo_baby">
-			CATÁLOGO
 		</div>
 	</div>
 	<div class="col-12">

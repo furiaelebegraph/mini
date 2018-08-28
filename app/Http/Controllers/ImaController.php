@@ -17,6 +17,7 @@ class ImaController extends Controller
     public function index()
     {
         $title = 'Index - Imagenes';
+        $imagenes = Ima::orderBy('id','desc')->paginate(10);
         return view('imagen.index', compact('imagenes', 'productos', 'title'));
     }
 
@@ -90,9 +91,9 @@ class ImaController extends Controller
      */
     public function edit($id,Request $request)
     {
-        $imagen = Ima::findOrfail($id);
+        $imagen = Ima::with('produ')->find($id);
         $producto = Produ::all();
-        return view('imagen.edit',compact('imagen', 'producto'));
+        return view('imagen.edit',compact('title','imagen'));
     }
 
     /**
@@ -104,8 +105,27 @@ class ImaController extends Controller
      */
     public function update($id,Request $request)
     {
-        //
-    }
+
+            $imagen = Ima::findOrfail($id);
+            if ($request->hasFile('imagen')) {
+                $imagen = $request->file('imagen');
+                $filename = time().'.'.$imagen->getClientOriginalExtension();
+                $path = 'img/ima/'.$filename;
+                Image::make($imagen)->resize(null, 400, function ($constraint) {
+                    $constraint->aspectRatio();
+                    $constraint->upsize();
+                })->save($path);
+
+                $imagen->imagen = 'img/ima/'.$filename;
+            }
+
+                $imagen->nombre = $request->nombre;
+
+                $imagen->produ_id = $request->id_producto;
+
+                $imagen->save();
+
+                return redirect('imagen');    }
 
     /**
      * Remove the specified resource from storage.

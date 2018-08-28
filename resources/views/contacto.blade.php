@@ -19,9 +19,6 @@
                     <div class="col-10 alienado_centro m-b-30">
                         <h1 class='titulo_generico_mini'>CONTACTO</h1>
                     </div>
-                    <div class="col-10 alienado_centro m-b-30">
-                      <p>¿Te interesa vender nuestros producto?, déjanos tus datos para contactarte.</p>
-                    </div>
 					<div class="col-10">
 
 						<form action="{{ url('enviar_correo') }}" method="post">
@@ -48,6 +45,9 @@
                                     <div class="form-group col-11 col-md-12">
                                         <textarea class="form-control" name='mensaje' id="exampleTextarea" rows="3" placeholder="Mensaje"></textarea>
                                         @if ($errors->has('mensaje')) <p class="help-block">{{ $errors->first('mensaje') }}</p> @endif
+                                    </div>
+                                    <div class="col-11 m-b-10">
+                                      <p>¿Te interesa vender nuestros productos?, déjanos tus datos para contactarte.</p>
                                     </div>                                    
                                     <div class="form-group col-11 col-md-12">
                                         <input type="checkbox" id="subscribeNews" name="distribuidor" value="distribuidor">
