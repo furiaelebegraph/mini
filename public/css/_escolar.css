@@ -6,22 +6,20 @@
 
 .fondo_azul_exolcar {
   background: #61e1e3;
-  background: -moz-linear-gradient(left, #61e1e3 0%, #abffff 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #61e1e3), color-stop(100%, #abffff));
-  background: -webkit-linear-gradient(left, #61e1e3 0%, #abffff 100%);
-  background: -o-linear-gradient(left, #61e1e3 0%, #abffff 100%);
-  background: -ms-linear-gradient(left, #61e1e3 0%, #abffff 100%);
-  background: linear-gradient(to right, #61e1e3 0%, #abffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61e1e3', endColorstr='#abffff', GradientType=1 ); }
+  background: -moz-linear-gradient(top, #61e1e3 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #61e1e3 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #61e1e3 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61e1e3', endColorstr='#ffffff',GradientType=0 ); }
 
 .fondo_azul_2 {
-  background: -moz-linear-gradient(90deg, #004474 0%, #8fcfeb 51%, #fff6f2 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff6f2), color-stop(49%, #8fcfeb), color-stop(100%, #004474));
-  background: -webkit-linear-gradient(90deg, #004474 0%, #8fcfeb 51%, #fff6f2 100%);
-  background: -o-linear-gradient(90deg, #004474 0%, #8fcfeb 51%, #fff6f2 100%);
-  background: -ms-linear-gradient(90deg, #004474 0%, #8fcfeb 51%, #fff6f2 100%);
-  background: linear-gradient(0deg, #004474 0%, #8fcfeb 51%, #fff6f2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff6f2', endColorstr='#004474',GradientType=0 ); }
+  background: #dbeef0;
+  background: -moz-linear-gradient(top, #dbeef0 0%, #94d1eb 52%, #62a5c6 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #dbeef0), color-stop(52%, #94d1eb), color-stop(100%, #62a5c6));
+  background: -webkit-linear-gradient(top, #dbeef0 0%, #94d1eb 52%, #62a5c6 100%);
+  background: -o-linear-gradient(top, #dbeef0 0%, #94d1eb 52%, #62a5c6 100%);
+  background: -ms-linear-gradient(top, #dbeef0 0%, #94d1eb 52%, #62a5c6 100%);
+  background: linear-gradient(to bottom, #dbeef0 0%, #94d1eb 52%, #62a5c6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbeef0', endColorstr='#62a5c6', GradientType=0 ); }
 
 .width_escolar {
   width: 100%;
@@ -31,13 +29,76 @@
 .fondo123 {
   background-image: url(../img/escolar/123.svg);
   background-repeat: no-repeat;
-  background-size: 58%;
-  background-position-x: 9%; }
+  background-size: 98%;
+  background-position-x: 50%; }
 
 .eescolar_1 {
   max-width: 550px;
   width: 44%;
   position: relative;
-  top: -50%; }
+  margin-top: -50%; }
+
+.left_escolar_1 {
+  left: 0px; }
+
+.zapatiito_3_escolar img {
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  margin-left: -71%;
+  transform: translateX(50%); }
+
+.fondo_nube_escolar {
+  background-image: url("../img/escolar/nubecita_escolar.svg");
+  background-position: 50% 4%;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.fondo_reticula {
+  background-image: url(../img/escolar/escolar_fondo-3.png);
+  background-position: -7% bottom;
+  background-repeat: no-repeat;
+  background-size: 80%; }
+
+.margent-top--30 {
+  margin-top: -30px; }
+
+.escolar_3 {
+  width: 60%;
+  max-width: 450px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -68%; }
+  .escolar_3 img {
+    width: 100%; }
+
+.p-b--30 {
+  padding-bottom: 30%; }
+
+.m-t--200 {
+  margin-top: 204px; }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .fondo123 {
+    background-size: 88%;
+    background-position-x: 9%; } }
+@media only screen and (min-width: 768px) {
+  .fondo123 {
+    background-size: 48%;
+    background-position-x: 9%; }
+
+  .fondo_nube_escolar {
+    background-size: 80%;
+    background-position: 50% 59%; }
+
+  .left_escolar_1 {
+    left: -80px; }
+
+  .zapatiito_3_escolar img {
+    margin-left: -32%;
+    transform: translateX(24%); }
+
+  .m-t--200 {
+    margin-top: 0px; } }
 
 /*# sourceMappingURL=_escolar.css.map */
