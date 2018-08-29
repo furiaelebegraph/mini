@@ -6,10 +6,9 @@
 
 .fondo_azul_exolcar
   background: #61e1e3
-  background: -moz-linear-gradient(top, #61e1e3 0%, #ffffff 100%)
-  background: -webkit-linear-gradient(top, #61e1e3 0%,#ffffff 100%)
-  background: linear-gradient(to bottom, #61e1e3 0%,#ffffff 100%)
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61e1e3', endColorstr='#ffffff',GradientType=0 )
+  background-image: -webkit-linear-gradient(rgb(97, 225, 227) 43.5%, rgb(255, 255, 255) 100%)
+  background-image: -o-linear-gradient(rgb(97, 225, 227) 43.5%, rgb(255, 255, 255) 100%)
+  background-image: linear-gradient(rgb(97, 225, 227) 43.5%, rgb(255, 255, 255) 100%)
 
 .fondo_azul_2
   background: rgba(219,238,240,1)
@@ -46,7 +45,7 @@
     max-width: 600px
     width: 100%
     position: relative    
-    margin-left: -71%
+    margin-left: -50%
     transform: translateX(50%)
 
 .fondo_nube_escolar
@@ -57,16 +56,19 @@
 
 .fondo_reticula
   background-image: url(../img/escolar/escolar_fondo-3.png)
-  background-position: -7% bottom
+  background-position: 13% bottom
   background-repeat: no-repeat
-  background-size: 80%
+  background-size: 170%
 
 .margent-top--30
   margin-top: -30px
 
+.margent-top--200
+  margin-top: 10px
+
 .escolar_3
-  width: 60%
-  max-width: 450px
+  width: 80%
+  max-width: 550px
   margin: 0 auto
   position: relative
   margin-top: -68%
@@ -79,6 +81,10 @@
 .m-t--200
   margin-top: 204px
 
+.m-t---200
+  margin-top: 50px
+
+
 .texto_1_escolar
   color: white
   text-align: center
@@ -87,12 +93,47 @@
   font-size: 20px
   line-height: 27px
 
+.wrap_cat_escolar
+  width: 100%
+  border-top: 10px solid #2e92ba
+  background: #094d7c
 
+.texto_cat_escolar 
+  padding: 6px 15px 0px 0px
+  h1
+    font-family: margotBold
+    font-size: 15px
+    color: white
+    span
+      font-size: 30px
+      font-family: margotBold
+
+.m-t---100
+  margin-top: 0px
 @media (min-width: 481px) and (max-width: 767px)
+  .fondo_reticula
+    background-position: 13% bottom
+    background-size: 90%
   .fondo123
-    background-size: 88%
+    background-size: 70%
     background-position-x: 9%
-
+  .m-t--200
+    margin-top: 50px
+  .m-t---200
+    margin-top: 100px
+  .m-t---100
+    margin-top: 50px
+  .zapatiito_3_escolar
+    img
+      max-width: 518px
+      width: 125%
+      margin-left: -57%
+      transform: translateX(41%)
+  .escolar_3
+    width: 70%
+    max-width: 550px
+    img
+      width: 100%
 @media only screen and ( min-width: 768px )
   .texto_1_escolar
     font-size: 30px
@@ -106,10 +147,24 @@
   .left_escolar_1
     left: -80px
   .zapatiito_3_escolar
-    img
-      margin-left: -32%
-      transform: translateX(24%)
+    img    
+      margin-left: -54%
+      transform: translateX(33%)
+      max-width: 635px
+      width: 120%
   .m-t--200
     margin-top: 0px
+  .m-t---200
+    margin-top: 200px
+  .m-t---100
+    margin-top: 100px
+  .fondo_reticula
+    background-position: -7% bottom
+    background-size: 80%
+  .escolar_3
+    width: 90%
+    max-width: 650px
+    img
+      width: 100%
 
 

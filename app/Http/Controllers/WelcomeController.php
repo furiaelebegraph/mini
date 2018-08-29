@@ -137,11 +137,11 @@ class WelcomeController extends Controller{
    }
 
    public function sitioEscolar(){
-     $escolares = SubCate::obtenerSubCategoria(5);
+     $escolares = SubCate::obtenerSubCategoria(6);
      return view( 'escolar', compact('escolares') );
    }
    public function sitioMomentos(){
-    $momentos = SubCate::obtenerSubCategoria(6);
+    $momentos = SubCate::obtenerSubCategoria(5);
     return view( 'momentos', compact('momentos') );
   }
 }
