@@ -70,13 +70,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 m-t---200">
                             <div class="row justify-content-center">
                                 <div class="col-12 col-sm-6 zapatiito_3_escolar">
                                     <img src="{{ asset('img/escolar/zapato_escolar_2.png') }}" alt="zapato escolar minniburbujas 1">
                                     
                                 </div>
-                                <div class="col-12 col-sm-6">
+                                <div class="col-12 col-sm-5 align-self-center">
                                     <img src="{{ asset('img/escolar/texto_seguro.svg') }}" alt="calzado seguro miniburbujas">
                                     <p class="texto_1_escolar">
                                         Lorem ipsum dolor sit amet, sagittis purus consequat 
@@ -92,22 +92,62 @@
 
         </div>
     </div> 
-</div>    
-<div class="width_escolar">
-    <div class="row no-gutters justify-content-center">
-        <div class="col-12">
+    <div class="col-12">
+        <div class="width_escolar">
             <div class="row no-gutters justify-content-center">
-                <div class="col-12 p-b--30">
-                    <img src="{{ asset('img/escolar/footer_escolar.svg') }}" alt="">
-                    <div class="escolar_3">
-                        <img src="{{ asset('img/escolar/zapato_escolar_3.png') }}" alt="">
+                <div class="col-12">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-12 p-b--30">
+                            <img src="{{ asset('img/escolar/footer_escolar.svg') }}" alt="">
+                            <div class="escolar_3">
+                                <img src="{{ asset('img/escolar/zapato_escolar_3.png') }}" alt="">
+                            </div>
+                        </div>
                     </div>
+                </div> 
+            </div>
+        </div>
+        
+    </div>
+</div>    
+    <div class="row no-gutters align-items-center m-t---100">
+        <div class="col-12 col-sm-7">
+            <div class="wrap_cat_escolar">
+                <div class="texto_cat_escolar alienado_derecha">
+                    <h1>
+                        Categorías <br>
+                        <span>
+                            Escolar
+                        </span>
+                        
+                    </h1>
                 </div>
             </div>
-        </div> 
+        </div>
+        <div id='seccion_catalogo_return' class="col-12">
+            <div class="centro_baby_category">
+                <div class="row justify-content-center m-b-50">
+                    <div class="col-12 col-sm-8">
+                        <div class="row justify-content-between">
+                            @foreach ($escolares as $escolar)
+                                <div class="col-11 col-sm-5">
+                                    <div class="wrap_catalogo_baby">
+                                        <a href=" {{ route('catalogo' , $escolar->id) }} ">
+                                            <img class='imagen_catalogo_kids' src="{{ asset( $escolar->imagen ) }}" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="m-t-20 alienado_centro">
+                                        <a class='titulo_baby_cata' href=" {{ route('catalogo' , $escolar->id) }}"> {{ $escolar->nombre }} </a>
+                                    </div>
+                                </div>  
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
-</div>
-
 
 @endsection
 @push('js360')
