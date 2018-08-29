@@ -3391,7 +3391,8 @@ p {
   width: 350px; }
 
 .carousel-indicators {
-  z-index: 2; }
+  z-index: 2;
+  bottom: -15px; }
 
 .carusel_landing .carousel-control-next-icon, .carusel_landing .carousel-control-prev-icon {
   width: 30px;
