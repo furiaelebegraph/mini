@@ -197,6 +197,16 @@
 								<img src="{{ asset('img/logo_junior_footer.svg') }}" alt="">
 							</a>
 						</div>
+						<div class="icono_footer">
+							<a href="{{ url('escolar') }}">
+								<img src="{{ asset('img/logo_escolar_footer.svg') }}" alt="">
+							</a>
+						</div>
+						<div class="icono_footer">
+							<a href="{{ url('momentos') }}">
+								<img src="{{ asset('img/logo_moments_footer.svg') }}" alt="">
+							</a>
+						</div>
 					</div>
 				</div>
 				<div class="contacto_footer m-b-10">
