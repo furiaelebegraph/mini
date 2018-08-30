@@ -16,15 +16,15 @@
             </div>
             <div class="row no-gutters fondo_azul_2 margent-top--30">
                 <div class="col-12 fondo_reticula">
-                    <div class="row justify-content-end ">
+                    <div class="row justify-content-end no-gutters">
                         <div class="col-12">
-                            <div class="row justify-content-end fondo123">
+                            <div class="row justify-content-end fondo123 p-b-100">
                                 <div class="col-12 col-sm-6 alineado_centro left_escolar_1 m-t--200 wow slideInRight">
-                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselescolar" class="carousel slide" data-ride="carousel">
                                       <ol class="carousel-indicators">
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        <li data-target="#carouselescolar" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselescolar" data-slide-to="1"></li>
+                                        <li data-target="#carouselescolar" data-slide-to="2"></li>
                                       </ol>
                                       <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -37,19 +37,21 @@
                                           <img class="d-block w-100" src="{{ asset('img/escolar/zapato_escolar_1.png') }}" alt="Third slide">
                                         </div>
                                       </div>
-                                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <a class="carousel-control-prev" href="#carouselescolar" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Previous</span>
                                       </a>
-                                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <a class="carousel-control-next" href="#carouselescolar" role="button" data-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Next</span>
                                       </a>
                                     </div>
 
-
-                                    <img src="{{ asset('img/escolar/texto_escolar.svg') }}" alt="miniburbujas">
-                                    <p>Nuestra experiencia en calzado, nos ha llevado a implementar tecnología que brinde una total comodidad y seguridad:</p>
+                                    <div class="wrap_texto_imagen_escolar_1">
+                                        <img class="texto_svg_escolar_1" src="{{ asset('img/escolar/texto_escolar.svg') }}" alt="miniburbujas">
+                                        <p class="texto_1_escolar">Nuestra experiencia en calzado, nos ha llevado a implementar tecnología que brinde una total comodidad y seguridad:</p>
+                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +80,7 @@
                                 </div>
                                 <div class="col-12 col-sm-5 align-self-center wow slideInRight">
                                     <img src="{{ asset('img/escolar/texto_seguro.svg') }}" alt="calzado seguro miniburbujas">
-                                    <p class="texto_1_escolar">
+                                    <p class="texto_2_escolar">
                                         Lorem ipsum dolor sit amet, sagittis purus consequat 
                                     </p>
                                 </div>
@@ -131,7 +133,7 @@
                         <div class="row justify-content-between">
                             @foreach ($escolares as $escolar)
                                 <div class="col-11 col-sm-5">
-                                    <div class="wrap_catalogo_baby">
+                                    <div class="wrap_catalogo_escolar">
                                         <a href=" {{ route('catalogo' , $escolar->id) }} ">
                                             <img class='imagen_catalogo_kids' src="{{ asset( $escolar->imagen ) }}" alt="">
                                         </a>
