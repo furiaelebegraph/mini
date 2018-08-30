@@ -1,0 +1,347 @@
+.primeracolumna {
+  margin-top: 30px; }
+
+.centro_momentos {
+  max-width: 1000px;
+  widh: 100%;
+  margin: 0 auto; }
+
+.fondo_momentos {
+  background-image: url(../img/momentos/fondo_momentos.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 13%; }
+
+.momentosLogo {
+  max-width: 300px;
+  width: 90%;
+  position: relative;
+  margin-top: 193px; }
+
+.zapato1 {
+  width: 100%;
+  margin-top: 63px; }
+
+.Fondo_zapato1 {
+  background-image: url(../img/momentos/Fondo_principal.png);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: 250px;
+  margin-top: 25px;
+  height: 285px; }
+
+.florecita {
+  background-image: url(../img/momentos/florecita.svg);
+  background-position: 35% 95%;
+  background-repeat: no-repeat;
+  background-size: 56px; }
+
+.chispitas {
+  width: 88px;
+  margin-left: -14px;
+  margin-top: -30px; }
+
+.bolitas {
+  width: 88px;
+  margin-left: 65%; }
+
+.textoMomentos1 {
+  font-family: margot;
+  color: #7f7f7f; }
+
+.textoMomentos1S {
+  font-family: margotBold;
+  color: #04b1ad; }
+
+.momentos_bloque_1 {
+  width: 100%;
+  margin: 57px auto; }
+
+.momentos_bloque_2 {
+  width: 100%; }
+
+.estrella {
+  width: 45px;
+  margin-left: 49px;
+  margin-top: 25px; }
+
+.corazon {
+  width: 64px;
+  margin-left: 182px; }
+
+.momentosnuves {
+  margin-top: -47px; }
+
+.momentos_bloque_3 {
+  width: 100%;
+  margin: 50px auto; }
+
+.especial {
+  position: relative;
+  width: 60%; }
+
+.texto_especial_big {
+  font-family: margot;
+  color: #35ada9;
+  font-size: 50px; }
+
+.texto_especial {
+  font-family: margot;
+  color: #35ada9; }
+
+.zapatoespecial {
+  background-image: url(../img/momentos/espiral.svg);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  margin-top: 25px;
+  height: 300px; }
+
+.zapatoEspiral {
+  position: relative;
+  width: 100%;
+  margin-top: -55px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH; }
+
+.fondoZapatofinal {
+  background-image: url(../img/momentos/fondoZapatofinal.svg);
+  background-position: 50% 62%;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  margin-top: 25px; }
+
+.zapatosfinal {
+  position: relative;
+  width: 100%;
+  margin-top: -85px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  margin-left: 30px; }
+
+.degragado {
+  height: 1200px;
+  background-color: #d5ffff;
+  background-image: linear-gradient(white, #d5ffff, white); }
+
+.fondocategorias {
+  background-image: url(../img/momentos/fondoCatalogo.svg);
+  background-position: 50% 138%;
+  background-repeat: no-repeat;
+  background-size: 644px;
+  margin-top: -100px;
+  height: 400px; }
+
+.textomomentos1derecha {
+  margin-top: 85px; }
+
+.wrap_cat_momentos {
+  width: 100%;
+  border-top: 10px solid #fffa8c;
+  background: #ff9f0b; }
+
+.wrap_catalogo_momentos {
+  width: 180px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .wrap_catalogo_momentos::before {
+    transition: all 0.5s ease;
+    content: "";
+    background-image: url(../img/momentos/fondo_catalogo_momentos.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 155px;
+    width: 180px;
+    height: 180px;
+    display: inline-block; }
+  .wrap_catalogo_momentos:hover::before {
+    width: 165px;
+    height: 165px; }
+
+.imagen_catalogo_momentos {
+  width: 220px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.titulo_momentos_cata {
+  font-size: 25px;
+  margin-top: 150px;
+  font-family: margotBold;
+  color: #005f93; }
+  .titulo_momentos_cata:hover {
+    text-decoration: none;
+    text-shadow: -1px 0 #fdfdfd, 0 1px white, 1px 0 #ffffff, 0 -1px #ffffff; }
+
+@media (min-width: 550px) and (max-width: 950px) {
+  .centro_momentos {
+    widh: 80%; }
+
+  .momentosLogo {
+    max-width: 320px;
+    margin-top: 220px; }
+
+  .Fondo_zapato1 {
+    background-position: 43% 0%;
+    margin-top: 40px; }
+
+  .zapato1 {
+    margin-left: 31%;
+    width: 360px; }
+
+  .momentos_bloque_2 {
+    width: 100%; }
+
+  .florecita {
+    background-size: 105px;
+    background-position: 49% 74%; }
+
+  .bolitas {
+    margin-left: 0%;
+    margin-top: 30px; }
+
+  .chispitas {
+    width: 135px;
+    margin-top: -190px; }
+
+  .estrella {
+    width: 150px;
+    margin-left: 95px; }
+
+  .corazon {
+    width: 150px;
+    margin-left: 285px;
+    margin-top: -85px; }
+
+  .especial {
+    position: relative;
+    width: 82%; }
+
+  .zapatoespecial {
+    background-size: 385px;
+    margin-top: 0px;
+    height: 400px; }
+
+  .zapatoEspiral {
+    margin-top: -130px; }
+
+  .fondoZapatofinal {
+    background-position: 50% 40%;
+    background-size: 600px; }
+
+  .fondocategorias {
+    background-position: 50% 0%;
+    background-size: 1000px; }
+
+  .textoMomentos1 {
+    text-align: center;
+    margin-top: -80px; }
+
+  .textomomentos1derecha {
+    margin-top: 125px; }
+
+  .texto_especial_big {
+    font-size: 55px; }
+
+  .zapatosfinal {
+    margin-left: 50px; } }
+@media (min-width: 951px) {
+  .fondo_momentos {
+    margin-top: 86px;
+    background-size: 100%;
+    height: 500px; }
+
+  .momentosLogo {
+    margin-top: 300px;
+    max-width: 500px;
+    width: 100%; }
+
+  .Fondo_zapato1 {
+    background-position: 19% 0%;
+    background-size: 400px;
+    height: 500px;
+    margin-top: 65px; }
+
+  .zapato1 {
+    margin-left: 195px;
+    width: 466px;
+    margin-top: 95px; }
+
+  .florecita {
+    background-position: 54% 79%;
+    background-size: 110px; }
+
+  .textoMomentos1 {
+    width: 224px;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 17px; }
+
+  .chispitas {
+    margin-left: -42px;
+    margin-top: -10px;
+    position: absolute;
+    width: 140px; }
+
+  .bolitas {
+    margin-left: 22%;
+    margin-top: 24%;
+    width: 125px; }
+
+  .textomomentos1derecha {
+    left: -85px;
+    margin-top: 50px; }
+
+  .momentos_bloque_2 {
+    width: 100%;
+    margin: 400px auto;
+    margin-top: 450px; }
+
+  .estrella {
+    width: 145px;
+    margin-left: 15%;
+    margin-top: 25px; }
+
+  .corazon {
+    width: 160px;
+    margin-left: 37%; }
+
+  .texto_especial_big {
+    font-size: 65px; }
+
+  .especial {
+    position: relative;
+    width: 80%; }
+
+  .zapatoespecial {
+    background-position: -80% -22%;
+    background-size: 645px;
+    margin-top: -108px;
+    height: 600px; }
+
+  .momentos_bloque_3 {
+    margin-top: -130px; }
+
+  .fondoZapatofinal {
+    background-size: 800px;
+    margin-left: 25px; }
+
+  .zapatosfinal {
+    margin-left: 70px; }
+
+  .fondocategorias {
+    background-position: 50% 0%;
+    background-size: 130%;
+    margin-top: 20px;
+    height: 600px; } }
+
+/*# sourceMappingURL=_momentos.css.map */
