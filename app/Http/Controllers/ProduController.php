@@ -55,6 +55,10 @@ class ProduController extends Controller
         $this->validate($request, [
             'nombre' => 'required|unique:cate|max:255',
             'imagen' => 'required | image | max:2000',
+            'descripcion' => 'required | min:5',
+            'subcate_id' => 'required',
+            'color_id' => 'required',
+            'orden' => 'required',
         ]);
 
             $producto = new Produ();
