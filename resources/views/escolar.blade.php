@@ -7,19 +7,19 @@
 
 <div class="row no-gutters justify-content-center align-items-center fondo_azul_exolcar">
     <div class="col-12">
-        <div class="width_escolar m-t-100">
+        <div class="width_escolar">
             <div class="row no-gutters">
                 <div class="col-12 alineado_centro">
-                    <img src="{{ asset('img/escolar/cabecera_escolar.svg') }}" alt="">
+                    <img class="imagen_lapicitos" src="{{ asset('img/escolar/cabecera_escolar.svg') }}" alt="">
                     <img class="eescolar_1 wow bounceIn" src="{{ asset('img/escolar/escolar_logo.png') }}" alt="miniburbujas">
                 </div>
             </div>
             <div class="row no-gutters fondo_azul_2 margent-top--30">
                 <div class="col-12 fondo_reticula">
-                    <div class="row justify-content-end no-gutters">
-                        <div class="col-12">
-                            <div class="row justify-content-end fondo123 p-b-100">
-                                <div class="col-12 col-sm-6 alineado_centro left_escolar_1 m-t--200 wow slideInRight">
+                    <div class="row justify-content-center no-gutters">
+                        <div class="col-12 col-lg-10">
+                            <div class="row justify-content-end fondo123 p-b-10">
+                                <div class="col-8 col-sm-6 alineado_centro left_escolar_1 m-t--200 wow slideInRight">
                                     <div id="carouselescolar" class="carousel slide" data-ride="carousel">
                                       <ol class="carousel-indicators">
                                         <li data-target="#carouselescolar" data-slide-to="0" class="active"></li>
@@ -95,21 +95,18 @@
         </div>
     </div> 
     <div class="col-12">
-        <div class="width_escolar">
-            <div class="row no-gutters justify-content-center">
-                <div class="col-12">
-                    <div class="row no-gutters justify-content-center">
-                        <div class="col-12 p-b--30">
-                            <img src="{{ asset('img/escolar/footer_escolar.svg') }}" alt="">
-                            <div class="escolar_3 wow bounceIn">
-                                <img src="{{ asset('img/escolar/zapato_escolar_3.png') }}" alt="">
-                            </div>
+        <div class="row no-gutters justify-content-center">
+            <div class="col-12">
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-12 p-b--30">
+                        <img src="{{ asset('img/escolar/footer_escolar.svg') }}" alt="">
+                        <div class="escolar_3 wow bounceIn">
+                            <img src="{{ asset('img/escolar/zapato_escolar_3.png') }}" alt="">
                         </div>
                     </div>
-                </div> 
-            </div>
+                </div>
+            </div> 
         </div>
-        
     </div>
 </div>    
     <div class="row no-gutters align-items-center m-t---100">
