@@ -41,28 +41,24 @@
 			</div>
 		</div>
 			<div class="row justify-content-center align-items-center opciones_submenu">
-				<div class="col-12 alienado_centro">
-					<div class="cerrar_navega"> CERRAR </div>
-					
-				</div>
 				<div class="col-12">
 					<div class="centro_submenu">
-						<div class="row justify-content-center align-items-center">
-							<div class="col-7 col-sm-5 baby_navega margen_menu alienado_centro">
+						<div class="row justify-content-around no-gutters align-items-center">
+							<div class="col-5 col-sm-12 col-md-7 baby_navega margen_menu alienado_centro">
 								<div>
 									<a href="{{ url('baby') }}">
 										<img class='icono_navegacion_menu' src="{{ asset('img/logo_baby_footer.svg') }}" alt="">
 									</a>
 								</div>
 							</div>
-							<div class="col-7 col-sm-5 primeros_navega margen_menu alienado_centro">
+							<div class="col-5 col-sm-12 col-md-7 primeros_navega margen_menu alienado_centro">
 								<div>
 									<a href="{{ url('primeros') }}">
 										<img class='icono_navegacion_menu' src="{{ asset('img/logo_1eros_footer.svg') }}" alt="">
 									</a>
 								</div>
 							</div>
-							<div class="col-7 col-sm-5 kids_navega margen_menu alienado_centro">
+							<div class="col-5 col-sm-12 col-md-7 kids_navega margen_menu alienado_centro">
 								<div>
 									<a href="{{ url('kids') }}">
 										<img class='icono_navegacion_menu' src="{{ asset('img/logo_kids_footer.svg') }}" alt="">
@@ -70,21 +66,35 @@
 								</div>
 							</div>
 
-							<div class="col-7 col-sm-5 juvenil_navega margen_menu alienado_centro">
+							<div class="col-5 col-sm-12 col-md-7 juvenil_navega margen_menu alienado_centro">
 								<div> 
 									<a href="{{ url('juvenil') }}">
 										<img class='icono_navegacion_menu' src="{{ asset('img/logo_junior_footer.svg') }}" alt="">
 									</a>
 								</div>
 							</div>
+							<div class="col-5 col-sm-12 col-md-7 juvenil_navega margen_menu alienado_centro">
+								<div> 
+									<a href="{{ url('escolar') }}">
+										<img class='icono_navegacion_menu' src="{{ asset('img/logo_escolar_footer.svg') }}" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="col-5 col-sm-12 col-md-7 juvenil_navega margen_menu alienado_centro">
+								<div> 
+									<a href="{{ url('momentos') }}">
+										<img class='icono_navegacion_menu' src="{{ asset('img/logo_moments_footer.svg') }}" alt="">
+									</a>
+								</div>
+							</div>
 
-							<div class="col-7 col-sm-5 alienado_centro m-t-20">
+							<div class="col-5 col-sm-12 col-md-7 alienado_centro m-t-20">
 								<div> <a href="{{ url('acerca') }}"><img class="icono_navegacion_menu" src="{{ asset('img/logo_blanco_mini.svg') }}" alt=""></a></div>
 							</div>
-							<div class="col-7 col-sm-5 alienado_centro m-t-20">
+							<div class="col-5 col-sm-12 col-md-7 alienado_centro m-t-20">
 								<div> <a href="{{ url('proximamente') }}"><img class="icono_navegacion_menu" src="{{ asset('img/logo_blog.png') }}" alt=""></a></div>
 							</div>
-							<div class="col-7 col-sm-5 m-t-20">
+							<div class="col-5 col-sm-12 col-md-7 m-t-20">
 								<div class="contacto_link"> <a href="{{ url('contacto') }}">CONTACTO</a></div>
 							</div>
 						</div>
@@ -93,6 +103,7 @@
 				</div>
 			</div>
 	</div>
+	<div class="moveer_template">
 	<nav class="navbar-default navbar-static-top navegador_movil ">
 		<div class="row align-items-center m-t-10">
 			<div class="offset-0 offset-sm-1"></div>
@@ -255,6 +266,8 @@
 				</div>
 			</div>
 		</div>
+	</div>
+		
 	</div>
 
     <!-- Scripts -->

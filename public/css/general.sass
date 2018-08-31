@@ -84,7 +84,7 @@ p
 
 .centro_submenu
   max-width: 800px
-  width: 90%
+  width: 100%
   margin: 0 auto
 
 .altura_80
@@ -200,6 +200,9 @@ p
 
 .cerrado_minis
   width: 0 !important
+
+.mover_minis
+  left: 100%
 
 #myCarousel
   .carousel-indicators li
@@ -317,7 +320,7 @@ p
 .opciones_submenu
   position: relative
   z-index: 7
-  margin-top: 70px
+  margin-top: 95px
 
 .cerrar_navega
   padding: 30px 0
@@ -1094,13 +1097,8 @@ p.texto_light_acerca
 
 .icono_navegacion_menu
   max-width: 150px
+  width: 100%
   transition: all 0.3s ease-in-out
-  &:hover
-    -webkit-transform: scale(1.1,1.1)
-    -moz-transform: scale(1.1,1.1)
-    -ms-transform: scale(1.1,1.1)
-    -o-transform: scale(1.1,1.1)
-    transform: scale(1.1,1.1)
 
 .titulo_generico_mini
   font-family: mikadoBold
@@ -1519,8 +1517,20 @@ button:focus
     background-size: 60%
   .separacion_cate_baby
     margin-top: 240px
+  .abierto_minis
+    width: 20% !important
+
+@media (min-width: 768px) and (max-width: 900px)
+  .abierto_minis
+    width: 25% !important
+
+@media only screen and ( min-width: 901px )
+  .abierto_minis
+    width: 15% !important
 
 @media only screen and ( min-width: 768px )
+  .mover_minis
+    left: 100%
   .btn_tienda_linea
     left: 0
     transform: translateX(0%)
@@ -1582,10 +1592,11 @@ button:focus
   #myCarousel .carousel-inner, .carousel-item
     height: auto
   .margen_menu
-    margin-top: 10px
-    margin-bottom: 10px
+    margin-top: 4px
+    margin-bottom: 4px
   .icono_navegacion_menu
-    max-width: 150px
+    width: 90%
+    max-width: 120px
   .margen_top_producto
     margin-top: 0px
   .coleccion_3
