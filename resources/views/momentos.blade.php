@@ -15,9 +15,10 @@
                         </div>
                         <div class="centro_momentos primeracolumna">
                             <div class=" row">
-                                <div class="Fondo_zapato1 col-lg-8 col-sm-12 col-md-8">
+                                <div class="Fondo_zapato1 wow slideInUp col-8" style="visibility: visible; animation-name: bounceIn;">
+                                     <img class="florecita" src="{{ asset('img/momentos/florecita.svg') }}">
                                     <div id="carouselExampleIndicators" class="carousel slidemomentos slide" data-ride="carousel">
-                                      <ol class="carousel-indicators">
+                                      <ol class="bolitasCarucel carousel-indicators carousel-momentos">
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -33,39 +34,34 @@
                                           <img class="d-block w-100" src="{{ asset('img/momentos/ZapatoFondo.png') }}" alt="Third slide">
                                         </div>
                                       </div>
-                                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+<!--                                       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Previous</span>
                                       </a>
                                       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Next</span>
-                                      </a>
+                                      </a> -->
                                     </div>
-                                    <div class="florecita"></div>
                                 </div>
-                                <div class="col-lg-4 col-sm-12 col-md-4 textomomentos1derecha">
-                                    <img class="chispitas" src="{{ asset('img/momentos/chispitas.svg') }}">
-                                        <p class='textoMomentos1 p-l-20 p-r-20'>
+                                <div class="col-4 textomomentos1derecha">
+                                    <img class="chispitas wow slideInLeft" src="{{ asset('img/momentos/chispitas.svg') }}">
+                                        <p class='textoMomentos1 p-l-20 p-r-20 wow slideInRight'>
                                             Lo más importante de la vida no son las cosas,
                                             <strong class="textoMomentos1S">son esos pequeños momentos,</strong>
                                             emociones y recuerdos que te llevas en tu corazón.
                                         </p>
-                                    
                                 </div>
+
+                                
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
     <div class="momentos_bloque_2 centro_momentos">
         <img class='estrella wow slideInLeft' src="{{ asset('img/momentos/estrella.svg') }}" alt="">
         <img class='corazon wow slideInRight' src="{{ asset('img/momentos/corazon.svg') }}" alt="">
@@ -90,14 +86,14 @@
     <div class="degragado">
         <div class="momentos_bloque_3 col-12 centro_momentos">
             <div class="row align-items-center">
-                <div class="col-lg-4 col-sm-12 col-md-4">
+                <div class="col-4">
                     <div class="alienado_centro wow">
                         <div>
-                            <img class="especial slideInLeft" src="{{ asset('img/momentos/especial.svg') }}">
+                            <img class="especial wow slideInRight" src="{{ asset('img/momentos/especial.svg') }}">
                         </div>
                         <div>
-                            <strong class="texto_especial_big">El amor</strong>
-                            <p class="texto_especial ">
+                            <strong class="texto_especial_big wow slideInLeft">El amor</strong>
+                            <p class="texto_especial wow slideInRight">
                                 dura para siempre,<br>
                                 comienza antes<br>
                                 de nacer y se vive<br>
@@ -106,22 +102,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="zapatoespecial col-lg-8 col-sm-12 col-md-8">
-                    <img class="zapatoEspiral slideInRight" src="{{ asset('img/momentos/zapatoEspiral.png') }}">
+                <div class="col-8">
+                    <div class="zapatoespecial"></div>
+                    <div class="corazonespiral wow slideInRight"></div>
+                    <div class="corazonespiral2 wow slideInLeft"></div>
+                    <img class="zapatoEspiral wow slideInRight" src="{{ asset('img/momentos/zapatoEspiral.png') }}">
                 </div>
                 
             </div>
         </div>
-
         <div class="momentos_bloque_4 centro_momentos">
             <div class="row align-items-center">
-                <div class="fondoZapatofinal">
-                    <img class="zapatosfinal slideInLeft" src="{{ asset('img/momentos/zapatosfinal.png') }}">
+                <div class="fondoZapatofinal wow slideInUp" style="visibility: visible; animation-name: bounceIn;">
+                    <img class="zapatosfinal wow slideInLeft" src="{{ asset('img/momentos/zapatosfinal.png') }}">
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <div class="fondocategorias">
     <div class="row align-items-center">
         <div class="col-12 col-sm-7">
@@ -156,8 +155,7 @@
                             @endforeach
                         </div>
                     </div>
-                </div>
-                
+                </div> 
             </div>
         </div>
     </div>

@@ -14,9 +14,9 @@
 
 .momentosLogo
     max-width: 300px
-    width: 90%
+    width: 70%
     position: relative
-    margin-top: 193px
+    margin-top: 55%
 
 .zapato1
   width: 100%
@@ -24,31 +24,44 @@
 
 .Fondo_zapato1
   background-image: url(../img/momentos/Fondo_principal.png)
-  background-position: 50% 0%
   background-repeat: no-repeat
-  background-size: 250px
-  margin-top: 25px
-  height: 285px
+  background-size: 180px
+  margin-top: 50px
+  height: 220px
+  left: -20px
 
 .florecita
-  background-image: url(../img/momentos/florecita.svg)
-  background-position: 35% 95%
-  background-repeat: no-repeat
-  background-size: 56px
+  width: 64px
+  position: absolute
+  margin-top: 167px
+  left: 31%
 
 .chispitas
   width: 88px
-  margin-left: -14px
-  margin-top: -30px
+  margin-left: -57px
+  margin-top: 27px
 
-.bolitas
-  width: 88px
-  margin-left: 65%
- 
+.bolitasCarucel
+  position: relative
+  left: 56%
+  top: 261px
+
+.carousel-momentos li
+  background-color: rgba(#8ee0df, 0.5) !important
+
+.carousel-momentos .active
+    background-color: rgba(#8ee0df, 1) !important
 
 .textoMomentos1
   font-family: margot
   color: #7f7f7f
+  visibility: visible
+  animation-name: slideInRight
+  width: 173px
+  margin-left: -55px
+  text-align: center
+  font-size: 9px
+  margin-top: -5px
 
 .textoMomentos1S
   font-family: margotBold
@@ -91,25 +104,76 @@
   font-family: margot
   color: #35ada9
   margin-top: -15px
+  line-height: 1.2
 
 
 .zapatoespecial
-  background-image: url(../img/momentos/espiral.svg)
-  background-position: 50% 0%
+  background-image: url(../img/momentos/espiral.png)
+  background-position: 67% 58%
   background-repeat: no-repeat
-  background-size: 300px
-  margin-top: 50px
+  background-size: 137px
+  margin-top: -32px
   height: 300px
+  -webkit-animation: rotating 10s linear infinite
+  -moz-animation: rotating 10s linear infinite
+  -ms-animation: rotating 10s linear infinite
+  -o-animation: rotating 10s linear infinite
+  animation: rotating 10s linear infinite
+
+  @-webkit-keyframes rotating 
+  from 
+    -webkit-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+  to 
+    -webkit-transform: rotate(360deg)
+    -o-transform: rotate(360deg)
+    transform: rotate(360deg)
+  
+@keyframes rotating 
+  from 
+    -ms-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+  
+  to 
+    -ms-transform: rotate(360deg)
+    -moz-transform: rotate(360deg)
+    -webkit-transform: rotate(360deg)
+    -o-transform: rotate(360deg)
+    transform: rotate(360deg)
+  
+.corazonespiral
+  background-image: url(../img/momentos/corazon.png)
+  background-repeat: no-repeat
+  background-size: 50px
+  margin-top: -60px
+  height: 70px
+  margin-left: 12%
+  z-index: 1
+  position: relative
+
+.corazonespiral2
+  background-image: url(../img/momentos/corazon2.png)
+  background-repeat: no-repeat
+  background-size: 70px
+  height: 79px
+  position: relative
+  z-index: 1
+  margin-top: -300px
 
 .zapatoEspiral
   position: relative
   width: 100%
-  margin-top: -38px
+  margin-top: -45%
   -moz-transform: scaleX(-1) 
   -o-transform: scaleX(-1) 
   -webkit-transform: scaleX(-1) 
   transform: scaleX(-1) 
   filter: FlipH 
+  z-index: 1
 
 .fondoZapatofinal
   background-image: url(../img/momentos/fondoZapatofinal.png)
@@ -122,12 +186,6 @@
   position: relative
   width: 100%
   margin-top: -85px
-  -moz-transform: scaleX(-1) 
-  -o-transform: scaleX(-1) 
-  -webkit-transform: scaleX(-1) 
-  transform: scaleX(-1) 
-  filter: FlipH 
-  margin-left: 30px
 
 .degragado
   background-color: #d5ffff
@@ -140,8 +198,6 @@
   background-size: 706px
   margin-top: 100px
 
-.textomomentos1derecha
-  margin-top: 125px
 
 .wrap_cat_momentos
     width: 100%
@@ -190,6 +246,16 @@
 
 .caruselMomentos
   background-color: #8ee0df !important
+  -webkit-animation: rotating 5s ease-in-out infinite
+  -moz-animation: rotating 5s ease-in-out infinite
+  -ms-animation: rotating 5s ease-in-out infinite
+  -o-animation: rotating 5s ease-in-out infinite
+  animation: rotating 5s ease-in-out infinite
+
+.slidemomentos
+  margin-top: -82px
+  width: 136%
+
 
 
 @media (min-width: 550px) and (max-width: 950px)
@@ -202,8 +268,9 @@
     margin-top: 220px
 
   .Fondo_zapato1
-    background-position: 43% 0%
-    margin-top: 40px
+    background-position: 5% 0%
+    background-size: 231px
+    height: 270px
 
   .zapato1
     width: 360px
@@ -213,15 +280,13 @@
     margin-top: 10%
 
   .florecita
-    background-size: 105px
-    background-position: 49% 74%
+    width: 95px
+    margin-top: 56%
+    left: 31%
 
   .bolitas
     margin-left: 0%
     margin-top: 30px
-
-  .chispitas
-    width: 135px
 
   .estrella
     width: 15%
@@ -238,14 +303,22 @@
     width: 100%
 
   .zapatoespecial
-    background-size: 385px
+    background-size: 370px
     margin-top: 0px
     height: 400px
 
   .zapatoEspiral
-    margin-top: -79px
-    margin-left: 13%
-    width: 80%
+    width: 100%
+    margin-top: -53%
+
+  .corazonespiral2
+    margin-left: 5%
+    margin-top: -345px
+    background-size: 100px
+    height: 140px
+
+  .corazonespiral
+    margin-top: -132px
 
   .fondoZapatofinal
     background-position: 50% 3%
@@ -257,17 +330,18 @@
 
   .textoMomentos1
     text-align: center
-    margin-top: -15px
-
-  .textomomentos1derecha
-    margin-top: 125px
+    font-size: 12px
 
   .zapatosfinal
-    margin-left: 23%
+    margin-left: 16%
     width: 70%
 
   .slidemomentos
-    margin-top: -113px
+    width: 100%
+    margin-left: 10%
+
+  .bolitasCarucel
+    top: 377px
 
 @media (min-width: 951px) 
 
@@ -287,28 +361,27 @@
     margin-top: 95px
 
   .florecita
-    background-position: 54% 79%
-    background-size: 110px
+    margin-top: 331px
+    width: 110px
+    left: 36%
 
   .textoMomentos1
-    width: 224px
-    text-align: center
-    margin-top: 60px
+    width: 345px
+    margin-top: 78px
     font-size: 17px
 
   .chispitas
-    margin-left: -42px
-    margin-top: -10px
+    margin-left: -77px
+    margin-top: 11px
     position: absolute
     width: 140px
 
-  .bolitas
-    margin-left: 22%
-    margin-top: 24%
-    width: 125px
+  .bolitasCarucel
+    position: relative
+    left: 48%
+    top: 445px
 
   .textomomentos1derecha
-    left: -85px
     margin-top: 50px
 
   .momentos_bloque_2
@@ -333,10 +406,18 @@
     width: 80%
 
   .zapatoespecial
-    background-position: -80% -22%
-    background-size: 645px
-    margin-top: -108px
-    height: 600px
+    background-size: 400px
+    height: 500px
+    margin-top: -22%
+
+  .corazonespiral
+    margin-top: -26%
+    background-size: 68px
+
+  .corazonespiral2
+    background-size: 100px
+    height: 136px
+    margin-top: -57%
 
   .momentos_bloque_3
     margin-top: -130px
@@ -348,11 +429,20 @@
     margin-top: 30px
 
   .zapatosfinal
-    margin-left: 34%
-    width: 68%
+    margin-left: 9%
+    width: 87%
+    margin-top: -91px
 
   .fondocategorias
     background-position: 50% 50%
     background-size: 130%
     margin-top: 20px
     height: 600px
+
+  .zapatoEspiral
+    margin-top: -56%
+
+  .slidemomentos
+    margin-top: -46px
+    margin-left: 18%
+    width: 85%
