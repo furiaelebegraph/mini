@@ -17,10 +17,10 @@
             <div class="row no-gutters fondo_azul_2 margent-top--30">
                 <div class="col-12 fondo_reticula">
                     <div class="row justify-content-center no-gutters">
-                        <div class="col-12 col-lg-10">
+                        <div class="col-12 col-lg-10 centerBigItems">
                             <div class="row justify-content-end fondo123 p-b-10">
                                 <div class="col-8 col-sm-6 alineado_centro left_escolar_1 m-t--200 wow slideInRight">
-                                    <div id="carouselescolar" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselescolar" class="carousel slide caroumomentos" data-ride="carousel">
                                       <ol class="carousel-indicators">
                                         <li data-target="#carouselescolar" data-slide-to="0" class="active"></li>
                                         <li data-target="#carouselescolar" data-slide-to="1"></li>
@@ -65,21 +65,21 @@
                                             </div>
                                             <ol class="threesixty_images"></ol>
                                         </div>
-                                        <div class="icono_360 m-t-20">
+                                        <div class="icono_360 icono_360Momentos m-t-20">
                                             <img src="{{ asset('img/360_icono.png') }}" alt="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 m-t---200">
+                        <div class="col-12 m-t---200 centerBigItems">
                             <div class="row justify-content-center">
-                                <div class="col-12 col-sm-6 zapatiito_3_escolar wow slideInLeft">
+                                <div class="col-6 zapatiito_3_escolar wow slideInLeft">
                                     <img src="{{ asset('img/escolar/zapato_escolar_2.png') }}" alt="zapato escolar minniburbujas 1">
                                     
                                 </div>
-                                <div class="col-12 col-sm-5 align-self-center wow slideInRight">
-                                    <img src="{{ asset('img/escolar/texto_seguro.svg') }}" alt="calzado seguro miniburbujas">
+                                <div class="col-6 align-self-center wow slideInRight">
+                                    <img class="textoSeguro" src="{{ asset('img/escolar/texto_seguro.svg') }}" alt="calzado seguro miniburbujas">
                                     <p class="texto_2_escolar">
                                         Lorem ipsum dolor sit amet, sagittis purus consequat 
                                     </p>
@@ -98,9 +98,9 @@
         <div class="row no-gutters justify-content-center">
             <div class="col-12">
                 <div class="row no-gutters justify-content-center">
-                    <div class="col-12 p-b--30">
-                        <img src="{{ asset('img/escolar/footer_escolar.svg') }}" alt="">
-                        <div class="escolar_3 wow bounceIn">
+                    <div class="col-12 p-b--30 ">
+                        <img class="backtoSchool" src="{{ asset('img/escolar/footer_escolar.svg') }}" alt="">
+                        <div class="escolar_3 wow bounceIn centerBigItems">
                             <img src="{{ asset('img/escolar/zapato_escolar_3.png') }}" alt="">
                         </div>
                     </div>

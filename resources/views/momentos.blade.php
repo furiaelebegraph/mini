@@ -86,7 +86,7 @@
     <div class="degragado">
         <div class="momentos_bloque_3 col-12 centro_momentos">
             <div class="row align-items-center">
-                <div class="col-4">
+                <div class="col-6">
                     <div class="alienado_centro wow">
                         <div>
                             <img class="especial wow slideInRight" src="{{ asset('img/momentos/especial.svg') }}">
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-6">
                     <div class="zapatoespecial"></div>
                     <div class="corazonespiral wow slideInRight"></div>
                     <div class="corazonespiral2 wow slideInLeft"></div>
