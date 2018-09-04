@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="row no-gutters fondo_azul_2 margent-top--30">
-                <div class="col-12 fondo_reticula">
+                <div class="col-12 fondo_reticula ">
                     <div class="row justify-content-center no-gutters">
                         <div class="col-12 col-lg-10 centerBigItems">
                             <div class="row justify-content-end fondo123 p-b-10">
@@ -55,7 +55,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 m-t-30">
+                        <div class="col-12 m-t-30 centerBigItems">
                             <div class="row fondo_nube_escolar">
                                 <div class="col-12 wow zoomIn">
                                     <div class="centro_360 m-b-100 m-t-100">
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         <div class="col-12 m-t---200 centerBigItems">
-                            <div class="row justify-content-center">
+                            <div class="alturaseguro row justify-content-center">
                                 <div class="col-6 zapatiito_3_escolar wow slideInLeft">
                                     <img src="{{ asset('img/escolar/zapato_escolar_2.png') }}" alt="zapato escolar minniburbujas 1">
                                     

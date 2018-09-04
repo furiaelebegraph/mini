@@ -1769,16 +1769,16 @@
   max-width: 543px;
   width: 34%;
   position: relative;
-  margin-top: -86%; }
+  margin-top: -90%; }
 
 .left_escolar_1 {
   left: 0px; }
 
 .zapatiito_3_escolar img {
   max-width: 600px;
-  width: 106%;
+  width: 145%;
   position: relative;
-  margin-left: -50%;
+  margin-left: -108%;
   transform: translateX(62%);
   margin-top: -42%;
   z-index: 1; }
@@ -1794,9 +1794,9 @@
 
 .fondo_reticula {
   background-image: url(../img/escolar/escolar_fondo-3.png);
-  background-position: 31% 103%;
+  background-position: 49% 103%;
   background-repeat: no-repeat;
-  background-size: 91%; }
+  background-size: 86%; }
 
 .imagen_lapicitos {
   width: 122%;
@@ -1905,7 +1905,7 @@
     margin-top: 11%; }
 
   .eescolar_1 {
-    margin-top: -73%;
+    margin-top: -90%;
     max-width: 537px;
     width: 38%; }
 
@@ -1941,23 +1941,42 @@
 
   .shapatito_baby {
     top: -10px;
-    max-width: 50%;
-    height: 153px !important;
+    max-width: 73%;
+    height: 228px !important;
     left: 4%; }
 
   .icono_360Momentos {
-    top: 100% !important; }
+    top: 93% !important; }
 
   .textoSeguro {
     position: relative;
     left: -8%;
-    margin-top: 53%; } }
+    margin-top: 53%; }
+
+  .fondo_azul_2 {
+    background: #dbeef0;
+    background: -moz-linear-gradient(top, #dbeef0 20%, #94d1eb 52%, #62a5c6 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #dbeef0), color-stop(52%, #94d1eb), color-stop(100%, #62a5c6));
+    background: -webkit-linear-gradient(top, #dbeef0 20%, #94d1eb 52%, #62a5c6 100%);
+    background: -o-linear-gradient(top, #dbeef0 20%, #94d1eb 52%, #62a5c6 100%);
+    background: -ms-linear-gradient(top, #dbeef0 20%, #94d1eb 52%, #62a5c6 100%);
+    background: linear-gradient(to bottom, #dbeef0 20%, #94d1eb 52%, #62a5c6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbeef0', endColorstr='#62a5c6', GradientType=0 ); }
+
+  .fondo_nube_escolar {
+    background-size: 91%; }
+
+  .alturaseguro {
+    margin-top: -13%; }
+
+  .caroumomentos {
+    width: 120%;
+    left: -13%; } }
 @media only screen and (min-width: 768px) {
   .eescolar_1 {
     max-width: 336px;
     width: 44%;
-    position: relative;
-    margin-top: -94%; }
+    position: relative; }
 
   .width_escolar {
     margin-top: -3%; }
@@ -1969,31 +1988,32 @@
     transform: translateX(31%); }
 
   .texto_1_escolar {
-    font-size: 12px;
+    font-size: 17px;
     line-height: 16px;
-    margin-left: 77%;
+    margin-left: 83%;
     position: relative;
-    margin-top: -22%;
-    width: 148px; }
+    margin-top: -41%;
+    width: 179px; }
 
   .texto_2_escolar {
     font-size: 22px;
-    line-height: 34px; }
+    line-height: 34px;
+    left: -21%; }
 
   .fondo123 {
     background-size: 48%;
     background-position-x: 2%;
-    margin-bottom: 45px;
-    height: 100%; }
+    margin-bottom: 111px;
+    height: 210%;
+    margin-top: -16%; }
 
   .left_escolar_1 {
     left: -80px; }
 
   .zapatiito_3_escolar img {
-    margin-left: -45%;
-    transform: translateX(33%);
-    max-width: 635px;
-    width: 120%; }
+    margin-top: -31%;
+    width: 93%;
+    margin-left: -51%; }
 
   .m-t--200 {
     margin-top: 0px; }
@@ -2005,24 +2025,26 @@
     margin-top: 100px; }
 
   .fondo_reticula {
-    background-position: -7% bottom;
-    background-size: 80%; }
+    background-position: 22% 100%;
+    background-size: 48%; }
 
   .escolar_3 {
     width: 90%;
     max-width: 650px; }
     .escolar_3 img {
       position: relative;
-      margin-top: -242%; }
+      margin-top: -50%;
+      width: 65%;
+      left: 17%; }
 
   .shapatito_baby {
     top: 18px;
-    max-width: 60%;
-    height: 200.5px; }
+    max-width: 95%;
+    height: 325px !important; }
 
   .caroumomentos {
     left: -22%;
-    top: 16%; }
+    top: 5%; }
 
   .texto_svg_escolar_1 {
     margin-top: 31%;
@@ -2031,12 +2053,30 @@
     max-width: 220px; }
 
   .icono_360Momentos {
-    top: 96% !important;
+    top: 75% !important;
     width: 84px !important; }
 
   .centerBigItems {
     margin-top: 100px;
-    max-width: 800px; } }
+    max-width: 80%; }
+
+  .alturaseguro {
+    margin-top: 100px; }
+
+  .backtoSchool {
+    margin-bottom: -40%; }
+
+  .fondo_azul_2 {
+    background: #dbeef0;
+    background: -moz-linear-gradient(top, #dbeef0 42%, #94d1eb 52%, #62a5c6 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #dbeef0), color-stop(52%, #94d1eb), color-stop(100%, #62a5c6));
+    background: -webkit-linear-gradient(top, #dbeef0 42%, #94d1eb 52%, #62a5c6 100%);
+    background: -o-linear-gradient(top, #dbeef0 42%, #94d1eb 52%, #62a5c6 100%);
+    background: -ms-linear-gradient(top, #dbeef0 42%, #94d1eb 52%, #62a5c6 100%);
+    background: linear-gradient(to bottom, #dbeef0 42%, #94d1eb 52%, #62a5c6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbeef0', endColorstr='#62a5c6', GradientType=0 ); }
+    .fondo_azul_2 .textoSeguro {
+      left: -20%; } }
 .primeracolumna {
   margin-top: 30px; }
 
