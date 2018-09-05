@@ -51,11 +51,8 @@
                                             <strong class="textoMomentos1S">son esos pequeños momentos,</strong>
                                             emociones y recuerdos que te llevas en tu corazón.
                                         </p>
-                                </div>
-
-                                
+                                </div>   
                             </div>
-
                         </div>
                     </div>
                 </div>

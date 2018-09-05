@@ -17,7 +17,7 @@
             <div class="row no-gutters fondo_azul_2 margent-top--30">
                 <div class="col-12 fondo_reticula ">
                     <div class="row justify-content-center no-gutters">
-                        <div class="col-12 col-lg-10 centerBigItems">
+                        <div class="col-12 col-lg-10 centerBigItems escritorioinicio">
                             <div class="row justify-content-end fondo123 p-b-10">
                                 <div class="col-8 col-sm-6 alineado_centro left_escolar_1 m-t--200 wow slideInRight">
                                     <div id="carouselescolar" class="carousel slide caroumomentos" data-ride="carousel">
@@ -59,7 +59,7 @@
                             <div class="row fondo_nube_escolar">
                                 <div class="col-12 wow zoomIn">
                                     <div class="centro_360 m-b-100 m-t-100">
-                                        <div class="threesixty shapatito_baby">
+                                        <div class="threesixty shapatito_baby ">
                                             <div class="spinner">
                                                 <span>0%</span>
                                             </div>

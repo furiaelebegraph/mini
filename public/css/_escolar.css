@@ -12,12 +12,12 @@
 
 .fondo_azul_2 {
   background: #dbeef0;
-  background: -moz-linear-gradient(top, #dbeef0 0%, #94d1eb 52%, #62a5c6 100%);
+  background: -moz-linear-gradient(top, #dbeef0 10%, #94d1eb 52%, #62a5c6 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #dbeef0), color-stop(52%, #94d1eb), color-stop(100%, #62a5c6));
-  background: -webkit-linear-gradient(top, #dbeef0 0%, #94d1eb 52%, #62a5c6 100%);
-  background: -o-linear-gradient(top, #dbeef0 0%, #94d1eb 52%, #62a5c6 100%);
-  background: -ms-linear-gradient(top, #dbeef0 0%, #94d1eb 52%, #62a5c6 100%);
-  background: linear-gradient(to bottom, #dbeef0 0%, #94d1eb 52%, #62a5c6 100%);
+  background: -webkit-linear-gradient(top, #dbeef0 10%, #94d1eb 52%, #62a5c6 100%);
+  background: -o-linear-gradient(top, #dbeef0 10%, #94d1eb 52%, #62a5c6 100%);
+  background: -ms-linear-gradient(top, #dbeef0 10%, #94d1eb 52%, #62a5c6 100%);
+  background: linear-gradient(to bottom, #dbeef0 10%, #94d1eb 52%, #62a5c6 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbeef0', endColorstr='#62a5c6', GradientType=0 ); }
 
 .width_escolar {
@@ -35,29 +35,34 @@
   max-width: 543px;
   width: 34%;
   position: relative;
-  margin-top: -86%; }
+  margin-top: -90%; }
 
 .left_escolar_1 {
   left: 0px; }
 
 .zapatiito_3_escolar img {
   max-width: 600px;
-  width: 100%;
+  width: 145%;
   position: relative;
-  margin-left: -50%;
-  transform: translateX(50%); }
+  margin-left: -108%;
+  transform: translateX(62%);
+  margin-top: -42%;
+  z-index: 1; }
+
+.textoSeguro {
+  position: relative;
+  left: -8%; }
 
 .fondo_nube_escolar {
   background-image: url("../img/escolar/nubecita_escolar.svg");
   background-position: 50% 4%;
-  background-repeat: no-repeat;
-  background-size: 100%; }
+  background-repeat: no-repeat; }
 
 .fondo_reticula {
   background-image: url(../img/escolar/escolar_fondo-3.png);
-  background-position: 13% bottom;
+  background-position: 49% 103%;
   background-repeat: no-repeat;
-  background-size: 170%; }
+  background-size: 86%; }
 
 .imagen_lapicitos {
   width: 122%;
@@ -84,7 +89,7 @@
   padding-bottom: 30%; }
 
 .m-t--200 {
-  margin-top: 204px; }
+  margin-top: 0px; }
 
 .m-t---200 {
   margin-top: 50px; }
@@ -97,16 +102,18 @@
 .texto_1_escolar {
   color: #005f8b;
   text-align: center;
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 19px;
   max-width: 300px;
   margin-left: auto; }
 
 .texto_2_escolar {
   color: white;
   text-align: center;
-  font-size: 20px;
-  line-height: 27px; }
+  font-size: 13px;
+  line-height: 18px;
+  position: relative;
+  left: -13%; }
 
 .wrap_cat_escolar {
   width: 100%;
@@ -148,12 +155,23 @@
   height: 180px;
   display: inline-block; }
 
+.shapatito_baby {
+  top: -53px;
+  max-width: 230px; }
+
+.icono_360Momentos {
+  top: 57% !important;
+  width: 84px !important; }
+
+.backtoSchool {
+  margin-top: -1px; }
+
 @media (min-width: 481px) and (max-width: 767px) {
   .width_escolar {
     margin-top: 11%; }
 
   .eescolar_1 {
-    margin-top: -73%;
+    margin-top: -90%;
     max-width: 537px;
     width: 38%; }
 
@@ -162,7 +180,7 @@
     background-size: 90%; }
 
   .fondo123 {
-    background-size: 70%;
+    background-size: 58%;
     background-position-x: 9%; }
 
   .m-t--200 {
@@ -175,22 +193,56 @@
     margin-top: 50px; }
 
   .zapatiito_3_escolar img {
-    max-width: 518px;
-    width: 125%;
+    max-width: 500px;
+    width: 122%;
     margin-left: -57%;
-    transform: translateX(41%); }
+    transform: translateX(41%);
+    margin-top: 30%; }
 
   .escolar_3 {
     width: 70%;
     max-width: 550px; }
     .escolar_3 img {
-      width: 100%; } }
+      width: 100%; }
+
+  .shapatito_baby {
+    top: -10px;
+    max-width: 73%;
+    height: 228px !important;
+    left: 4%; }
+
+  .icono_360Momentos {
+    top: 93% !important; }
+
+  .textoSeguro {
+    position: relative;
+    left: -8%;
+    margin-top: 53%; }
+
+  .fondo_azul_2 {
+    background: #dbeef0;
+    background: -moz-linear-gradient(top, #dbeef0 20%, #94d1eb 52%, #62a5c6 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #dbeef0), color-stop(52%, #94d1eb), color-stop(100%, #62a5c6));
+    background: -webkit-linear-gradient(top, #dbeef0 20%, #94d1eb 52%, #62a5c6 100%);
+    background: -o-linear-gradient(top, #dbeef0 20%, #94d1eb 52%, #62a5c6 100%);
+    background: -ms-linear-gradient(top, #dbeef0 20%, #94d1eb 52%, #62a5c6 100%);
+    background: linear-gradient(to bottom, #dbeef0 20%, #94d1eb 52%, #62a5c6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbeef0', endColorstr='#62a5c6', GradientType=0 ); }
+
+  .fondo_nube_escolar {
+    background-size: 91%; }
+
+  .alturaseguro {
+    margin-top: -13%; }
+
+  .caroumomentos {
+    width: 120%;
+    left: -13%; } }
 @media only screen and (min-width: 768px) {
   .eescolar_1 {
     max-width: 336px;
     width: 44%;
-    position: relative;
-    margin-top: -94%; }
+    position: relative; }
 
   .width_escolar {
     margin-top: -3%; }
@@ -202,29 +254,32 @@
     transform: translateX(31%); }
 
   .texto_1_escolar {
-    font-size: 23px;
-    line-height: 27px; }
+    font-size: 17px;
+    line-height: 16px;
+    margin-left: 92%;
+    position: relative;
+    margin-top: -41%;
+    width: 179px; }
 
   .texto_2_escolar {
-    font-size: 30px;
-    line-height: 34px; }
+    font-size: 22px;
+    line-height: 34px;
+    left: -6%; }
 
   .fondo123 {
     background-size: 48%;
-    background-position-x: 19%; }
-
-  .fondo_nube_escolar {
-    background-size: 80%;
-    background-position: 50% 59%; }
+    background-position-x: 2%;
+    margin-bottom: 111px;
+    height: 210%;
+    margin-top: -16%; }
 
   .left_escolar_1 {
     left: -80px; }
 
   .zapatiito_3_escolar img {
-    margin-left: -54%;
-    transform: translateX(33%);
-    max-width: 635px;
-    width: 120%; }
+    margin-top: -31%;
+    width: 93%;
+    margin-left: -35%; }
 
   .m-t--200 {
     margin-top: 0px; }
@@ -236,13 +291,60 @@
     margin-top: 100px; }
 
   .fondo_reticula {
-    background-position: -7% bottom;
-    background-size: 80%; }
+    background-position: 40% 100%;
+    background-size: 50%; }
 
   .escolar_3 {
     width: 90%;
     max-width: 650px; }
     .escolar_3 img {
-      width: 100%; } }
+      position: relative;
+      margin-top: -50%;
+      width: 65%;
+      left: 17%; }
+
+  .shapatito_baby {
+    top: 18px;
+    max-width: 95%;
+    height: 325px !important; }
+
+  .caroumomentos {
+    left: -22%;
+    top: 5%; }
+
+  .texto_svg_escolar_1 {
+    margin-top: 31%;
+    position: relative;
+    left: -14%;
+    max-width: 220px; }
+
+  .icono_360Momentos {
+    top: 75% !important;
+    width: 84px !important; }
+
+  .centerBigItems {
+    margin-top: 100px;
+    max-width: 80%; }
+
+  .alturaseguro {
+    margin-top: 20%;
+    max-width: 1300px; }
+
+  .backtoSchool {
+    margin-bottom: -40%; }
+
+  .fondo_azul_2 {
+    background: #dbeef0;
+    background: -moz-linear-gradient(top, #dbeef0 42%, #94d1eb 52%, #62a5c6 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #dbeef0), color-stop(52%, #94d1eb), color-stop(100%, #62a5c6));
+    background: -webkit-linear-gradient(top, #dbeef0 42%, #94d1eb 52%, #62a5c6 100%);
+    background: -o-linear-gradient(top, #dbeef0 42%, #94d1eb 52%, #62a5c6 100%);
+    background: -ms-linear-gradient(top, #dbeef0 42%, #94d1eb 52%, #62a5c6 100%);
+    background: linear-gradient(to bottom, #dbeef0 42%, #94d1eb 52%, #62a5c6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbeef0', endColorstr='#62a5c6', GradientType=0 ); }
+    .fondo_azul_2 .textoSeguro {
+      left: 0%; }
+    .fondo_azul_2 .escritorioinicio {
+      max-width: 70%; } }
 
 /*# sourceMappingURL=_escolar.css.map */
